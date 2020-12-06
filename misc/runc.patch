@@ -1,0 +1,61 @@
+From f6cefb86a04bfaeeaeb7cbad9976c43a91ee5b95 Mon Sep 17 00:00:00 2001
+From: Zhipeng Jia <zjia@cs.utexas.edu>
+Date: Wed, 22 Apr 2020 16:41:30 -0500
+Subject: [PATCH] automatically add CAP_SYS_NICE, and set RLIMIT_NICE and
+ RLIMIT_NOFILE
+
+---
+ utils_linux.go | 27 ++++++++++++++++++++++++++-
+ 1 file changed, 26 insertions(+), 1 deletion(-)
+
+diff --git a/utils_linux.go b/utils_linux.go
+index 984e6b0f..81b7e497 100644
+--- a/utils_linux.go
++++ b/utils_linux.go
+@@ -131,17 +131,42 @@ func newProcess(p specs.Process, init bool, logLevel string) (*libcontainer.Proc
+ 		lp.Capabilities.Inheritable = p.Capabilities.Inheritable
+ 		lp.Capabilities.Permitted = p.Capabilities.Permitted
+ 		lp.Capabilities.Ambient = p.Capabilities.Ambient
+-	}
++	} else {
++		lp.Capabilities = &configs.Capabilities{}	
++	}
++	// Add CAP_SYS_NICE
++	lp.Capabilities.Bounding = append(lp.Capabilities.Bounding, "CAP_SYS_NICE")
++	lp.Capabilities.Effective = append(lp.Capabilities.Effective, "CAP_SYS_NICE")
++	lp.Capabilities.Inheritable = append(lp.Capabilities.Inheritable, "CAP_SYS_NICE")
++	lp.Capabilities.Permitted = append(lp.Capabilities.Permitted, "CAP_SYS_NICE")
++	lp.Capabilities.Ambient = append(lp.Capabilities.Ambient, "CAP_SYS_NICE")
+ 	for _, gid := range p.User.AdditionalGids {
+ 		lp.AdditionalGroups = append(lp.AdditionalGroups, strconv.FormatUint(uint64(gid), 10))
+ 	}
+ 	for _, rlimit := range p.Rlimits {
++		if rlimit.Type == "RLIMIT_NICE" {
++			continue
++		}
+ 		rl, err := createLibContainerRlimit(rlimit)
+ 		if err != nil {
+ 			return nil, err
+ 		}
+ 		lp.Rlimits = append(lp.Rlimits, rl)
+ 	}
++	// Set RLIMIT_NICE to 40
++	rlNice, _ := strToRlimit("RLIMIT_NICE")
++	lp.Rlimits = append(lp.Rlimits, configs.Rlimit{
++		Type: rlNice,
++		Hard: 40,
++		Soft: 40,
++	})
++	// Set RLIMIT_NOFILE to 65536
++	rlNoFile, _ := strToRlimit("RLIMIT_NOFILE")
++	lp.Rlimits = append(lp.Rlimits, configs.Rlimit{
++		Type: rlNoFile,
++		Hard: 65536,
++		Soft: 65536,
++	})
+ 	return lp, nil
+ }
+ 
+-- 
+2.25.1
+
