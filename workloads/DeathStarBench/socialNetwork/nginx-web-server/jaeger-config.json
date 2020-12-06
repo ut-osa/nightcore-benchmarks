@@ -1,0 +1,12 @@
+{
+  "service_name": "nginx-web-server",
+  "disabled": true,
+  "reporter": {
+    "logSpans": true,
+    "localAgentHostPort": "jaeger:6831"
+  },
+  "sampler": {
+    "type": "probabilistic",
+    "param": "0.1"
+  }
+}
