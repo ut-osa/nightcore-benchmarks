@@ -28,7 +28,7 @@ services:
       - --func_config_file=/tmp/nightcore/func_config.json
       - --num_io_workers=4
       - --lb_pick_least_load
-      - --max_running_requests=48
+      - --max_running_requests=40
     volumes:
       - /tmp/nightcore_config.json:/tmp/nightcore/func_config.json
 

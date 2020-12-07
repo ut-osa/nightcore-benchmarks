@@ -1,0 +1,964 @@
+I1207 06:54:58.051976 Main     thread.cpp:100] Register main thread: tid=57188
+I1207 06:54:58.052274 Main     func_config.cpp:135] Load configuration for function SocialGraphService[1]
+I1207 06:54:58.052300 Main     func_config.cpp:135] Load configuration for function ComposePostService[2]
+I1207 06:54:58.052308 Main     func_config.cpp:135] Load configuration for function PostStorageService[3]
+I1207 06:54:58.052314 Main     func_config.cpp:135] Load configuration for function UserTimelineService[4]
+I1207 06:54:58.052318 Main     func_config.cpp:135] Load configuration for function UrlShortenService[5]
+I1207 06:54:58.052323 Main     func_config.cpp:135] Load configuration for function UserService[6]
+I1207 06:54:58.052327 Main     func_config.cpp:135] Load configuration for function MediaService[7]
+I1207 06:54:58.052333 Main     func_config.cpp:135] Load configuration for function TextService[8]
+I1207 06:54:58.052337 Main     func_config.cpp:135] Load configuration for function UniqueIdService[9]
+I1207 06:54:58.052342 Main     func_config.cpp:135] Load configuration for function UserMentionService[10]
+I1207 06:54:58.052346 Main     func_config.cpp:135] Load configuration for function HomeTimelineService[11]
+I1207 06:54:58.052356 Main     engine.cpp:86] Engine: Start 2 IO workers
+I1207 06:54:58.052534 IO-0/EL  thread.cpp:40] Start thread: IO-0/EL
+I1207 06:54:58.052580 IO-0/EL  io_worker.cpp:167] IO-0: Event loop starts
+I1207 06:54:58.052618 IO-1/EL  thread.cpp:40] Start thread: IO-1/EL
+I1207 06:54:58.052657 IO-1/EL  io_worker.cpp:167] IO-1: Event loop starts
+I1207 06:54:58.054467 Main     engine.cpp:118] Engine: Listen on /tmp/nightcore/ipc/engine.sock for IPC connections
+I1207 06:54:58.054857 Server/E thread.cpp:40] Start thread: Server/EL
+I1207 06:54:58.054921 Server/E server_base.cpp:50] Server: Event loop starts
+I1207 06:54:58.055009 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=0) assigned to IO worker 0
+I1207 06:54:58.055055 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=1) assigned to IO worker 1
+I1207 06:54:58.055074 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=2) assigned to IO worker 0
+I1207 06:54:58.055086 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=3) assigned to IO worker 1
+I1207 06:54:58.055098 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=4) assigned to IO worker 0
+I1207 06:54:58.055107 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=5) assigned to IO worker 1
+I1207 06:54:58.055116 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=6) assigned to IO worker 0
+I1207 06:54:58.055124 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=7) assigned to IO worker 1
+I1207 06:54:58.055136 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=8) assigned to IO worker 0
+I1207 06:54:58.055138 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 1
+I1207 06:54:58.055145 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 1
+I1207 06:54:58.055146 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=9) assigned to IO worker 1
+I1207 06:54:58.055175 IO-1/EL  gateway_connection.cpp:150] GatewayConnection[1]: Handshake done
+I1207 06:54:58.055167 IO-0/EL  gateway_connection.cpp:150] GatewayConnection[0]: Handshake done
+I1207 06:54:58.055192 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=10) assigned to IO worker 0
+I1207 06:54:58.055203 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=11) assigned to IO worker 1
+I1207 06:54:58.055217 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=12) assigned to IO worker 0
+I1207 06:54:58.055224 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 2
+I1207 06:54:58.055230 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=13) assigned to IO worker 1
+I1207 06:54:58.055249 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=14) assigned to IO worker 0
+I1207 06:54:58.055252 IO-0/EL  gateway_connection.cpp:150] GatewayConnection[2]: Handshake done
+I1207 06:54:58.055260 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=15) assigned to IO worker 1
+I1207 06:54:58.055226 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 2
+I1207 06:54:58.055281 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 3
+I1207 06:54:58.055289 IO-1/EL  gateway_connection.cpp:150] GatewayConnection[3]: Handshake done
+I1207 06:54:58.055294 IO-0/EL  gateway_connection.cpp:150] GatewayConnection[4]: Handshake done
+I1207 06:54:58.055281 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=16) assigned to IO worker 0
+I1207 06:54:58.055311 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=17) assigned to IO worker 1
+I1207 06:54:58.055333 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 3
+I1207 06:54:58.055342 IO-1/EL  gateway_connection.cpp:150] GatewayConnection[5]: Handshake done
+I1207 06:54:58.055335 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=18) assigned to IO worker 0
+I1207 06:54:58.055355 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=19) assigned to IO worker 1
+I1207 06:54:58.055382 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=20) assigned to IO worker 0
+I1207 06:54:58.055316 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 4
+I1207 06:54:58.055394 IO-0/EL  gateway_connection.cpp:150] GatewayConnection[6]: Handshake done
+I1207 06:54:58.055402 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=21) assigned to IO worker 1
+I1207 06:54:58.055411 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=22) assigned to IO worker 0
+I1207 06:54:58.055425 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=23) assigned to IO worker 1
+I1207 06:54:58.055434 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=24) assigned to IO worker 0
+I1207 06:54:58.055442 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=25) assigned to IO worker 1
+I1207 06:54:58.055461 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=26) assigned to IO worker 0
+I1207 06:54:58.055476 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=27) assigned to IO worker 1
+I1207 06:54:58.055485 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=28) assigned to IO worker 0
+I1207 06:54:58.055499 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=29) assigned to IO worker 1
+I1207 06:54:58.055514 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=30) assigned to IO worker 0
+I1207 06:54:58.055522 Server/E engine.cpp:491] Engine: New gateway connection (conn_id=31) assigned to IO worker 1
+I1207 06:54:58.065528 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:54:58.094971 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 4
+I1207 06:54:58.094971 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 5
+I1207 06:54:58.095013 IO-1/EL  gateway_connection.cpp:150] GatewayConnection[7]: Handshake done
+I1207 06:54:58.095022 IO-0/EL  gateway_connection.cpp:150] GatewayConnection[8]: Handshake done
+I1207 06:54:58.095071 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 5
+I1207 06:54:58.095095 IO-1/EL  gateway_connection.cpp:150] GatewayConnection[9]: Handshake done
+I1207 06:54:58.095112 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 6
+I1207 06:54:58.095120 IO-0/EL  gateway_connection.cpp:150] GatewayConnection[10]: Handshake done
+I1207 06:54:58.095140 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 6
+I1207 06:54:58.095155 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 7
+I1207 06:54:58.095161 IO-0/EL  gateway_connection.cpp:150] GatewayConnection[12]: Handshake done
+I1207 06:54:58.095152 IO-1/EL  gateway_connection.cpp:150] GatewayConnection[11]: Handshake done
+I1207 06:54:58.095192 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 8
+I1207 06:54:58.095219 IO-0/EL  gateway_connection.cpp:150] GatewayConnection[14]: Handshake done
+I1207 06:54:58.095226 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 7
+I1207 06:54:58.095239 IO-1/EL  gateway_connection.cpp:150] GatewayConnection[13]: Handshake done
+I1207 06:54:58.095258 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 9
+I1207 06:54:58.095267 IO-0/EL  gateway_connection.cpp:150] GatewayConnection[16]: Handshake done
+I1207 06:54:58.095297 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 10
+I1207 06:54:58.095301 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 8
+I1207 06:54:58.095306 IO-0/EL  gateway_connection.cpp:150] GatewayConnection[18]: Handshake done
+I1207 06:54:58.095308 IO-1/EL  gateway_connection.cpp:150] GatewayConnection[15]: Handshake done
+I1207 06:54:58.095336 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 11
+I1207 06:54:58.095344 IO-0/EL  gateway_connection.cpp:150] GatewayConnection[20]: Handshake done
+I1207 06:54:58.095362 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 9
+I1207 06:54:58.095368 IO-1/EL  gateway_connection.cpp:150] GatewayConnection[17]: Handshake done
+I1207 06:54:58.095384 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 12
+I1207 06:54:58.095402 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 10
+I1207 06:54:58.095408 IO-1/EL  gateway_connection.cpp:150] GatewayConnection[19]: Handshake done
+I1207 06:54:58.095393 IO-0/EL  gateway_connection.cpp:150] GatewayConnection[22]: Handshake done
+I1207 06:54:58.095442 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 11
+I1207 06:54:58.095449 IO-1/EL  gateway_connection.cpp:150] GatewayConnection[21]: Handshake done
+I1207 06:54:58.095450 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 13
+I1207 06:54:58.095456 IO-0/EL  gateway_connection.cpp:150] GatewayConnection[24]: Handshake done
+I1207 06:54:58.095488 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 14
+I1207 06:54:58.095510 IO-0/EL  gateway_connection.cpp:150] GatewayConnection[26]: Handshake done
+I1207 06:54:58.095489 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 12
+I1207 06:54:58.095536 IO-1/EL  gateway_connection.cpp:150] GatewayConnection[23]: Handshake done
+I1207 06:54:58.095552 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 15
+I1207 06:54:58.095564 IO-0/EL  gateway_connection.cpp:150] GatewayConnection[28]: Handshake done
+I1207 06:54:58.095571 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 13
+I1207 06:54:58.095577 IO-1/EL  gateway_connection.cpp:150] GatewayConnection[25]: Handshake done
+I1207 06:54:58.095609 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 14
+I1207 06:54:58.095612 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 16
+I1207 06:54:58.095636 IO-1/EL  gateway_connection.cpp:150] GatewayConnection[27]: Handshake done
+I1207 06:54:58.095657 IO-0/EL  gateway_connection.cpp:150] GatewayConnection[30]: Handshake done
+I1207 06:54:58.095675 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 1
+I1207 06:54:58.095697 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 15
+I1207 06:54:58.095692 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Read]: Allocate new buffer, current buffer count is 1
+I1207 06:54:58.095718 IO-1/EL  gateway_connection.cpp:150] GatewayConnection[29]: Handshake done
+I1207 06:54:58.095731 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:54:58.095739 IO-0/EL  worker_manager.cpp:23] WorkerManager: Launcher of func_id 1 connected
+I1207 06:54:58.095744 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 1 with client_id 1
+I1207 06:54:58.095762 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 16
+I1207 06:54:58.095769 IO-1/EL  gateway_connection.cpp:150] GatewayConnection[31]: Handshake done
+I1207 06:54:58.095795 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 1 with client_id 2
+I1207 06:54:58.095804 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 1 with client_id 3
+I1207 06:54:58.095814 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 1 with client_id 4
+I1207 06:54:58.095874 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Write]: Allocate new buffer, current buffer count is 1
+I1207 06:54:58.095892 IO-0/EL  message_connection.cpp:269] LauncherConnection[1]: Handshake done
+I1207 06:54:58.117282 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:54:58.117334 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:54:58.117348 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 1
+I1207 06:54:58.117353 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:54:58.117371 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:54:58.117372 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 2
+I1207 06:54:58.117380 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 2
+I1207 06:54:58.117414 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Read]: Allocate new buffer, current buffer count is 1
+I1207 06:54:58.117447 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 3
+I1207 06:54:58.117450 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:54:58.117477 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 1, client_id 1 connected
+I1207 06:54:58.117484 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:54:58.117490 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 1, client_id 3 connected
+I1207 06:54:58.117493 IO-1/EL  dispatcher.cpp:49] Dispatcher[1]: min_workers=4
+I1207 06:54:58.117501 IO-1/EL  dispatcher.cpp:53] Dispatcher[1]: max_workers=20
+I1207 06:54:58.117567 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[1-3]: Handshake done
+I1207 06:54:58.117604 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:54:58.117610 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 1, client_id 4 connected
+I1207 06:54:58.117637 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[1-4]: Handshake done
+I1207 06:54:58.117638 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[1-1]: Handshake done
+I1207 06:54:58.117659 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:54:58.117663 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 1, client_id 2 connected
+I1207 06:54:58.117695 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[1-2]: Handshake done
+I1207 06:54:59.468727 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:54:59.468802 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 3
+I1207 06:54:59.468908 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:54:59.468917 IO-1/EL  worker_manager.cpp:23] WorkerManager: Launcher of func_id 8 connected
+I1207 06:54:59.468922 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 8 with client_id 5
+I1207 06:54:59.468943 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 8 with client_id 6
+I1207 06:54:59.468955 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 8 with client_id 7
+I1207 06:54:59.468967 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 8 with client_id 8
+I1207 06:54:59.468995 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Write]: Allocate new buffer, current buffer count is 1
+I1207 06:54:59.469005 IO-1/EL  message_connection.cpp:269] LauncherConnection[8]: Handshake done
+I1207 06:54:59.472466 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:54:59.472545 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 4
+I1207 06:54:59.472565 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:54:59.472572 IO-0/EL  worker_manager.cpp:23] WorkerManager: Launcher of func_id 6 connected
+I1207 06:54:59.472577 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 6 with client_id 9
+I1207 06:54:59.472600 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 6 with client_id 10
+I1207 06:54:59.472619 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 6 with client_id 11
+I1207 06:54:59.472639 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 6 with client_id 12
+I1207 06:54:59.472692 IO-0/EL  message_connection.cpp:269] LauncherConnection[6]: Handshake done
+I1207 06:54:59.479141 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:54:59.479234 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 4
+I1207 06:54:59.479302 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:54:59.479310 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 8, client_id 5 connected
+I1207 06:54:59.479321 IO-1/EL  dispatcher.cpp:49] Dispatcher[8]: min_workers=4
+I1207 06:54:59.479326 IO-1/EL  dispatcher.cpp:53] Dispatcher[8]: max_workers=20
+I1207 06:54:59.479375 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[8-5]: Handshake done
+I1207 06:54:59.480868 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:54:59.481559 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 5
+I1207 06:54:59.481599 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:54:59.481607 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 8, client_id 7 connected
+I1207 06:54:59.481670 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[8-7]: Handshake done
+I1207 06:54:59.486226 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:54:59.486300 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 5
+I1207 06:54:59.486345 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:54:59.486358 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 8, client_id 8 connected
+I1207 06:54:59.486399 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[8-8]: Handshake done
+I1207 06:54:59.489813 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:54:59.489895 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 6
+I1207 06:54:59.489931 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:54:59.489938 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 8, client_id 6 connected
+I1207 06:54:59.489978 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[8-6]: Handshake done
+I1207 06:54:59.514757 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:54:59.514832 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:54:59.514861 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:54:59.514860 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 6
+I1207 06:54:59.514878 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 7
+I1207 06:54:59.514902 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 7
+I1207 06:54:59.514915 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:54:59.514921 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:54:59.514926 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 6, client_id 12 connected
+I1207 06:54:59.514928 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 6, client_id 11 connected
+I1207 06:54:59.514943 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:54:59.514949 IO-0/EL  dispatcher.cpp:49] Dispatcher[6]: min_workers=4
+I1207 06:54:59.514957 IO-0/EL  dispatcher.cpp:53] Dispatcher[6]: max_workers=20
+I1207 06:54:59.515002 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[6-12]: Handshake done
+I1207 06:54:59.515007 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[6-11]: Handshake done
+I1207 06:54:59.515016 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 8
+I1207 06:54:59.515032 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:54:59.515038 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:54:59.515041 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 6, client_id 9 connected
+I1207 06:54:59.515044 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 6, client_id 10 connected
+I1207 06:54:59.515065 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[6-9]: Handshake done
+I1207 06:54:59.515071 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[6-10]: Handshake done
+I1207 06:55:00.144839 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:00.144911 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 8
+I1207 06:55:00.145029 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:00.145040 IO-1/EL  worker_manager.cpp:23] WorkerManager: Launcher of func_id 4 connected
+I1207 06:55:00.145045 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 4 with client_id 13
+I1207 06:55:00.145064 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 4 with client_id 14
+I1207 06:55:00.145075 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 4 with client_id 15
+I1207 06:55:00.145090 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 4 with client_id 16
+I1207 06:55:00.145144 IO-1/EL  message_connection.cpp:269] LauncherConnection[4]: Handshake done
+I1207 06:55:00.165397 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:00.165454 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:00.165475 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:00.165491 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 9
+I1207 06:55:00.165488 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 9
+I1207 06:55:00.165499 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:00.165522 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 10
+I1207 06:55:00.165530 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:00.165538 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 4, client_id 16 connected
+I1207 06:55:00.165546 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:00.165548 IO-1/EL  dispatcher.cpp:49] Dispatcher[4]: min_workers=4
+I1207 06:55:00.165580 IO-1/EL  dispatcher.cpp:53] Dispatcher[4]: max_workers=20
+I1207 06:55:00.165567 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 4, client_id 13 connected
+I1207 06:55:00.165622 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[4-16]: Handshake done
+I1207 06:55:00.165633 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 10
+I1207 06:55:00.165641 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[4-13]: Handshake done
+I1207 06:55:00.165656 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:00.165674 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 4, client_id 14 connected
+I1207 06:55:00.165660 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:00.165692 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 4, client_id 15 connected
+I1207 06:55:00.165714 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[4-14]: Handshake done
+I1207 06:55:00.165760 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[4-15]: Handshake done
+I1207 06:55:00.456832 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:00.456916 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 11
+I1207 06:55:00.457016 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:00.457028 IO-0/EL  worker_manager.cpp:23] WorkerManager: Launcher of func_id 2 connected
+I1207 06:55:00.457032 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 2 with client_id 17
+I1207 06:55:00.457051 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 2 with client_id 18
+I1207 06:55:00.457058 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 2 with client_id 19
+I1207 06:55:00.457069 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 2 with client_id 20
+I1207 06:55:00.457103 IO-0/EL  message_connection.cpp:269] LauncherConnection[2]: Handshake done
+I1207 06:55:00.466047 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:00.466115 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:00.466138 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 11
+I1207 06:55:00.466158 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 12
+I1207 06:55:00.466178 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:00.466179 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:00.466185 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 2, client_id 17 connected
+I1207 06:55:00.466186 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 2, client_id 19 connected
+I1207 06:55:00.466209 IO-1/EL  dispatcher.cpp:49] Dispatcher[2]: min_workers=4
+I1207 06:55:00.466219 IO-1/EL  dispatcher.cpp:53] Dispatcher[2]: max_workers=20
+I1207 06:55:00.466279 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[2-17]: Handshake done
+I1207 06:55:00.466285 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[2-19]: Handshake done
+I1207 06:55:00.468284 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:00.468339 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:00.468357 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 12
+I1207 06:55:00.468393 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 13
+I1207 06:55:00.468391 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:00.468409 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 2, client_id 20 connected
+I1207 06:55:00.468427 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:00.468433 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 2, client_id 18 connected
+I1207 06:55:00.468447 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[2-20]: Handshake done
+I1207 06:55:00.468469 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[2-18]: Handshake done
+I1207 06:55:01.779381 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:01.779476 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 13
+I1207 06:55:01.779551 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:01.779561 IO-1/EL  worker_manager.cpp:23] WorkerManager: Launcher of func_id 11 connected
+I1207 06:55:01.779565 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 11 with client_id 21
+I1207 06:55:01.779587 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 11 with client_id 22
+I1207 06:55:01.779600 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 11 with client_id 23
+I1207 06:55:01.779615 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 11 with client_id 24
+I1207 06:55:01.779649 IO-1/EL  message_connection.cpp:269] LauncherConnection[11]: Handshake done
+I1207 06:55:01.786918 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:01.786978 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:01.786999 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 14
+I1207 06:55:01.787030 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:01.787032 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 14
+I1207 06:55:01.787037 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:01.787072 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 11, client_id 21 connected
+I1207 06:55:01.787079 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:01.787085 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 11, client_id 23 connected
+I1207 06:55:01.787093 IO-0/EL  dispatcher.cpp:49] Dispatcher[11]: min_workers=4
+I1207 06:55:01.787100 IO-0/EL  dispatcher.cpp:53] Dispatcher[11]: max_workers=20
+I1207 06:55:01.787143 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[11-21]: Handshake done
+I1207 06:55:01.811041 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[11-23]: Handshake done
+I1207 06:55:01.811027 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:01.811029 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 15
+I1207 06:55:01.814375 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:01.814383 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 15
+I1207 06:55:01.814459 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:01.814467 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 11, client_id 24 connected
+I1207 06:55:01.814502 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[11-24]: Handshake done
+I1207 06:55:01.814414 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 11, client_id 22 connected
+I1207 06:55:01.814573 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[11-22]: Handshake done
+I1207 06:55:02.332179 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:02.332278 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 16
+I1207 06:55:02.332354 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:02.332367 IO-0/EL  worker_manager.cpp:23] WorkerManager: Launcher of func_id 5 connected
+I1207 06:55:02.332374 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 5 with client_id 25
+I1207 06:55:02.332414 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 5 with client_id 26
+I1207 06:55:02.332436 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 5 with client_id 27
+I1207 06:55:02.332453 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 5 with client_id 28
+I1207 06:55:02.332502 IO-0/EL  message_connection.cpp:269] LauncherConnection[5]: Handshake done
+I1207 06:55:02.352842 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:02.352905 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:02.353019 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:02.353162 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:02.354862 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 16
+I1207 06:55:02.354894 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 17
+I1207 06:55:02.354919 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:02.354929 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 5, client_id 27 connected
+I1207 06:55:02.354948 IO-1/EL  dispatcher.cpp:49] Dispatcher[5]: min_workers=4
+I1207 06:55:02.354953 IO-1/EL  dispatcher.cpp:53] Dispatcher[5]: max_workers=20
+I1207 06:55:02.354991 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[5-27]: Handshake done
+I1207 06:55:02.354985 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 17
+I1207 06:55:02.355013 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:02.355013 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 18
+I1207 06:55:02.355017 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 5, client_id 26 connected
+I1207 06:55:02.355035 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:02.355041 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 5, client_id 25 connected
+I1207 06:55:02.355045 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[5-26]: Handshake done
+I1207 06:55:02.355092 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[5-25]: Handshake done
+I1207 06:55:02.355115 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:02.355118 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 5, client_id 28 connected
+I1207 06:55:02.355140 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[5-28]: Handshake done
+I1207 06:55:02.521987 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:02.522067 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 18
+I1207 06:55:02.522198 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:02.522208 IO-1/EL  worker_manager.cpp:23] WorkerManager: Launcher of func_id 7 connected
+I1207 06:55:02.522212 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 7 with client_id 29
+I1207 06:55:02.522251 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 7 with client_id 30
+I1207 06:55:02.522266 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 7 with client_id 31
+I1207 06:55:02.522277 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 7 with client_id 32
+I1207 06:55:02.522326 IO-1/EL  message_connection.cpp:269] LauncherConnection[7]: Handshake done
+I1207 06:55:02.530221 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:02.530300 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 19
+I1207 06:55:02.530334 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:02.530343 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 7, client_id 29 connected
+I1207 06:55:02.530371 IO-0/EL  dispatcher.cpp:49] Dispatcher[7]: min_workers=4
+I1207 06:55:02.530378 IO-0/EL  dispatcher.cpp:53] Dispatcher[7]: max_workers=20
+I1207 06:55:02.530420 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[7-29]: Handshake done
+I1207 06:55:02.530882 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:02.530943 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 19
+I1207 06:55:02.530975 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:02.530984 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 7, client_id 31 connected
+I1207 06:55:02.531023 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[7-31]: Handshake done
+I1207 06:55:02.531745 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:02.531790 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 20
+I1207 06:55:02.531821 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:02.531829 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 7, client_id 30 connected
+I1207 06:55:02.531863 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[7-30]: Handshake done
+I1207 06:55:02.531946 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:02.531981 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 20
+I1207 06:55:02.532003 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:02.532007 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 7, client_id 32 connected
+I1207 06:55:02.532034 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[7-32]: Handshake done
+I1207 06:55:03.430030 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:03.430103 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 21
+I1207 06:55:03.430175 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:03.430188 IO-0/EL  worker_manager.cpp:23] WorkerManager: Launcher of func_id 10 connected
+I1207 06:55:03.430194 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 10 with client_id 33
+I1207 06:55:03.430237 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 10 with client_id 34
+I1207 06:55:03.430256 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 10 with client_id 35
+I1207 06:55:03.430265 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 10 with client_id 36
+I1207 06:55:03.430314 IO-0/EL  message_connection.cpp:269] LauncherConnection[10]: Handshake done
+I1207 06:55:03.431514 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:03.431568 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 21
+I1207 06:55:03.431812 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:03.431827 IO-1/EL  worker_manager.cpp:23] WorkerManager: Launcher of func_id 9 connected
+I1207 06:55:03.431833 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 9 with client_id 37
+I1207 06:55:03.431852 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 9 with client_id 38
+I1207 06:55:03.431870 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 9 with client_id 39
+I1207 06:55:03.431887 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 9 with client_id 40
+I1207 06:55:03.431939 IO-1/EL  message_connection.cpp:269] LauncherConnection[9]: Handshake done
+I1207 06:55:03.441116 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:03.441205 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 22
+I1207 06:55:03.441257 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:03.441264 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 9, client_id 37 connected
+I1207 06:55:03.441287 IO-0/EL  dispatcher.cpp:49] Dispatcher[9]: min_workers=4
+I1207 06:55:03.441292 IO-0/EL  dispatcher.cpp:53] Dispatcher[9]: max_workers=20
+I1207 06:55:03.441335 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[9-37]: Handshake done
+I1207 06:55:03.441370 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:03.441425 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 22
+I1207 06:55:03.441487 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:03.441492 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 9, client_id 38 connected
+I1207 06:55:03.441526 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[9-38]: Handshake done
+I1207 06:55:03.441564 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:03.441606 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 23
+I1207 06:55:03.441621 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:03.441625 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 10, client_id 34 connected
+I1207 06:55:03.441641 IO-0/EL  dispatcher.cpp:49] Dispatcher[10]: min_workers=4
+I1207 06:55:03.441646 IO-0/EL  dispatcher.cpp:53] Dispatcher[10]: max_workers=20
+I1207 06:55:03.441672 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[10-34]: Handshake done
+I1207 06:55:03.443525 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:03.443593 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 23
+I1207 06:55:03.443622 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:03.443633 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 9, client_id 40 connected
+I1207 06:55:03.443667 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[9-40]: Handshake done
+I1207 06:55:03.445397 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:03.445460 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 24
+I1207 06:55:03.445497 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:03.445519 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 10, client_id 33 connected
+I1207 06:55:03.445559 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[10-33]: Handshake done
+I1207 06:55:03.446191 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:03.446238 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 24
+I1207 06:55:03.446266 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:03.446272 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 9, client_id 39 connected
+I1207 06:55:03.446313 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[9-39]: Handshake done
+I1207 06:55:03.448242 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:03.448299 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 25
+I1207 06:55:03.448346 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:03.448359 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 10, client_id 35 connected
+I1207 06:55:03.448419 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[10-35]: Handshake done
+I1207 06:55:03.449320 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:03.449370 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 25
+I1207 06:55:03.449406 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:03.449417 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 10, client_id 36 connected
+I1207 06:55:03.449451 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[10-36]: Handshake done
+I1207 06:55:04.493843 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:04.493924 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 26
+I1207 06:55:04.494046 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:04.494056 IO-0/EL  worker_manager.cpp:23] WorkerManager: Launcher of func_id 3 connected
+I1207 06:55:04.494060 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 3 with client_id 41
+I1207 06:55:04.494078 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 3 with client_id 42
+I1207 06:55:04.494090 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 3 with client_id 43
+I1207 06:55:04.494097 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 3 with client_id 44
+I1207 06:55:04.494131 IO-0/EL  message_connection.cpp:269] LauncherConnection[3]: Handshake done
+I1207 06:55:04.514989 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:04.515063 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:04.515083 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 26
+I1207 06:55:04.515111 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 27
+I1207 06:55:04.515098 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:04.515135 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:04.515143 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 3, client_id 41 connected
+I1207 06:55:04.515152 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:04.515163 IO-1/EL  dispatcher.cpp:49] Dispatcher[3]: min_workers=4
+I1207 06:55:04.515168 IO-1/EL  dispatcher.cpp:53] Dispatcher[3]: max_workers=20
+I1207 06:55:04.515158 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:04.515178 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 3, client_id 42 connected
+I1207 06:55:04.515206 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[3-41]: Handshake done
+I1207 06:55:04.515221 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 27
+I1207 06:55:04.515234 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[3-42]: Handshake done
+I1207 06:55:04.515243 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:04.515247 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 3, client_id 43 connected
+I1207 06:55:04.515249 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 28
+I1207 06:55:04.515266 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:04.515270 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 3, client_id 44 connected
+I1207 06:55:04.515274 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[3-43]: Handshake done
+I1207 06:55:04.515299 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[3-44]: Handshake done
+I1207 06:55:58.370095 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Write]: Allocate new buffer, current buffer count is 2
+I1207 06:55:58.372936 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Write]: Allocate new buffer, current buffer count is 2
+I1207 06:55:58.374594 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Write]: Allocate new buffer, current buffer count is 3
+I1207 06:55:58.374875 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Write]: Allocate new buffer, current buffer count is 3
+I1207 06:55:58.383322 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Write]: Allocate new buffer, current buffer count is 4
+I1207 06:55:58.393225 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Write]: Allocate new buffer, current buffer count is 4
+I1207 06:55:58.453020 IO-0/EL  dispatcher.cpp:295] Dispatcher[6]: Request new FuncWorker: expected_concurrency=26
+I1207 06:55:58.453073 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 6 with client_id 45
+I1207 06:55:58.453129 IO-0/EL  dispatcher.cpp:295] Dispatcher[6]: Request new FuncWorker: expected_concurrency=26
+I1207 06:55:58.453136 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 6 with client_id 46
+I1207 06:55:58.453156 IO-0/EL  dispatcher.cpp:295] Dispatcher[6]: Request new FuncWorker: expected_concurrency=26
+I1207 06:55:58.453158 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 6 with client_id 47
+I1207 06:55:58.453172 IO-0/EL  dispatcher.cpp:295] Dispatcher[6]: Request new FuncWorker: expected_concurrency=26
+I1207 06:55:58.453176 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 6 with client_id 48
+I1207 06:55:58.453208 IO-1/EL  dispatcher.cpp:295] Dispatcher[6]: Request new FuncWorker: expected_concurrency=26
+I1207 06:55:58.453228 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 6 with client_id 49
+I1207 06:55:58.453346 IO-0/EL  dispatcher.cpp:295] Dispatcher[6]: Request new FuncWorker: expected_concurrency=26
+I1207 06:55:58.453367 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 6 with client_id 50
+I1207 06:55:58.453411 IO-0/EL  dispatcher.cpp:295] Dispatcher[6]: Request new FuncWorker: expected_concurrency=26
+I1207 06:55:58.453420 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 6 with client_id 51
+I1207 06:55:58.453528 IO-1/EL  dispatcher.cpp:295] Dispatcher[6]: Request new FuncWorker: expected_concurrency=26
+I1207 06:55:58.453545 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 6 with client_id 52
+I1207 06:55:58.453579 IO-1/EL  dispatcher.cpp:295] Dispatcher[6]: Request new FuncWorker: expected_concurrency=26
+I1207 06:55:58.453585 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 6 with client_id 53
+I1207 06:55:58.453630 IO-0/EL  dispatcher.cpp:295] Dispatcher[6]: Request new FuncWorker: expected_concurrency=26
+I1207 06:55:58.453649 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 6 with client_id 54
+I1207 06:55:58.453742 IO-1/EL  dispatcher.cpp:295] Dispatcher[6]: Request new FuncWorker: expected_concurrency=26
+I1207 06:55:58.453767 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 6 with client_id 55
+I1207 06:55:58.453798 IO-1/EL  dispatcher.cpp:295] Dispatcher[6]: Request new FuncWorker: expected_concurrency=26
+I1207 06:55:58.453805 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 6 with client_id 56
+I1207 06:55:58.463986 IO-0/EL  dispatcher.cpp:295] Dispatcher[6]: Request new FuncWorker: expected_concurrency=26
+I1207 06:55:58.464014 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 6 with client_id 57
+I1207 06:55:58.464080 IO-1/EL  dispatcher.cpp:295] Dispatcher[6]: Request new FuncWorker: expected_concurrency=26
+I1207 06:55:58.464102 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 6 with client_id 58
+I1207 06:55:58.464142 IO-0/EL  dispatcher.cpp:295] Dispatcher[6]: Request new FuncWorker: expected_concurrency=26
+I1207 06:55:58.464149 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 6 with client_id 59
+I1207 06:55:58.464190 IO-1/EL  dispatcher.cpp:295] Dispatcher[6]: Request new FuncWorker: expected_concurrency=26
+I1207 06:55:58.464196 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 6 with client_id 60
+I1207 06:55:58.469991 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.470156 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 28
+I1207 06:55:58.470218 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.470225 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 6, client_id 47 connected
+I1207 06:55:58.470231 IO-1/EL  dispatcher.cpp:68] Dispatcher[6]: FuncWorker (client_id 47) takes 17ms to launch
+I1207 06:55:58.470265 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[6-47]: Handshake done
+I1207 06:55:58.470508 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.470592 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.470600 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 29
+I1207 06:55:58.470648 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 29
+I1207 06:55:58.470653 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.470679 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 6, client_id 46 connected
+I1207 06:55:58.470685 IO-0/EL  dispatcher.cpp:68] Dispatcher[6]: FuncWorker (client_id 46) takes 17ms to launch
+I1207 06:55:58.470704 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.470712 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 6, client_id 45 connected
+I1207 06:55:58.470718 IO-1/EL  dispatcher.cpp:68] Dispatcher[6]: FuncWorker (client_id 45) takes 17ms to launch
+I1207 06:55:58.470733 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[6-46]: Handshake done
+I1207 06:55:58.470753 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[6-45]: Handshake done
+I1207 06:55:58.472405 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.472471 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 30
+I1207 06:55:58.472498 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.472504 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 6, client_id 48 connected
+I1207 06:55:58.472511 IO-0/EL  dispatcher.cpp:68] Dispatcher[6]: FuncWorker (client_id 48) takes 19ms to launch
+I1207 06:55:58.472566 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[6-48]: Handshake done
+I1207 06:55:58.473347 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.473411 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 30
+I1207 06:55:58.473448 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.473471 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 6, client_id 49 connected
+I1207 06:55:58.473478 IO-1/EL  dispatcher.cpp:68] Dispatcher[6]: FuncWorker (client_id 49) takes 20ms to launch
+I1207 06:55:58.473522 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[6-49]: Handshake done
+I1207 06:55:58.476040 IO-1/EL  dispatcher.cpp:295] Dispatcher[1]: Request new FuncWorker: expected_concurrency=9
+I1207 06:55:58.476061 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 1 with client_id 61
+I1207 06:55:58.476137 IO-0/EL  dispatcher.cpp:295] Dispatcher[1]: Request new FuncWorker: expected_concurrency=9
+I1207 06:55:58.476158 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 1 with client_id 62
+I1207 06:55:58.476195 IO-0/EL  dispatcher.cpp:295] Dispatcher[1]: Request new FuncWorker: expected_concurrency=9
+I1207 06:55:58.476201 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 1 with client_id 63
+I1207 06:55:58.476222 IO-0/EL  dispatcher.cpp:295] Dispatcher[1]: Request new FuncWorker: expected_concurrency=9
+I1207 06:55:58.476226 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 1 with client_id 64
+I1207 06:55:58.476298 IO-1/EL  dispatcher.cpp:295] Dispatcher[1]: Request new FuncWorker: expected_concurrency=9
+I1207 06:55:58.476313 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 1 with client_id 65
+I1207 06:55:58.476587 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.476777 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 31
+I1207 06:55:58.476810 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.476816 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 6, client_id 50 connected
+I1207 06:55:58.476822 IO-0/EL  dispatcher.cpp:68] Dispatcher[6]: FuncWorker (client_id 50) takes 23ms to launch
+I1207 06:55:58.476864 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[6-50]: Handshake done
+I1207 06:55:58.477350 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Write]: Allocate new buffer, current buffer count is 5
+I1207 06:55:58.477685 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.477935 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 31
+I1207 06:55:58.477987 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.478000 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 6, client_id 52 connected
+I1207 06:55:58.478005 IO-1/EL  dispatcher.cpp:68] Dispatcher[6]: FuncWorker (client_id 52) takes 24ms to launch
+I1207 06:55:58.478035 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[6-52]: Handshake done
+I1207 06:55:58.479454 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.479618 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 32
+I1207 06:55:58.479738 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.479749 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 6, client_id 51 connected
+I1207 06:55:58.479754 IO-0/EL  dispatcher.cpp:68] Dispatcher[6]: FuncWorker (client_id 51) takes 26ms to launch
+I1207 06:55:58.479785 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[6-51]: Handshake done
+I1207 06:55:58.491441 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.491527 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 32
+I1207 06:55:58.491670 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.491686 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 6, client_id 55 connected
+I1207 06:55:58.491693 IO-1/EL  dispatcher.cpp:68] Dispatcher[6]: FuncWorker (client_id 55) takes 37ms to launch
+I1207 06:55:58.491769 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[6-55]: Handshake done
+I1207 06:55:58.494400 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.494481 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 33
+I1207 06:55:58.494515 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.494523 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 1, client_id 63 connected
+I1207 06:55:58.494529 IO-0/EL  dispatcher.cpp:68] Dispatcher[1]: FuncWorker (client_id 63) takes 18ms to launch
+I1207 06:55:58.494571 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[1-63]: Handshake done
+I1207 06:55:58.494583 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.494646 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 33
+I1207 06:55:58.494693 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.494699 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 6, client_id 56 connected
+I1207 06:55:58.494705 IO-1/EL  dispatcher.cpp:68] Dispatcher[6]: FuncWorker (client_id 56) takes 40ms to launch
+I1207 06:55:58.494738 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[6-56]: Handshake done
+I1207 06:55:58.495498 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.495621 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 34
+I1207 06:55:58.495651 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.495664 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 1, client_id 62 connected
+I1207 06:55:58.495688 IO-0/EL  dispatcher.cpp:68] Dispatcher[1]: FuncWorker (client_id 62) takes 19ms to launch
+I1207 06:55:58.495720 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[1-62]: Handshake done
+I1207 06:55:58.497949 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.498016 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 34
+I1207 06:55:58.498053 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.498061 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 6, client_id 54 connected
+I1207 06:55:58.498078 IO-1/EL  dispatcher.cpp:68] Dispatcher[6]: FuncWorker (client_id 54) takes 44ms to launch
+I1207 06:55:58.498118 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[6-54]: Handshake done
+I1207 06:55:58.498360 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.498419 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 35
+I1207 06:55:58.498449 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.498460 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 6, client_id 53 connected
+I1207 06:55:58.498466 IO-0/EL  dispatcher.cpp:68] Dispatcher[6]: FuncWorker (client_id 53) takes 44ms to launch
+I1207 06:55:58.498498 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[6-53]: Handshake done
+I1207 06:55:58.499301 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.499362 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 35
+I1207 06:55:58.499409 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.499417 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 1, client_id 61 connected
+I1207 06:55:58.499422 IO-1/EL  dispatcher.cpp:68] Dispatcher[1]: FuncWorker (client_id 61) takes 23ms to launch
+I1207 06:55:58.499458 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[1-61]: Handshake done
+I1207 06:55:58.501885 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.502019 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 36
+I1207 06:55:58.502058 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.502064 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 6, client_id 57 connected
+I1207 06:55:58.502071 IO-0/EL  dispatcher.cpp:68] Dispatcher[6]: FuncWorker (client_id 57) takes 38ms to launch
+I1207 06:55:58.502107 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[6-57]: Handshake done
+I1207 06:55:58.502404 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.502518 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 36
+I1207 06:55:58.502670 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.502724 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.502734 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 1, client_id 64 connected
+I1207 06:55:58.502740 IO-1/EL  dispatcher.cpp:68] Dispatcher[1]: FuncWorker (client_id 64) takes 26ms to launch
+I1207 06:55:58.502805 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 37
+I1207 06:55:58.502947 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[1-64]: Handshake done
+I1207 06:55:58.503400 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.503444 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 6, client_id 58 connected
+I1207 06:55:58.503486 IO-0/EL  dispatcher.cpp:68] Dispatcher[6]: FuncWorker (client_id 58) takes 39ms to launch
+I1207 06:55:58.503581 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[6-58]: Handshake done
+I1207 06:55:58.505315 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.505373 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 37
+I1207 06:55:58.505406 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.505411 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 1, client_id 65 connected
+I1207 06:55:58.505416 IO-1/EL  dispatcher.cpp:68] Dispatcher[1]: FuncWorker (client_id 65) takes 29ms to launch
+I1207 06:55:58.526878 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.526900 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[1-65]: Handshake done
+I1207 06:55:58.526943 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.526964 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 38
+I1207 06:55:58.526989 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 38
+I1207 06:55:58.527015 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.527027 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 6, client_id 59 connected
+I1207 06:55:58.527033 IO-0/EL  dispatcher.cpp:68] Dispatcher[6]: FuncWorker (client_id 59) takes 62ms to launch
+I1207 06:55:58.527067 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[6-59]: Handshake done
+I1207 06:55:58.527106 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.527116 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 6, client_id 60 connected
+I1207 06:55:58.527120 IO-1/EL  dispatcher.cpp:68] Dispatcher[6]: FuncWorker (client_id 60) takes 62ms to launch
+I1207 06:55:58.527151 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[6-60]: Handshake done
+I1207 06:55:58.535251 IO-0/EL  dispatcher.cpp:295] Dispatcher[1]: Request new FuncWorker: expected_concurrency=10
+I1207 06:55:58.535274 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 1 with client_id 66
+I1207 06:55:58.548609 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:55:58.548676 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 39
+I1207 06:55:58.548718 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:55:58.548730 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 1, client_id 66 connected
+I1207 06:55:58.548734 IO-0/EL  dispatcher.cpp:68] Dispatcher[1]: FuncWorker (client_id 66) takes 13ms to launch
+I1207 06:55:58.548775 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[1-66]: Handshake done
+I1207 06:55:58.554524 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Write]: Allocate new buffer, current buffer count is 5
+I1207 06:55:58.554565 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Write]: Allocate new buffer, current buffer count is 6
+I1207 06:55:59.049233 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Write]: Allocate new buffer, current buffer count is 6
+I1207 06:55:59.341254 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Write]: Allocate new buffer, current buffer count is 7
+I1207 06:56:01.597118 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Write]: Allocate new buffer, current buffer count is 7
+I1207 06:56:06.114673 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Write]: Allocate new buffer, current buffer count is 8
+I1207 06:56:06.114727 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Write]: Allocate new buffer, current buffer count is 9
+I1207 06:57:17.105362 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Write]: Allocate new buffer, current buffer count is 8
+I1207 06:58:06.673067 IO-1/EL  dispatcher.cpp:295] Dispatcher[2]: Request new FuncWorker: expected_concurrency=13
+I1207 06:58:06.673090 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 2 with client_id 67
+I1207 06:58:06.673151 IO-0/EL  dispatcher.cpp:295] Dispatcher[2]: Request new FuncWorker: expected_concurrency=13
+I1207 06:58:06.673163 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 2 with client_id 68
+I1207 06:58:06.673306 IO-0/EL  dispatcher.cpp:295] Dispatcher[2]: Request new FuncWorker: expected_concurrency=13
+I1207 06:58:06.673409 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 2 with client_id 69
+I1207 06:58:06.673520 IO-0/EL  dispatcher.cpp:295] Dispatcher[2]: Request new FuncWorker: expected_concurrency=13
+I1207 06:58:06.673532 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 2 with client_id 70
+I1207 06:58:06.673622 IO-1/EL  dispatcher.cpp:295] Dispatcher[2]: Request new FuncWorker: expected_concurrency=13
+I1207 06:58:06.673641 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 2 with client_id 71
+I1207 06:58:06.673675 IO-0/EL  dispatcher.cpp:295] Dispatcher[2]: Request new FuncWorker: expected_concurrency=13
+I1207 06:58:06.673682 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 2 with client_id 72
+I1207 06:58:06.673790 IO-0/EL  dispatcher.cpp:295] Dispatcher[2]: Request new FuncWorker: expected_concurrency=13
+I1207 06:58:06.673800 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 2 with client_id 73
+I1207 06:58:06.673827 IO-0/EL  dispatcher.cpp:295] Dispatcher[2]: Request new FuncWorker: expected_concurrency=13
+I1207 06:58:06.673831 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 2 with client_id 74
+I1207 06:58:06.673893 IO-1/EL  dispatcher.cpp:295] Dispatcher[2]: Request new FuncWorker: expected_concurrency=13
+I1207 06:58:06.673906 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 2 with client_id 75
+I1207 06:58:06.687189 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.687248 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.687295 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 40
+I1207 06:58:06.687317 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.687331 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 39
+I1207 06:58:06.687335 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.687342 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 2, client_id 67 connected
+I1207 06:58:06.687348 IO-0/EL  dispatcher.cpp:68] Dispatcher[2]: FuncWorker (client_id 67) takes 14ms to launch
+I1207 06:58:06.687385 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[2-67]: Handshake done
+I1207 06:58:06.687470 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.687478 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 2, client_id 68 connected
+I1207 06:58:06.687482 IO-1/EL  dispatcher.cpp:68] Dispatcher[2]: FuncWorker (client_id 68) takes 14ms to launch
+I1207 06:58:06.687514 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[2-68]: Handshake done
+I1207 06:58:06.687534 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 40
+I1207 06:58:06.687591 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.687598 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 2, client_id 69 connected
+I1207 06:58:06.687601 IO-1/EL  dispatcher.cpp:68] Dispatcher[2]: FuncWorker (client_id 69) takes 14ms to launch
+I1207 06:58:06.687627 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[2-69]: Handshake done
+I1207 06:58:06.688328 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.688394 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 41
+I1207 06:58:06.688475 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.688488 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 2, client_id 72 connected
+I1207 06:58:06.688495 IO-0/EL  dispatcher.cpp:68] Dispatcher[2]: FuncWorker (client_id 72) takes 14ms to launch
+I1207 06:58:06.688526 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[2-72]: Handshake done
+I1207 06:58:06.688625 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.688694 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 41
+I1207 06:58:06.688753 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.688764 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 2, client_id 71 connected
+I1207 06:58:06.688769 IO-1/EL  dispatcher.cpp:68] Dispatcher[2]: FuncWorker (client_id 71) takes 15ms to launch
+I1207 06:58:06.688807 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[2-71]: Handshake done
+I1207 06:58:06.689844 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.689945 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 42
+I1207 06:58:06.689978 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.689982 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 2, client_id 70 connected
+I1207 06:58:06.689985 IO-0/EL  dispatcher.cpp:68] Dispatcher[2]: FuncWorker (client_id 70) takes 16ms to launch
+I1207 06:58:06.690058 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[2-70]: Handshake done
+I1207 06:58:06.698881 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.698965 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 42
+I1207 06:58:06.699002 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.699007 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 2, client_id 73 connected
+I1207 06:58:06.699013 IO-1/EL  dispatcher.cpp:68] Dispatcher[2]: FuncWorker (client_id 73) takes 25ms to launch
+I1207 06:58:06.699046 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[2-73]: Handshake done
+I1207 06:58:06.708420 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.708586 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.708791 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 43
+I1207 06:58:06.708823 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 43
+I1207 06:58:06.708848 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.708854 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 2, client_id 74 connected
+I1207 06:58:06.708888 IO-1/EL  dispatcher.cpp:68] Dispatcher[2]: FuncWorker (client_id 74) takes 35ms to launch
+I1207 06:58:06.708893 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.708902 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 2, client_id 75 connected
+I1207 06:58:06.708908 IO-0/EL  dispatcher.cpp:68] Dispatcher[2]: FuncWorker (client_id 75) takes 35ms to launch
+I1207 06:58:06.708930 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[2-74]: Handshake done
+I1207 06:58:06.709016 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[2-75]: Handshake done
+I1207 06:58:06.780820 IO-1/EL  dispatcher.cpp:295] Dispatcher[8]: Request new FuncWorker: expected_concurrency=24
+I1207 06:58:06.780847 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 8 with client_id 76
+I1207 06:58:06.781501 IO-1/EL  dispatcher.cpp:295] Dispatcher[8]: Request new FuncWorker: expected_concurrency=24
+I1207 06:58:06.781520 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 8 with client_id 77
+I1207 06:58:06.782930 IO-0/EL  dispatcher.cpp:295] Dispatcher[8]: Request new FuncWorker: expected_concurrency=24
+I1207 06:58:06.782951 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 8 with client_id 78
+I1207 06:58:06.783874 IO-0/EL  dispatcher.cpp:295] Dispatcher[8]: Request new FuncWorker: expected_concurrency=24
+I1207 06:58:06.783893 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 8 with client_id 79
+I1207 06:58:06.784728 IO-1/EL  dispatcher.cpp:295] Dispatcher[8]: Request new FuncWorker: expected_concurrency=24
+I1207 06:58:06.784744 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 8 with client_id 80
+I1207 06:58:06.785271 IO-0/EL  dispatcher.cpp:295] Dispatcher[8]: Request new FuncWorker: expected_concurrency=24
+I1207 06:58:06.785317 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 8 with client_id 81
+I1207 06:58:06.788086 IO-0/EL  dispatcher.cpp:295] Dispatcher[8]: Request new FuncWorker: expected_concurrency=24
+I1207 06:58:06.788104 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 8 with client_id 82
+I1207 06:58:06.788530 IO-1/EL  dispatcher.cpp:295] Dispatcher[8]: Request new FuncWorker: expected_concurrency=24
+I1207 06:58:06.788668 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 8 with client_id 83
+I1207 06:58:06.789262 IO-1/EL  dispatcher.cpp:295] Dispatcher[8]: Request new FuncWorker: expected_concurrency=24
+I1207 06:58:06.789280 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 8 with client_id 84
+I1207 06:58:06.789989 IO-1/EL  dispatcher.cpp:295] Dispatcher[8]: Request new FuncWorker: expected_concurrency=24
+I1207 06:58:06.790097 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 8 with client_id 85
+I1207 06:58:06.791086 IO-1/EL  dispatcher.cpp:295] Dispatcher[8]: Request new FuncWorker: expected_concurrency=24
+I1207 06:58:06.791109 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 8 with client_id 86
+I1207 06:58:06.791409 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.791454 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.791538 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 44
+I1207 06:58:06.791580 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.791593 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 8, client_id 76 connected
+I1207 06:58:06.791599 IO-0/EL  dispatcher.cpp:68] Dispatcher[8]: FuncWorker (client_id 76) takes 10ms to launch
+I1207 06:58:06.791645 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[8-76]: Handshake done
+I1207 06:58:06.791657 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 44
+I1207 06:58:06.791717 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.791730 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 8, client_id 77 connected
+I1207 06:58:06.791735 IO-1/EL  dispatcher.cpp:68] Dispatcher[8]: FuncWorker (client_id 77) takes 10ms to launch
+I1207 06:58:06.791775 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[8-77]: Handshake done
+I1207 06:58:06.793247 IO-1/EL  dispatcher.cpp:295] Dispatcher[8]: Request new FuncWorker: expected_concurrency=24
+I1207 06:58:06.793325 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 8 with client_id 87
+I1207 06:58:06.793946 IO-1/EL  dispatcher.cpp:295] Dispatcher[8]: Request new FuncWorker: expected_concurrency=23
+I1207 06:58:06.793963 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 8 with client_id 88
+I1207 06:58:06.794344 IO-0/EL  dispatcher.cpp:295] Dispatcher[10]: Request new FuncWorker: expected_concurrency=5
+I1207 06:58:06.794371 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 10 with client_id 89
+I1207 06:58:06.795131 IO-0/EL  dispatcher.cpp:295] Dispatcher[8]: Request new FuncWorker: expected_concurrency=23
+I1207 06:58:06.795150 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 8 with client_id 90
+I1207 06:58:06.795550 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.795668 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 45
+I1207 06:58:06.795718 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.795728 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 8, client_id 80 connected
+I1207 06:58:06.795733 IO-0/EL  dispatcher.cpp:68] Dispatcher[8]: FuncWorker (client_id 80) takes 11ms to launch
+I1207 06:58:06.795760 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[8-80]: Handshake done
+I1207 06:58:06.798313 IO-0/EL  dispatcher.cpp:295] Dispatcher[8]: Request new FuncWorker: expected_concurrency=23
+I1207 06:58:06.798342 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 8 with client_id 91
+I1207 06:58:06.798320 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.798442 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 45
+I1207 06:58:06.798482 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.798493 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 8, client_id 78 connected
+I1207 06:58:06.798500 IO-1/EL  dispatcher.cpp:68] Dispatcher[8]: FuncWorker (client_id 78) takes 15ms to launch
+I1207 06:58:06.798563 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[8-78]: Handshake done
+I1207 06:58:06.799065 IO-0/EL  dispatcher.cpp:295] Dispatcher[8]: Request new FuncWorker: expected_concurrency=23
+I1207 06:58:06.799156 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 8 with client_id 92
+I1207 06:58:06.800849 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.800910 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 46
+I1207 06:58:06.800945 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.800968 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 8, client_id 79 connected
+I1207 06:58:06.800977 IO-0/EL  dispatcher.cpp:68] Dispatcher[8]: FuncWorker (client_id 79) takes 17ms to launch
+I1207 06:58:06.801025 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[8-79]: Handshake done
+I1207 06:58:06.802420 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.802524 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 46
+I1207 06:58:06.802571 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.802581 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 8, client_id 81 connected
+I1207 06:58:06.802587 IO-1/EL  dispatcher.cpp:68] Dispatcher[8]: FuncWorker (client_id 81) takes 17ms to launch
+I1207 06:58:06.802630 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[8-81]: Handshake done
+I1207 06:58:06.806961 IO-1/EL  dispatcher.cpp:295] Dispatcher[4]: Request new FuncWorker: expected_concurrency=5
+I1207 06:58:06.806978 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 4 with client_id 93
+I1207 06:58:06.808013 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.808075 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 47
+I1207 06:58:06.808240 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.808254 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 10, client_id 89 connected
+I1207 06:58:06.808261 IO-0/EL  dispatcher.cpp:68] Dispatcher[10]: FuncWorker (client_id 89) takes 13ms to launch
+I1207 06:58:06.808294 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[10-89]: Handshake done
+I1207 06:58:06.814524 IO-1/EL  dispatcher.cpp:295] Dispatcher[5]: Request new FuncWorker: expected_concurrency=6
+I1207 06:58:06.814546 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 5 with client_id 94
+I1207 06:58:06.816904 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.816984 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 47
+I1207 06:58:06.817019 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.817029 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 8, client_id 82 connected
+I1207 06:58:06.817035 IO-1/EL  dispatcher.cpp:68] Dispatcher[8]: FuncWorker (client_id 82) takes 28ms to launch
+I1207 06:58:06.817072 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[8-82]: Handshake done
+I1207 06:58:06.818922 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Write]: Allocate new buffer, current buffer count is 9
+I1207 06:58:06.827915 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.828025 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 48
+I1207 06:58:06.828075 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.828082 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 8, client_id 83 connected
+I1207 06:58:06.828088 IO-0/EL  dispatcher.cpp:68] Dispatcher[8]: FuncWorker (client_id 83) takes 39ms to launch
+I1207 06:58:06.828132 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[8-83]: Handshake done
+I1207 06:58:06.828512 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.828636 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 48
+I1207 06:58:06.828707 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.828714 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 4, client_id 93 connected
+I1207 06:58:06.828720 IO-1/EL  dispatcher.cpp:68] Dispatcher[4]: FuncWorker (client_id 93) takes 21ms to launch
+I1207 06:58:06.828755 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[4-93]: Handshake done
+I1207 06:58:06.828914 IO-0/EL  dispatcher.cpp:295] Dispatcher[5]: Request new FuncWorker: expected_concurrency=6
+I1207 06:58:06.828972 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 5 with client_id 95
+I1207 06:58:06.830959 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Write]: Allocate new buffer, current buffer count is 10
+I1207 06:58:06.831027 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Write]: Allocate new buffer, current buffer count is 11
+I1207 06:58:06.834807 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.834905 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 49
+I1207 06:58:06.835004 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.835016 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 5, client_id 94 connected
+I1207 06:58:06.835021 IO-0/EL  dispatcher.cpp:68] Dispatcher[5]: FuncWorker (client_id 94) takes 20ms to launch
+I1207 06:58:06.835051 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[5-94]: Handshake done
+I1207 06:58:06.843552 IO-0/EL  dispatcher.cpp:295] Dispatcher[2]: Request new FuncWorker: expected_concurrency=15
+I1207 06:58:06.843577 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 2 with client_id 96
+I1207 06:58:06.845230 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.845522 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 49
+I1207 06:58:06.845593 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.845608 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 8, client_id 84 connected
+I1207 06:58:06.845614 IO-1/EL  dispatcher.cpp:68] Dispatcher[8]: FuncWorker (client_id 84) takes 56ms to launch
+I1207 06:58:06.845669 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[8-84]: Handshake done
+I1207 06:58:06.850630 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.850797 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 50
+I1207 06:58:06.850938 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.850953 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 8, client_id 85 connected
+I1207 06:58:06.850959 IO-0/EL  dispatcher.cpp:68] Dispatcher[8]: FuncWorker (client_id 85) takes 60ms to launch
+I1207 06:58:06.851011 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[8-85]: Handshake done
+I1207 06:58:06.856064 IO-0/EL  dispatcher.cpp:295] Dispatcher[2]: Request new FuncWorker: expected_concurrency=16
+I1207 06:58:06.856142 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 2 with client_id 97
+I1207 06:58:06.856480 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.856576 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 50
+I1207 06:58:06.856629 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.856643 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 8, client_id 90 connected
+I1207 06:58:06.856658 IO-1/EL  dispatcher.cpp:68] Dispatcher[8]: FuncWorker (client_id 90) takes 61ms to launch
+I1207 06:58:06.856705 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[8-90]: Handshake done
+I1207 06:58:06.859050 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.859117 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 51
+I1207 06:58:06.859185 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.859201 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 5, client_id 95 connected
+I1207 06:58:06.859208 IO-0/EL  dispatcher.cpp:68] Dispatcher[5]: FuncWorker (client_id 95) takes 30ms to launch
+I1207 06:58:06.859250 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[5-95]: Handshake done
+I1207 06:58:06.859344 IO-1/EL  dispatcher.cpp:295] Dispatcher[2]: Request new FuncWorker: expected_concurrency=16
+I1207 06:58:06.859360 IO-1/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 2 with client_id 98
+I1207 06:58:06.863824 IO-0/EL  dispatcher.cpp:295] Dispatcher[2]: Request new FuncWorker: expected_concurrency=17
+I1207 06:58:06.863846 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 2 with client_id 99
+I1207 06:58:06.869866 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.869964 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 51
+I1207 06:58:06.872656 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.872756 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 52
+I1207 06:58:06.872888 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.872902 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 8, client_id 91 connected
+I1207 06:58:06.872908 IO-0/EL  dispatcher.cpp:68] Dispatcher[8]: FuncWorker (client_id 91) takes 74ms to launch
+I1207 06:58:06.872946 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[8-91]: Handshake done
+I1207 06:58:06.873002 IO-0/EL  dispatcher.cpp:295] Dispatcher[2]: Request new FuncWorker: expected_concurrency=18
+I1207 06:58:06.873014 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 2 with client_id 100
+I1207 06:58:06.874092 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.874142 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 2, client_id 96 connected
+I1207 06:58:06.874149 IO-1/EL  dispatcher.cpp:68] Dispatcher[2]: FuncWorker (client_id 96) takes 30ms to launch
+I1207 06:58:06.874182 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[2-96]: Handshake done
+I1207 06:58:06.881810 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.881876 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 52
+I1207 06:58:06.881924 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.881946 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 8, client_id 88 connected
+I1207 06:58:06.881952 IO-1/EL  dispatcher.cpp:68] Dispatcher[8]: FuncWorker (client_id 88) takes 88ms to launch
+I1207 06:58:06.881995 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[8-88]: Handshake done
+I1207 06:58:06.883891 IO-0/EL  dispatcher.cpp:295] Dispatcher[2]: Request new FuncWorker: expected_concurrency=19
+I1207 06:58:06.883916 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 2 with client_id 101
+I1207 06:58:06.887266 IO-0/EL  dispatcher.cpp:295] Dispatcher[2]: Request new FuncWorker: expected_concurrency=20
+I1207 06:58:06.887288 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 2 with client_id 102
+I1207 06:58:06.895518 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.895641 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 53
+I1207 06:58:06.896048 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.896067 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 2, client_id 99 connected
+I1207 06:58:06.896075 IO-0/EL  dispatcher.cpp:68] Dispatcher[2]: FuncWorker (client_id 99) takes 32ms to launch
+I1207 06:58:06.896133 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[2-99]: Handshake done
+I1207 06:58:06.897107 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.897248 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 53
+I1207 06:58:06.897735 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.897753 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 8, client_id 92 connected
+I1207 06:58:06.897759 IO-1/EL  dispatcher.cpp:68] Dispatcher[8]: FuncWorker (client_id 92) takes 98ms to launch
+I1207 06:58:06.897880 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[8-92]: Handshake done
+I1207 06:58:06.898255 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.898428 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.898518 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 54
+I1207 06:58:06.898600 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.898646 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 8, client_id 87 connected
+I1207 06:58:06.898658 IO-0/EL  dispatcher.cpp:68] Dispatcher[8]: FuncWorker (client_id 87) takes 105ms to launch
+I1207 06:58:06.898691 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[8-87]: Handshake done
+I1207 06:58:06.898598 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 54
+I1207 06:58:06.898855 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.898868 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 8, client_id 86 connected
+I1207 06:58:06.898874 IO-1/EL  dispatcher.cpp:68] Dispatcher[8]: FuncWorker (client_id 86) takes 107ms to launch
+I1207 06:58:06.898919 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[8-86]: Handshake done
+I1207 06:58:06.899887 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.900185 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 55
+I1207 06:58:06.900291 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.900305 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 2, client_id 97 connected
+I1207 06:58:06.900316 IO-0/EL  dispatcher.cpp:68] Dispatcher[2]: FuncWorker (client_id 97) takes 44ms to launch
+I1207 06:58:06.900342 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[2-97]: Handshake done
+I1207 06:58:06.903344 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.903652 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 55
+I1207 06:58:06.903703 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.903714 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 2, client_id 98 connected
+I1207 06:58:06.903719 IO-1/EL  dispatcher.cpp:68] Dispatcher[2]: FuncWorker (client_id 98) takes 44ms to launch
+I1207 06:58:06.903766 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[2-98]: Handshake done
+I1207 06:58:06.919776 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Write]: Allocate new buffer, current buffer count is 10
+I1207 06:58:06.919819 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Write]: Allocate new buffer, current buffer count is 11
+I1207 06:58:06.923482 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.923609 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 56
+I1207 06:58:06.923880 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.923897 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 2, client_id 100 connected
+I1207 06:58:06.923911 IO-0/EL  dispatcher.cpp:68] Dispatcher[2]: FuncWorker (client_id 100) takes 50ms to launch
+I1207 06:58:06.923981 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[2-100]: Handshake done
+I1207 06:58:06.934981 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Write]: Allocate new buffer, current buffer count is 12
+I1207 06:58:06.935018 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Write]: Allocate new buffer, current buffer count is 13
+I1207 06:58:06.935034 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Write]: Allocate new buffer, current buffer count is 14
+I1207 06:58:06.935053 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Write]: Allocate new buffer, current buffer count is 15
+I1207 06:58:06.937885 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.937975 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 56
+I1207 06:58:06.938773 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.938791 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 2, client_id 101 connected
+I1207 06:58:06.938797 IO-1/EL  dispatcher.cpp:68] Dispatcher[2]: FuncWorker (client_id 101) takes 54ms to launch
+I1207 06:58:06.938850 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[2-101]: Handshake done
+I1207 06:58:06.951400 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.951598 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 1, total of type 1 is 57
+I1207 06:58:06.951795 IO-0/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.951812 IO-0/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 2, client_id 102 connected
+I1207 06:58:06.951817 IO-0/EL  dispatcher.cpp:68] Dispatcher[2]: FuncWorker (client_id 102) takes 64ms to launch
+I1207 06:58:06.951852 IO-0/EL  message_connection.cpp:269] FuncWorkerConnection[2-102]: Handshake done
+I1207 06:58:06.955252 IO-0/EL  dispatcher.cpp:295] Dispatcher[10]: Request new FuncWorker: expected_concurrency=6
+I1207 06:58:06.955307 IO-0/EL  worker_manager.cpp:131] WorkerManager: Request new FuncWorker for func_id 10 with client_id 103
+I1207 06:58:06.975867 Server/E engine.cpp:506] Engine: New message connection
+I1207 06:58:06.976031 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 1, total of type 1 is 57
+I1207 06:58:06.976097 IO-1/EL  engine.cpp:171] Engine: Receive new handshake message from message connection
+I1207 06:58:06.976105 IO-1/EL  worker_manager.cpp:60] WorkerManager: FuncWorker of func_id 10, client_id 103 connected
+I1207 06:58:06.976109 IO-1/EL  dispatcher.cpp:68] Dispatcher[10]: FuncWorker (client_id 103) takes 20ms to launch
+I1207 06:58:06.976146 IO-1/EL  message_connection.cpp:269] FuncWorkerConnection[10-103]: Handshake done
+I1207 06:58:06.978242 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Write]: Allocate new buffer, current buffer count is 12
+I1207 06:58:07.013219 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Write]: Allocate new buffer, current buffer count is 13
+I1207 06:58:07.711220 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Write]: Allocate new buffer, current buffer count is 14
+I1207 06:58:07.711258 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Write]: Allocate new buffer, current buffer count is 15
+I1207 06:58:56.964595 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Write]: Allocate new buffer, current buffer count is 16
+I1207 06:58:56.964650 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Write]: Allocate new buffer, current buffer count is 17
+I1207 06:59:19.895361 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Write]: Allocate new buffer, current buffer count is 16
