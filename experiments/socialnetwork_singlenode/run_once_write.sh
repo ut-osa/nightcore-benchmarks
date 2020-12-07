@@ -46,8 +46,7 @@ rsync -arq $SRC_DIR/media-frontend      $ENTRY_HOST:/tmp/socialNetwork
 rsync -arq $SRC_DIR/gen-lua             $ENTRY_HOST:/tmp/socialNetwork
 rsync -arq $SRC_DIR/docker              $ENTRY_HOST:/tmp/socialNetwork
 
-ssh -q $MANAGER_HOST -- SRC_DIR=/mnt/efs/workspace/DeathStarBench-faas/socialNetwork \
-    docker stack deploy \
+ssh -q $MANAGER_HOST -- docker stack deploy \
     -c ~/docker-compose-write.yml -c ~/docker-compose-placement.yml socialnetwork
 sleep 60
 
