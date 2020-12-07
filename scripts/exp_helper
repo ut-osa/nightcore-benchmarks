@@ -11,8 +11,8 @@ import argparse
 import subprocess as sp
 
 AWS_REGION = 'us-east-2'
-SECURITY_GROUP_ID = 'sg-0ba8121ffdbee8cc4'
-AMI_ID = 'ami-08de756177e9e54ef'
+AMI_ID = 'ami-06e206d7334bff2ec'
+SECURITY_GROUP_NAME = 'nightcore'
 PLACEMENT_GROUP = 'nightcore-experiments'
 AVAILABILITY_ZONE = 'us-east-2a'
 
@@ -35,10 +35,10 @@ def run_remote_command(ssh_str, cmd):
         raise Exception('Failed to run remote command: ' + ' '.join(cmd) + '\n' + ret.stderr)
     return ret.stdout, ret.stderr
 
-def start_ec2_instance(name, instance_type):
+def start_ec2_instance(name, instance_type, security_group_id):
     cli_output = run_aws_ec2_command([
         'run-instances', '--image-id', AMI_ID, '--instance-type', instance_type,
-        '--security-group-ids', SECURITY_GROUP_ID,
+        '--security-group-ids', security_group_id,
         '--placement', 'AvailabilityZone='+AVAILABILITY_ZONE+',GroupName='+PLACEMENT_GROUP,
         '--tag-specifications', 'ResourceType=instance,Tags=[{Key=Name,Value='+name+'}]'])
     instance_info = cli_output['Instances'][0]
@@ -48,13 +48,13 @@ def start_ec2_instance(name, instance_type):
         'ip': instance_info['PrivateIpAddress']
     }
 
-def request_ec2_spot_instance(group_id, instance_type):
+def request_ec2_spot_instance(group_id, instance_type, security_group_id):
     cli_output = run_aws_ec2_command([
         'request-spot-instances', '--type', 'one-time',
         '--availability-zone-group', group_id, '--launch-group', group_id,
         '--launch-specification', json.dumps({
             'ImageId': AMI_ID, 'InstanceType': instance_type,
-            'SecurityGroupIds': [SECURITY_GROUP_ID],
+            'SecurityGroupIds': [security_group_id],
             'Placement': {
                 'AvailabilityZone': AVAILABILITY_ZONE,
                 'GroupName': PLACEMENT_GROUP
@@ -81,11 +81,20 @@ def cancel_spot_instance_requests(spot_requests):
         run_aws_ec2_command(['cancel-spot-instance-requests',
                              '--spot-instance-request-ids', request_id])
 
+def find_security_group_id():
+    cli_output = run_aws_ec2_command([
+        'describe-security-groups',
+        '--filters', 'Name=group-name,Values='+SECURITY_GROUP_NAME])
+    if len(cli_output['SecurityGroups']) == 0:
+        raise Exception('Failed to find security group %s' % SECURITY_GROUP_NAME)
+    return cli_output['SecurityGroups'][0]['GroupId']
+
 def start_instances(machine_configs):
+    security_group_id = find_security_group_id()
     results = {}
     for name, config in machine_configs.items():
         try:
-            machine_info = start_ec2_instance(name, config['type'])
+            machine_info = start_ec2_instance(name, config['type'], security_group_id)
             machine_info['role'] = config['role']
             if 'labels' in config:
                 machine_info['labels'] = config['labels']
@@ -96,12 +105,14 @@ def start_instances(machine_configs):
     return results
 
 def start_spot_instances(machine_configs, waiting_time):
+    security_group_id = find_security_group_id()
     spot_requests = {}
     group_id = random_string(10)
     results = {}
     try:
         for name, config in machine_configs.items():
-            spot_requests[name] = request_ec2_spot_instance(group_id, config['type'])
+            spot_requests[name] = request_ec2_spot_instance(
+                group_id, config['type'], security_group_id)
         time.sleep(waiting_time)
         for name, config in machine_configs.items():
             request_status = run_aws_ec2_command(
@@ -212,7 +223,7 @@ def generate_docker_compose_main(base_dir):
                 'constraints': ['node.labels.%s == true' % (service_config['placement_label'],)],
                 'max_replicas_per_node': 1
             }
-    with open(os.path.join(base_dir, 'docker-compose.yml'), 'w') as fout:
+    with open(os.path.join(base_dir, 'docker-compose-placement.yml'), 'w') as fout:
         yaml.dump(docker_compose, fout, default_flow_style=False)
 
 def get_host_main(base_dir, machine_name):
@@ -292,6 +303,29 @@ def get_container_id_main(base_dir, service_name, machine_name):
         container_info = json.loads(container_info)[0]
         print(container_info['Id'])
 
+def collect_container_logs_main(base_dir, log_path):
+    if not os.path.exists(os.path.join(base_dir, 'machines.json')):
+        raise Exception('Machines not started')
+    os.makedirs(log_path, exist_ok=True)
+    with open(os.path.join(base_dir, 'machines.json')) as fin:
+        machine_infos = json.load(fin)
+    for machine_info in machine_infos.values():
+        if machine_info['role'] == 'client':
+            continue
+        container_ids, _ = run_remote_command(machine_info['dns'], ['docker', 'ps', '-q'])
+        container_ids = container_ids.strip().split()
+        for container_id in container_ids:
+            container_info, _ = run_remote_command(
+                machine_info['dns'], ['docker', 'inspect', container_id])
+            container_info = json.loads(container_info)[0]
+            container_name = container_info['Name'][1:]  # remove prefix '/'
+            log_stdout, log_stderr = run_remote_command(
+                machine_info['dns'], ['docker', 'container', 'logs', container_id])
+            with open(os.path.join(log_path, '%s.stdout' % container_name), 'w') as fout:
+                fout.write(log_stdout)
+            with open(os.path.join(log_path, '%s.stderr' % container_name), 'w') as fout:
+                fout.write(log_stderr)
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('cmd', type=str)
@@ -301,6 +335,7 @@ if __name__ == '__main__':
     parser.add_argument('--service', type=str, default=None)
     parser.add_argument('--use-spot-instances', action='store_true')
     parser.add_argument('--spot-instances-waiting-time', type=int, default=3)
+    parser.add_argument('--log-path', type=str, default=None)
     args = parser.parse_args()
     try:
         if args.cmd == 'start-machines':
@@ -324,6 +359,8 @@ if __name__ == '__main__':
             get_machine_with_label_main(args.base_dir, args.machine_label)
         elif args.cmd == 'get-container-id':
             get_container_id_main(args.base_dir, args.service, args.machine_name)
+        elif args.cmd == 'collect-container-logs':
+            collect_container_logs_main(args.base_dir, args.log_path)
         else:
             raise Exception('Unknown command: ' + args.cmd)
     except Exception as e:

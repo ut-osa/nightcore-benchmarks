@@ -1,5 +1,5 @@
 FROM zjia/nightcore:asplos-ae as nightcore
-FROM zjia/cpp-microservice-deps:bionic
+FROM zjia/cpp-microservice-deps:asplos-ae
 
 COPY --from=nightcore /nightcore/launcher       /nightcore/launcher
 COPY --from=nightcore /nightcore/func_worker_v1 /nightcore/func_worker_v1

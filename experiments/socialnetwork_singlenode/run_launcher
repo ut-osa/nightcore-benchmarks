@@ -1,0 +1,6 @@
+#!/bin/bash
+
+/nightcore/launcher \
+    --root_path_for_ipc=/tmp/nightcore/ipc \
+    --fprocess="/nightcore/func_worker_v1 $1" \
+    --fprocess_output_dir=/tmp/nightcore/output --func_id=$2

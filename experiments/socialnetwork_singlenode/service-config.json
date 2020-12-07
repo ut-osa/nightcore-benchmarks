@@ -1,7 +1,7 @@
 {
   "secret": "secret",
   "social-graph-service": {
-    "addr": "faas-gateway",
+    "addr": "nightcore-gateway",
     "port": 8080,
     "http_path": "/function/SocialGraphService",
     "server_num_io_threads": 1,
@@ -35,7 +35,7 @@
     "port": 6379
   },
   "compose-post-service": {
-    "addr": "faas-gateway",
+    "addr": "nightcore-gateway",
     "port": 8080,
     "http_path": "/function/ComposePostService",
     "server_num_io_threads": 2,
@@ -50,7 +50,7 @@
     "port": 6379
   },
   "user-timeline-service": {
-    "addr": "faas-gateway",
+    "addr": "nightcore-gateway",
     "port": 8080,
     "http_path": "/function/UserTimelineService",
     "server_num_io_threads": 2,
@@ -67,7 +67,7 @@
     "port": 6379
   },
   "post-storage-service": {
-    "addr": "faas-gateway",
+    "addr": "nightcore-gateway",
     "port": 8080,
     "http_path": "/function/PostStorageService",
     "server_num_io_threads": 2,
@@ -82,7 +82,7 @@
     "port": 11211
   },
   "unique-id-service": {
-    "addr": "faas-gateway",
+    "addr": "nightcore-gateway",
     "port": 8080,
     "http_path": "/function/UniqueIdService",
     "server_num_io_threads": 1,
@@ -90,7 +90,7 @@
     "compose_post_client_pool_size": 128
   },
   "media-service": {
-    "addr": "faas-gateway",
+    "addr": "nightcore-gateway",
     "port": 8080,
     "http_path": "/function/MediaService",
     "server_num_io_threads": 1,
@@ -98,7 +98,7 @@
     "compose_post_client_pool_size": 128
   },
   "text-service": {
-    "addr": "faas-gateway",
+    "addr": "nightcore-gateway",
     "port": 8080,
     "http_path": "/function/TextService",
     "server_num_io_threads": 1,
@@ -108,7 +108,7 @@
     "user_mention_pool_size": 128
   },
   "user-mention-service": {
-    "addr": "faas-gateway",
+    "addr": "nightcore-gateway",
     "port": 8080,
     "http_path": "/function/UserMentionService",
     "server_num_io_threads": 1,
@@ -116,7 +116,7 @@
     "compose_post_client_pool_size": 128
   },
   "url-shorten-service": {
-    "addr": "faas-gateway",
+    "addr": "nightcore-gateway",
     "port": 8080,
     "http_path": "/function/UrlShortenService",
     "server_num_io_threads": 1,
@@ -132,7 +132,7 @@
     "port": 27017
   },
   "user-service": {
-    "addr": "faas-gateway",
+    "addr": "nightcore-gateway",
     "port": 8080,
     "http_path": "/function/UserService",
     "server_num_io_threads": 1,
@@ -149,7 +149,7 @@
     "port": 27017
   },
   "home-timeline-service": {
-    "addr": "faas-gateway",
+    "addr": "nightcore-gateway",
     "port": 8080,
     "http_path": "/function/HomeTimelineService",
     "server_num_io_threads": 1,

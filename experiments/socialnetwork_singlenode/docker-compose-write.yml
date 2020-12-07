@@ -1,0 +1,281 @@
+version: "3.8"
+services:
+  nightcore-engine:
+    image: zjia/nightcore:asplos-ae
+    entrypoint:
+      - /nightcore/engine
+      - --gateway_addr=nightcore-gateway
+      - --root_path_for_ipc=/tmp/nightcore/ipc
+      - --func_config_file=/tmp/nightcore/func_config.json
+      - --num_io_workers=2
+      - --gateway_conn_per_worker=16
+      - --disable_monitor
+      - --instant_rps_p_norm=0.7
+    depends_on:
+      - nightcore-gateway
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+      - /sys/fs/cgroup:/tmp/root_cgroupfs
+    environment:
+      - FAAS_CGROUP_FS_ROOT=/tmp/root_cgroupfs
+ 
+  nightcore-gateway:
+    image: zjia/nightcore:asplos-ae
+    entrypoint:
+      - /nightcore/gateway
+      - --listen_addr=0.0.0.0
+      - --http_port=8080
+      - --func_config_file=/tmp/nightcore/func_config.json
+      - --num_io_workers=4
+      - --lb_pick_least_load
+      - --max_running_requests=24
+    volumes:
+      - /tmp/nightcore_config.json:/tmp/nightcore/func_config.json
+
+  social-graph-service:
+    image: zjia/nightcore-socialnetwork:asplos-ae
+    hostname: social-graph-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/SocialGraphService/libSocialGraphService.so", "1"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/socialNetwork/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/socialNetwork
+    depends_on:
+      - nightcore-engine
+      - socialnetwork-mongodb
+
+  compose-post-service:
+    image: zjia/nightcore-socialnetwork:asplos-ae
+    hostname: compose-post-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/ComposePostService/libComposePostService.so", "2"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/socialNetwork/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/socialNetwork
+    depends_on:
+      - nightcore-engine
+      - write-home-timeline-rabbitmq
+      - socialnetwork-mongodb
+
+  post-storage-service:
+    image: zjia/nightcore-socialnetwork:asplos-ae
+    hostname: post-storage-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/PostStorageService/libPostStorageService.so", "3"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/socialNetwork/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/socialNetwork
+    depends_on:
+      - nightcore-engine
+      - socialnetwork-mongodb
+
+  user-timeline-service:
+    image: zjia/nightcore-socialnetwork:asplos-ae
+    hostname: user-timeline-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/UserTimelineService/libUserTimelineService.so", "4"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/socialNetwork/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/socialNetwork
+    depends_on:
+      - nightcore-engine
+      - socialnetwork-mongodb
+
+  url-shorten-service:
+    image: zjia/nightcore-socialnetwork:asplos-ae
+    hostname: url-shorten-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/UrlShortenService/libUrlShortenService.so", "5"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/socialNetwork/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/socialNetwork
+    depends_on:
+      - nightcore-engine
+      - socialnetwork-mongodb
+
+  user-service:
+    image: zjia/nightcore-socialnetwork:asplos-ae
+    hostname: user-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/UserService/libUserService.so", "6"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/socialNetwork/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/socialNetwork
+    depends_on:
+      - nightcore-engine
+      - socialnetwork-mongodb
+
+  media-service:
+    image: zjia/nightcore-socialnetwork:asplos-ae
+    hostname: media-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/MediaService/libMediaService.so", "7"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/socialNetwork/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/socialNetwork
+    depends_on:
+      - nightcore-engine
+      - socialnetwork-mongodb
+
+  text-service:
+    image: zjia/nightcore-socialnetwork:asplos-ae
+    hostname: text-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/TextService/libTextService.so", "8"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/socialNetwork/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/socialNetwork
+    depends_on:
+      - nightcore-engine
+      - socialnetwork-mongodb
+
+  unique-id-service:
+    image: zjia/nightcore-socialnetwork:asplos-ae
+    hostname: unique-id-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/UniqueIdService/libUniqueIdService.so", "9"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/socialNetwork/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/socialNetwork
+    depends_on:
+      - nightcore-engine
+      - socialnetwork-mongodb
+
+  user-mention-service:
+    image: zjia/nightcore-socialnetwork:asplos-ae
+    hostname: user-mention-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/UserMentionService/libUserMentionService.so", "10"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/socialNetwork/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/socialNetwork
+    depends_on:
+      - nightcore-engine
+      - socialnetwork-mongodb
+
+  home-timeline-service:
+    image: zjia/nightcore-socialnetwork:asplos-ae
+    hostname: home-timeline-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/HomeTimelineService/libHomeTimelineService.so", "11"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/socialNetwork/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/socialNetwork
+    depends_on:
+      - nightcore-engine
+      - socialnetwork-mongodb
+
+  socialnetwork-mongodb:
+    image: mongo:4.2.8-bionic
+    hostname: socialnetwork-mongodb
+    command: ["mongod", "--nojournal"]
+    volumes:
+      - /mnt/inmem/db:/data/db
+    restart: always
+
+  social-graph-redis:
+    image: redis:6.0.5
+    hostname: social-graph-redis
+    command: ["redis-server", "--save", "", "--io-threads", "4"]
+    restart: always
+
+  write-home-timeline-service:
+    image: zjia/nightcore-socialnetwork:asplos-ae
+    hostname: write-home-timeline-service
+    restart: always
+    entrypoint: /DeathStarBench/socialNetwork/build/src/WriteHomeTimelineService/WriteHomeTimelineService
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/socialNetwork/config/service-config.json
+    working_dir: /DeathStarBench/socialNetwork
+    depends_on:
+      - write-home-timeline-rabbitmq
+      - socialnetwork-mongodb
+    environment:
+      - MAX_FOLLOWERS_TO_UPDATE=2
+
+  write-home-timeline-rabbitmq:
+    image: rabbitmq:3.8.5
+    hostname: write-home-timeline-rabbitmq
+    environment:
+      RABBITMQ_ERLANG_COOKIE: "WRITE-HOME-TIMELINE-RABBITMQ"
+      RABBITMQ_DEFAULT_VHOST: "/"
+      RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS: "+S 4:4"
+    restart: always
+
+  home-timeline-redis:
+    image: redis:6.0.5
+    hostname: home-timeline-redis
+    command: ["redis-server", "--save", "", "--io-threads", "4"]
+    restart: always
+
+  compose-post-redis:
+    image: redis:6.0.5
+    hostname: compose-post-redis
+    command: ["redis-server", "--save", "", "--io-threads", "4"]
+    restart: always
+
+  post-storage-memcached:
+    image: memcached:1.5.22
+    hostname: post-storage-memcached
+    command: ["memcached", "-m", "4096"]
+    restart: always
+
+  user-timeline-redis:
+    image: redis:6.0.5
+    hostname: user-timeline-redis
+    command: ["redis-server", "--save", "", "--io-threads", "4"]
+    restart: always
+
+  url-shorten-memcached:
+    image: memcached:1.5.22
+    hostname: url-shorten-memcached
+    command: ["memcached", "-m", "4096"]
+    restart: always
+
+  user-memcached:
+    image: memcached:1.5.22
+    hostname: user-memcached
+    command: ["memcached", "-m", "4096"]
+    restart: always
+
+  media-memcached:
+    image: memcached:1.5.22
+    hostname: media-memcached
+    command: ["memcached", "-m", "4096"]
+    restart: always
+
+  nginx-thrift:
+    image: zjia/openresty-thrift:xenial
+    hostname: nginx-thrift
+    ports:
+      - 8080:8080
+    restart: always
+    volumes:
+      - /tmp/service-config.json:/social-network-microservices/config/service-config.json
+      - /tmp/socialNetwork/nginx-web-server/lua-scripts:/usr/local/openresty/nginx/lua-scripts
+      - /tmp/socialNetwork/nginx-web-server/pages:/usr/local/openresty/nginx/pages
+      - /tmp/socialNetwork/nginx-web-server/conf/nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf
+      - /tmp/socialNetwork/nginx-web-server/jaeger-config.json:/usr/local/openresty/nginx/jaeger-config.json
+      - /tmp/socialNetwork/gen-lua:/gen-lua
+      - /tmp/socialNetwork/docker/openresty-thrift/lua-thrift:/usr/local/openresty/lualib/thrift
+
+  media-frontend:
+    image: zjia/media-frontend:xenial
+    hostname: media-frontend
+    ports:
+      - 8081:8080
+    restart: always
+    volumes:
+      - /tmp/socialNetwork/media-frontend/lua-scripts:/usr/local/openresty/nginx/lua-scripts
+      - /tmp/socialNetwork/media-frontend/conf/nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf

@@ -1,0 +1,38 @@
+{
+    "machines": {
+        "nightcore-sn-middle": { "type": "c5.2xlarge", "role": "manager" },
+        "nightcore-sn-mongodb": { "type": "c5.2xlarge", "role": "worker" },
+        "nightcore-sn-cache": { "type": "c5.2xlarge", "role": "worker" },
+        "nightcore-sn-write-home-timeline": { "type": "c5.2xlarge", "role": "worker" },
+        "nightcore-sn-front": { "type": "c5.2xlarge", "role": "worker" },
+        "nightcore-sn-client": { "type": "c5.xlarge", "role": "client" }
+    },
+    "services": {
+        "social-graph-service": { "placement": "nightcore-sn-middle" },
+        "socialnetwork-mongodb": { "placement": "nightcore-sn-mongodb" },
+        "social-graph-redis": { "placement": "nightcore-sn-cache" },
+        "write-home-timeline-service": { "placement": "nightcore-sn-write-home-timeline" },
+        "write-home-timeline-rabbitmq": { "placement": "nightcore-sn-write-home-timeline" },
+        "home-timeline-redis": { "placement": "nightcore-sn-cache" },
+        "compose-post-service": { "placement": "nightcore-sn-middle" },
+        "compose-post-redis": { "placement": "nightcore-sn-cache" },
+        "post-storage-service": { "placement": "nightcore-sn-middle" },
+        "post-storage-memcached": { "placement": "nightcore-sn-cache" },
+        "user-timeline-service": { "placement": "nightcore-sn-middle" },
+        "user-timeline-redis": { "placement": "nightcore-sn-cache" },
+        "url-shorten-service": { "placement": "nightcore-sn-middle" },
+        "url-shorten-memcached": { "placement": "nightcore-sn-cache" },
+        "user-service": { "placement": "nightcore-sn-middle" },
+        "user-memcached": { "placement": "nightcore-sn-cache" },
+        "media-service": { "placement": "nightcore-sn-middle" },
+        "media-memcached": { "placement": "nightcore-sn-cache" },
+        "text-service": { "placement": "nightcore-sn-middle" },
+        "unique-id-service": { "placement": "nightcore-sn-middle" },
+        "user-mention-service": { "placement": "nightcore-sn-middle" },
+        "home-timeline-service": { "placement": "nightcore-sn-middle" },
+        "nginx-thrift": { "placement": "nightcore-sn-front" },
+        "media-frontend": { "placement": "nightcore-sn-front" },
+        "nightcore-gateway": { "placement": "nightcore-sn-front" },
+        "nightcore-engine": { "placement": "nightcore-sn-middle" }
+    }
+}
