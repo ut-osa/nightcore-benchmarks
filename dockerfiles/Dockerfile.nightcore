@@ -7,8 +7,12 @@ COPY . .
 RUN ./build_deps.sh && make -j $(nproc)
 
 FROM ubuntu:bionic as release
-WORKDIR /nightcore
+
+COPY . /src/nightcore
+
 COPY --from=builder /nightcore/bin/release/gateway         /nightcore/gateway
 COPY --from=builder /nightcore/bin/release/engine          /nightcore/engine
 COPY --from=builder /nightcore/bin/release/launcher        /nightcore/launcher
 COPY --from=builder /nightcore/bin/release/func_worker_v1  /nightcore/func_worker_v1
+
+WORKDIR /nightcore
