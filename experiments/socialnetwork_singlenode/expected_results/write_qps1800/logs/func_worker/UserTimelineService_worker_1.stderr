@@ -1,18 +1,19 @@
-I1207 06:55:00.149510 Main     thread.cpp:100] Register main thread: tid=57882
-I1207 06:55:00.149561 Main     func_worker.cpp:51] My client_id is 14
-[2020-12-07 06:55:00.156383] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
-I1207 06:55:00.165297 Main     func_config.cpp:135] Load configuration for function SocialGraphService[1]
-I1207 06:55:00.165314 Main     func_config.cpp:135] Load configuration for function ComposePostService[2]
-I1207 06:55:00.165321 Main     func_config.cpp:135] Load configuration for function PostStorageService[3]
-I1207 06:55:00.165327 Main     func_config.cpp:135] Load configuration for function UserTimelineService[4]
-I1207 06:55:00.165333 Main     func_config.cpp:135] Load configuration for function UrlShortenService[5]
-I1207 06:55:00.165338 Main     func_config.cpp:135] Load configuration for function UserService[6]
-I1207 06:55:00.165344 Main     func_config.cpp:135] Load configuration for function MediaService[7]
-I1207 06:55:00.165349 Main     func_config.cpp:135] Load configuration for function TextService[8]
-I1207 06:55:00.165360 Main     func_config.cpp:135] Load configuration for function UniqueIdService[9]
-I1207 06:55:00.165365 Main     func_config.cpp:135] Load configuration for function UserMentionService[10]
-I1207 06:55:00.165370 Main     func_config.cpp:135] Load configuration for function HomeTimelineService[11]
-I1207 06:55:00.165396 Main     func_worker.cpp:118] Use extra pipes for messages
-I1207 06:55:00.165732 Main     func_worker.cpp:137] Handshake done
-[2020-12-07 06:55:00.165768] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
-[2020-12-07 06:58:06.653894] <info>: (ClientPool.h:233:Pop) New user-timeline-redis client, total_client=1
+I1207 09:27:08.084913 Main     thread.cpp:100] Register main thread: tid=21502
+I1207 09:27:08.084965 Main     func_worker.cpp:51] My client_id is 26
+[2020-12-07 09:27:08.092039] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+I1207 09:27:08.100707 Main     func_config.cpp:135] Load configuration for function SocialGraphService[1]
+I1207 09:27:08.100719 Main     func_config.cpp:135] Load configuration for function ComposePostService[2]
+I1207 09:27:08.100726 Main     func_config.cpp:135] Load configuration for function PostStorageService[3]
+I1207 09:27:08.100732 Main     func_config.cpp:135] Load configuration for function UserTimelineService[4]
+I1207 09:27:08.100737 Main     func_config.cpp:135] Load configuration for function UrlShortenService[5]
+I1207 09:27:08.100742 Main     func_config.cpp:135] Load configuration for function UserService[6]
+I1207 09:27:08.100748 Main     func_config.cpp:135] Load configuration for function MediaService[7]
+I1207 09:27:08.100753 Main     func_config.cpp:135] Load configuration for function TextService[8]
+I1207 09:27:08.100762 Main     func_config.cpp:135] Load configuration for function UniqueIdService[9]
+I1207 09:27:08.100768 Main     func_config.cpp:135] Load configuration for function UserMentionService[10]
+I1207 09:27:08.100772 Main     func_config.cpp:135] Load configuration for function HomeTimelineService[11]
+I1207 09:27:08.100801 Main     func_worker.cpp:118] Use extra pipes for messages
+I1207 09:27:08.101086 Main     func_worker.cpp:137] Handshake done
+[2020-12-07 09:27:08.101109] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-07 09:30:18.912046] <info>: (ClientPool.h:233:Pop) New user-timeline-redis client, total_client=1
+[2020-12-07 09:30:19.274643] <error>: (UserTimelineHandler.h:108:WriteUserTimeline) Failed to insert user timeline user 369 to MongoDB: E11000 duplicate key error collection: user-timeline.user-timeline index: user_id_1 dup key: { user_id: 369 }

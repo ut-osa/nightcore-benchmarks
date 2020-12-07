@@ -1,32 +1,27 @@
-I1207 07:22:35.657963 Main     thread.cpp:100] Register main thread: tid=229375
-I1207 07:22:35.658028 Main     func_worker.cpp:51] My client_id is 98
-[2020-12-07 07:22:35.685614] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
-[2020-12-07 07:22:35.685712] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
-I1207 07:22:35.685760 Main     func_config.cpp:135] Load configuration for function SocialGraphService[1]
-I1207 07:22:35.685775 Main     func_config.cpp:135] Load configuration for function ComposePostService[2]
-I1207 07:22:35.685784 Main     func_config.cpp:135] Load configuration for function PostStorageService[3]
-I1207 07:22:35.685790 Main     func_config.cpp:135] Load configuration for function UserTimelineService[4]
-I1207 07:22:35.685794 Main     func_config.cpp:135] Load configuration for function UrlShortenService[5]
-I1207 07:22:35.685799 Main     func_config.cpp:135] Load configuration for function UserService[6]
-I1207 07:22:35.685803 Main     func_config.cpp:135] Load configuration for function MediaService[7]
-I1207 07:22:35.685809 Main     func_config.cpp:135] Load configuration for function TextService[8]
-I1207 07:22:35.685821 Main     func_config.cpp:135] Load configuration for function UniqueIdService[9]
-I1207 07:22:35.685825 Main     func_config.cpp:135] Load configuration for function UserMentionService[10]
-I1207 07:22:35.685828 Main     func_config.cpp:135] Load configuration for function HomeTimelineService[11]
-I1207 07:22:35.686139 Main     func_worker.cpp:118] Use extra pipes for messages
-I1207 07:22:35.686638 Main     func_worker.cpp:137] Handshake done
-[2020-12-07 07:22:35.686664] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
-[2020-12-07 07:22:35.686684] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
-[2020-12-07 07:22:35.686959] <info>: (ClientPool.h:233:Pop) New redis client, total_client=1
-[2020-12-07 07:22:35.698145] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
-[2020-12-07 07:22:35.698179] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
-I1207 07:22:35.698626 Main     buffer_pool.h:25] BufferPool[Pipes]: Allocate new buffer, current buffer count is 1
-[2020-12-07 07:22:35.698659] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
-[2020-12-07 07:22:35.698677] <info>: (ClientPool.h:233:Pop) New user-timeline-client client, total_client=1
-I1207 07:22:35.700213 Main     buffer_pool.h:25] BufferPool[Pipes]: Allocate new buffer, current buffer count is 2
-[2020-12-07 07:22:35.703302] <info>: (ClientPool.h:233:Pop) New rabbitmq client, total_client=1
-[2020-12-07 07:22:35.776652] <info>: (ClientPool.h:294:Remove) Remove user-timeline-client client, total_client=0
-[2020-12-07 07:22:35.776689] <error>: (ComposePostHandler.h:600:_UploadUserTimelineHelper) Failed to write user-timeline to user-timeline-service
-[2020-12-07 07:22:35.777062] <error>: (ComposePostHandler.h:518:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: user-timeline.user-timeline index: user_id_1 dup key: { user_id: 395 })
-[2020-12-07 07:22:35.782108] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
-[2020-12-07 07:22:35.782130] <info>: (ClientPool.h:233:Pop) New user-timeline-client client, total_client=1
+I1207 09:38:24.701974 Main     thread.cpp:100] Register main thread: tid=31607
+I1207 09:38:24.702038 Main     func_worker.cpp:51] My client_id is 96
+[2020-12-07 09:38:24.715014] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-07 09:38:24.715359] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+I1207 09:38:24.715396 Main     func_config.cpp:135] Load configuration for function SocialGraphService[1]
+I1207 09:38:24.715406 Main     func_config.cpp:135] Load configuration for function ComposePostService[2]
+I1207 09:38:24.715415 Main     func_config.cpp:135] Load configuration for function PostStorageService[3]
+I1207 09:38:24.715420 Main     func_config.cpp:135] Load configuration for function UserTimelineService[4]
+I1207 09:38:24.715425 Main     func_config.cpp:135] Load configuration for function UrlShortenService[5]
+I1207 09:38:24.715430 Main     func_config.cpp:135] Load configuration for function UserService[6]
+I1207 09:38:24.715435 Main     func_config.cpp:135] Load configuration for function MediaService[7]
+I1207 09:38:24.715441 Main     func_config.cpp:135] Load configuration for function TextService[8]
+I1207 09:38:24.715445 Main     func_config.cpp:135] Load configuration for function UniqueIdService[9]
+I1207 09:38:24.715450 Main     func_config.cpp:135] Load configuration for function UserMentionService[10]
+I1207 09:38:24.715455 Main     func_config.cpp:135] Load configuration for function HomeTimelineService[11]
+I1207 09:38:24.715483 Main     func_worker.cpp:118] Use extra pipes for messages
+I1207 09:38:24.716008 Main     func_worker.cpp:137] Handshake done
+[2020-12-07 09:38:24.716033] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-07 09:38:24.716081] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-07 09:38:24.716134] <info>: (ClientPool.h:233:Pop) New redis client, total_client=1
+[2020-12-07 09:38:24.725690] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-07 09:38:24.725715] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+I1207 09:38:24.726317 Main     buffer_pool.h:25] BufferPool[Pipes]: Allocate new buffer, current buffer count is 1
+[2020-12-07 09:38:24.726611] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-07 09:38:24.726627] <info>: (ClientPool.h:233:Pop) New user-timeline-client client, total_client=1
+I1207 09:38:24.728432 Main     buffer_pool.h:25] BufferPool[Pipes]: Allocate new buffer, current buffer count is 2
+[2020-12-07 09:38:24.731274] <info>: (ClientPool.h:233:Pop) New rabbitmq client, total_client=1

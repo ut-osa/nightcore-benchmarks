@@ -1,31 +1,23 @@
-I1207 06:18:26.151855 Main     thread.cpp:100] Register main thread: tid=38658
-I1207 06:18:26.151911 Main     func_worker.cpp:51] My client_id is 2
-[2020-12-07 06:18:26.159198] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
-[2020-12-07 06:18:26.159511] <info>: (UserHandler.h:998:GetMachineId) mac_hash=74d
-[2020-12-07 06:18:26.459106] <error>: (utils_mongodb.h:70:CreateIndex) Error in createIndexes: No suitable servers found: `serverSelectionTimeoutMS` expired: [Failed to resolve 'socialnetwork-mongodb']
-[2020-12-07 06:18:26.459162] <error>: (UserService.cpp:48:faas_init) Failed to create mongodb index, try again
-[2020-12-07 06:18:27.759088] <error>: (utils_mongodb.h:70:CreateIndex) Error in createIndexes: No suitable servers found: `serverSelectionTimeoutMS` expired: [Failed to resolve 'socialnetwork-mongodb']
-[2020-12-07 06:18:27.759138] <error>: (UserService.cpp:48:faas_init) Failed to create mongodb index, try again
-[2020-12-07 06:18:29.059097] <error>: (utils_mongodb.h:70:CreateIndex) Error in createIndexes: No suitable servers found: `serverSelectionTimeoutMS` expired: [Failed to resolve 'socialnetwork-mongodb']
-[2020-12-07 06:18:29.059146] <error>: (UserService.cpp:48:faas_init) Failed to create mongodb index, try again
-I1207 06:18:30.072394 Main     func_config.cpp:135] Load configuration for function SocialGraphService[1]
-I1207 06:18:30.072415 Main     func_config.cpp:135] Load configuration for function ComposePostService[2]
-I1207 06:18:30.072426 Main     func_config.cpp:135] Load configuration for function PostStorageService[3]
-I1207 06:18:30.072433 Main     func_config.cpp:135] Load configuration for function UserTimelineService[4]
-I1207 06:18:30.072439 Main     func_config.cpp:135] Load configuration for function UrlShortenService[5]
-I1207 06:18:30.072444 Main     func_config.cpp:135] Load configuration for function UserService[6]
-I1207 06:18:30.072450 Main     func_config.cpp:135] Load configuration for function MediaService[7]
-I1207 06:18:30.072455 Main     func_config.cpp:135] Load configuration for function TextService[8]
-I1207 06:18:30.072461 Main     func_config.cpp:135] Load configuration for function UniqueIdService[9]
-I1207 06:18:30.072466 Main     func_config.cpp:135] Load configuration for function UserMentionService[10]
-I1207 06:18:30.072471 Main     func_config.cpp:135] Load configuration for function HomeTimelineService[11]
-I1207 06:18:30.072501 Main     func_worker.cpp:118] Use extra pipes for messages
-I1207 06:18:30.072803 Main     func_worker.cpp:137] Handshake done
-[2020-12-07 06:18:30.072842] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
-[2020-12-07 06:18:30.072937] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
-[2020-12-07 06:18:30.072951] <info>: (UserHandler.h:137:UserHandler) machine_id=74d
-[2020-12-07 06:19:39.537840] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
-[2020-12-07 06:19:39.537875] <info>: (ClientPool.h:233:Pop) New social-graph client, total_client=1
-I1207 06:19:39.539075 Main     buffer_pool.h:25] BufferPool[Pipes]: Allocate new buffer, current buffer count is 1
-[2020-12-07 06:21:47.848912] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
-[2020-12-07 06:21:47.848949] <info>: (ClientPool.h:233:Pop) New compose-post client, total_client=1
+I1207 09:43:19.291638 Main     thread.cpp:100] Register main thread: tid=38604
+I1207 09:43:19.291700 Main     func_worker.cpp:51] My client_id is 34
+[2020-12-07 09:43:19.300025] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-07 09:43:19.300265] <info>: (UserHandler.h:998:GetMachineId) mac_hash=647
+I1207 09:43:19.313504 Main     func_config.cpp:135] Load configuration for function SocialGraphService[1]
+I1207 09:43:19.313523 Main     func_config.cpp:135] Load configuration for function ComposePostService[2]
+I1207 09:43:19.313529 Main     func_config.cpp:135] Load configuration for function PostStorageService[3]
+I1207 09:43:19.313535 Main     func_config.cpp:135] Load configuration for function UserTimelineService[4]
+I1207 09:43:19.313540 Main     func_config.cpp:135] Load configuration for function UrlShortenService[5]
+I1207 09:43:19.313549 Main     func_config.cpp:135] Load configuration for function UserService[6]
+I1207 09:43:19.313554 Main     func_config.cpp:135] Load configuration for function MediaService[7]
+I1207 09:43:19.313559 Main     func_config.cpp:135] Load configuration for function TextService[8]
+I1207 09:43:19.313564 Main     func_config.cpp:135] Load configuration for function UniqueIdService[9]
+I1207 09:43:19.313569 Main     func_config.cpp:135] Load configuration for function UserMentionService[10]
+I1207 09:43:19.313574 Main     func_config.cpp:135] Load configuration for function HomeTimelineService[11]
+I1207 09:43:19.313698 Main     func_worker.cpp:118] Use extra pipes for messages
+I1207 09:43:19.313852 Main     func_worker.cpp:137] Handshake done
+[2020-12-07 09:43:19.313884] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-07 09:43:19.313902] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-07 09:43:19.313909] <info>: (UserHandler.h:137:UserHandler) machine_id=647
+[2020-12-07 09:44:22.159520] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-07 09:44:22.159557] <info>: (ClientPool.h:233:Pop) New social-graph client, total_client=1
+I1207 09:44:22.160500 Main     buffer_pool.h:25] BufferPool[Pipes]: Allocate new buffer, current buffer count is 1

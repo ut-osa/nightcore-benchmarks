@@ -1,0 +1,45 @@
+2020/12/07 09:46:27 [error] 15417#15417: *83 lua tcp socket connect timed out, when connecting to 10.0.5.45:8080, client: 10.0.0.6, server: localhost, request: "POST http://localhost:8080/wrk2-api/post/compose HTTP/1.1", host: "ip-172-31-8-50.us-east-2.compute.internal:8080"
+2020/12/07 09:46:27 [error] 15417#15417: *83 lua user thread aborted: runtime error: /usr/local/openresty/lualib/thrift/Thrift.lua:37: TTransportException: Could not connect to nightcore-gateway:8080 (timeout)
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/usr/local/openresty/lualib/thrift/Thrift.lua:37: in function 'terror'
+	/usr/local/openresty/lualib/thrift/TSocket.lua:87: in function 'open'
+	/usr/local/openresty/lualib/thrift/RpcClient.lua:33: in function 'init'
+	/usr/local/openresty/lualib/thrift/RpcClientFactory.lua:11: in function 'createClient'
+	/usr/local/openresty/lualib/thrift/GenericObjectPool.lua:20: in function 'connection'
+	...al/openresty/nginx/lua-scripts/wrk2-api/post/compose.lua:23: in function <...al/openresty/nginx/lua-scripts/wrk2-api/post/compose.lua:18>
+coroutine 1:
+	[C]: in function 'wait'
+	...al/openresty/nginx/lua-scripts/wrk2-api/post/compose.lua:144: in function 'ComposePost'
+	content_by_lua(nginx.conf:327):3: in main chunk, client: 10.0.0.6, server: localhost, request: "POST http://localhost:8080/wrk2-api/post/compose HTTP/1.1", host: "ip-172-31-8-50.us-east-2.compute.internal:8080"
+2020/12/07 09:46:27 [error] 15419#15419: *123 lua tcp socket connect timed out, when connecting to 10.0.5.45:8080, client: 10.0.0.6, server: localhost, request: "POST http://localhost:8080/wrk2-api/post/compose HTTP/1.1", host: "ip-172-31-8-50.us-east-2.compute.internal:8080"
+2020/12/07 09:46:27 [error] 15419#15419: *123 lua user thread aborted: runtime error: /usr/local/openresty/lualib/thrift/Thrift.lua:37: TTransportException: Could not connect to nightcore-gateway:8080 (timeout)
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/usr/local/openresty/lualib/thrift/Thrift.lua:37: in function 'terror'
+	/usr/local/openresty/lualib/thrift/TSocket.lua:87: in function 'open'
+	/usr/local/openresty/lualib/thrift/RpcClient.lua:33: in function 'init'
+	/usr/local/openresty/lualib/thrift/RpcClientFactory.lua:11: in function 'createClient'
+	/usr/local/openresty/lualib/thrift/GenericObjectPool.lua:20: in function 'connection'
+	...al/openresty/nginx/lua-scripts/wrk2-api/post/compose.lua:65: in function <...al/openresty/nginx/lua-scripts/wrk2-api/post/compose.lua:60>
+coroutine 1:
+	[C]: in function 'wait'
+	...al/openresty/nginx/lua-scripts/wrk2-api/post/compose.lua:144: in function 'ComposePost'
+	content_by_lua(nginx.conf:327):3: in main chunk, client: 10.0.0.6, server: localhost, request: "POST http://localhost:8080/wrk2-api/post/compose HTTP/1.1", host: "ip-172-31-8-50.us-east-2.compute.internal:8080"
+2020/12/07 09:46:27 [error] 15419#15419: *110 lua tcp socket connect timed out, when connecting to 10.0.5.45:8080, client: 10.0.0.6, server: localhost, request: "POST http://localhost:8080/wrk2-api/post/compose HTTP/1.1", host: "ip-172-31-8-50.us-east-2.compute.internal:8080"
+2020/12/07 09:46:27 [error] 15419#15419: *110 lua user thread aborted: runtime error: /usr/local/openresty/lualib/thrift/Thrift.lua:37: TTransportException: Could not connect to nightcore-gateway:8080 (timeout)
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/usr/local/openresty/lualib/thrift/Thrift.lua:37: in function 'terror'
+	/usr/local/openresty/lualib/thrift/TSocket.lua:87: in function 'open'
+	/usr/local/openresty/lualib/thrift/RpcClient.lua:33: in function 'init'
+	/usr/local/openresty/lualib/thrift/RpcClientFactory.lua:11: in function 'createClient'
+	/usr/local/openresty/lualib/thrift/GenericObjectPool.lua:20: in function 'connection'
+	...al/openresty/nginx/lua-scripts/wrk2-api/post/compose.lua:23: in function <...al/openresty/nginx/lua-scripts/wrk2-api/post/compose.lua:18>
+coroutine 1:
+	[C]: in function 'wait'
+	...al/openresty/nginx/lua-scripts/wrk2-api/post/compose.lua:144: in function 'ComposePost'
+	content_by_lua(nginx.conf:327):3: in main chunk, client: 10.0.0.6, server: localhost, request: "POST http://localhost:8080/wrk2-api/post/compose HTTP/1.1", host: "ip-172-31-8-50.us-east-2.compute.internal:8080"
