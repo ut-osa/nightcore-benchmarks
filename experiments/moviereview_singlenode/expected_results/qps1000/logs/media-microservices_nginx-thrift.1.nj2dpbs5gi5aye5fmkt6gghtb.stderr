@@ -1,0 +1,80 @@
+2020/12/07 10:40:18 [error] 49130#49130: *1038 [lua] write.lua:27: WriteMovieInfo(): Empty body, client: 10.0.0.5, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-10-2.us-east-2.compute.internal:8080"
+2020/12/07 10:40:18 [error] 49132#49132: *1044 [lua] write.lua:27: WriteMovieInfo(): Empty body, client: 10.0.0.5, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-10-2.us-east-2.compute.internal:8080"
+2020/12/07 10:40:18 [error] 49130#49130: *1038 [lua] write.lua:27: WriteMovieInfo(): Empty body, client: 10.0.0.5, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-10-2.us-east-2.compute.internal:8080"
+2020/12/07 10:40:18 [error] 49132#49132: *1043 [lua] write.lua:27: WriteMovieInfo(): Empty body, client: 10.0.0.5, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-10-2.us-east-2.compute.internal:8080"
+2020/12/07 10:40:18 [error] 49134#49134: *1039 [lua] write.lua:27: WriteMovieInfo(): Empty body, client: 10.0.0.5, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-10-2.us-east-2.compute.internal:8080"
+2020/12/07 10:40:19 [error] 49134#49134: *1039 lua entry thread aborted: runtime error: /usr/local/openresty/lualib/thrift/TBinaryProtocol.lua:135: bad argument #1 to 'len' (string expected, got userdata)
+stack traceback:
+coroutine 0:
+	[builtin:len]: in function 'len'
+	/usr/local/openresty/lualib/thrift/TBinaryProtocol.lua:135: in function 'writeString'
+	/gen-lua/media_service_MovieInfoService.lua:186: in function 'write'
+	/gen-lua/media_service_MovieInfoService.lua:543: in function 'send_WriteMovieInfo'
+	/gen-lua/media_service_MovieInfoService.lua:525: in function 'WriteMovieInfo'
+	...penresty/nginx/lua-scripts/wrk2-api/movie-info/write.lua:57: in function 'WriteMovieInfo'
+	content_by_lua(nginx.conf:107):3: in main chunk, client: 10.0.0.5, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-10-2.us-east-2.compute.internal:8080"
+2020/12/07 10:40:19 [error] 49133#49133: *1045 [lua] write.lua:27: WriteMovieInfo(): Empty body, client: 10.0.0.5, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-10-2.us-east-2.compute.internal:8080"
+2020/12/07 10:40:19 [error] 49133#49133: *1037 [lua] write.lua:27: WriteMovieInfo(): Empty body, client: 10.0.0.5, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-10-2.us-east-2.compute.internal:8080"
+2020/12/07 10:40:19 [error] 49133#49133: *1041 [lua] write.lua:27: WriteMovieInfo(): Empty body, client: 10.0.0.5, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-10-2.us-east-2.compute.internal:8080"
+2020/12/07 10:40:19 [error] 49133#49133: *1037 lua entry thread aborted: runtime error: unknown reason
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/gen-lua/media_service_MovieIdService.lua:326: in function 'recv_RegisterMovieId'
+	/gen-lua/media_service_MovieIdService.lua:299: in function 'RegisterMovieId'
+	.../openresty/nginx/lua-scripts/wrk2-api/movie/register.lua:37: in function 'RegisterMovie'
+	content_by_lua(nginx.conf:93):3: in main chunk, client: 10.0.0.5, server: localhost, request: "POST /wrk2-api/movie/register HTTP/1.1", host: "ip-172-31-10-2.us-east-2.compute.internal:8080"
+2020/12/07 10:40:19 [error] 49130#49130: *1038 lua entry thread aborted: runtime error: /usr/local/openresty/lualib/thrift/TBinaryProtocol.lua:135: bad argument #1 to 'len' (string expected, got userdata)
+stack traceback:
+coroutine 0:
+	[builtin:len]: in function 'len'
+	/usr/local/openresty/lualib/thrift/TBinaryProtocol.lua:135: in function 'writeString'
+	/gen-lua/media_service_MovieInfoService.lua:186: in function 'write'
+	/gen-lua/media_service_MovieInfoService.lua:543: in function 'send_WriteMovieInfo'
+	/gen-lua/media_service_MovieInfoService.lua:525: in function 'WriteMovieInfo'
+	...penresty/nginx/lua-scripts/wrk2-api/movie-info/write.lua:57: in function 'WriteMovieInfo'
+	content_by_lua(nginx.conf:107):3: in main chunk, client: 10.0.0.5, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-10-2.us-east-2.compute.internal:8080"
+2020/12/07 10:40:19 [error] 49130#49130: *1040 [lua] write.lua:27: WriteMovieInfo(): Empty body, client: 10.0.0.5, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-10-2.us-east-2.compute.internal:8080"
+2020/12/07 10:40:20 [error] 49132#49132: *1047 lua entry thread aborted: runtime error: unknown reason
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/gen-lua/media_service_MovieIdService.lua:326: in function 'recv_RegisterMovieId'
+	/gen-lua/media_service_MovieIdService.lua:299: in function 'RegisterMovieId'
+	.../openresty/nginx/lua-scripts/wrk2-api/movie/register.lua:37: in function 'RegisterMovie'
+	content_by_lua(nginx.conf:93):3: in main chunk, client: 10.0.0.5, server: localhost, request: "POST /wrk2-api/movie/register HTTP/1.1", host: "ip-172-31-10-2.us-east-2.compute.internal:8080"
+2020/12/07 10:40:20 [error] 49133#49133: *1046 lua entry thread aborted: runtime error: unknown reason
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/gen-lua/media_service_MovieIdService.lua:326: in function 'recv_RegisterMovieId'
+	/gen-lua/media_service_MovieIdService.lua:299: in function 'RegisterMovieId'
+	.../openresty/nginx/lua-scripts/wrk2-api/movie/register.lua:37: in function 'RegisterMovie'
+	content_by_lua(nginx.conf:93):3: in main chunk, client: 10.0.0.5, server: localhost, request: "POST /wrk2-api/movie/register HTTP/1.1", host: "ip-172-31-10-2.us-east-2.compute.internal:8080"
+2020/12/07 10:40:20 [error] 49132#49132: *1042 lua entry thread aborted: runtime error: unknown reason
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/gen-lua/media_service_MovieIdService.lua:326: in function 'recv_RegisterMovieId'
+	/gen-lua/media_service_MovieIdService.lua:299: in function 'RegisterMovieId'
+	.../openresty/nginx/lua-scripts/wrk2-api/movie/register.lua:37: in function 'RegisterMovie'
+	content_by_lua(nginx.conf:93):3: in main chunk, client: 10.0.0.5, server: localhost, request: "POST /wrk2-api/movie/register HTTP/1.1", host: "ip-172-31-10-2.us-east-2.compute.internal:8080"
+2020/12/07 10:40:20 [error] 49133#49133: *1041 lua entry thread aborted: runtime error: unknown reason
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/gen-lua/media_service_MovieIdService.lua:326: in function 'recv_RegisterMovieId'
+	/gen-lua/media_service_MovieIdService.lua:299: in function 'RegisterMovieId'
+	.../openresty/nginx/lua-scripts/wrk2-api/movie/register.lua:37: in function 'RegisterMovie'
+	content_by_lua(nginx.conf:93):3: in main chunk, client: 10.0.0.5, server: localhost, request: "POST /wrk2-api/movie/register HTTP/1.1", host: "ip-172-31-10-2.us-east-2.compute.internal:8080"
+2020/12/07 10:40:20 [error] 49133#49133: *1045 lua entry thread aborted: runtime error: /usr/local/openresty/lualib/thrift/TBinaryProtocol.lua:135: bad argument #1 to 'len' (string expected, got userdata)
+stack traceback:
+coroutine 0:
+	[builtin:len]: in function 'len'
+	/usr/local/openresty/lualib/thrift/TBinaryProtocol.lua:135: in function 'writeString'
+	/gen-lua/media_service_MovieInfoService.lua:186: in function 'write'
+	/gen-lua/media_service_MovieInfoService.lua:543: in function 'send_WriteMovieInfo'
+	/gen-lua/media_service_MovieInfoService.lua:525: in function 'WriteMovieInfo'
+	...penresty/nginx/lua-scripts/wrk2-api/movie-info/write.lua:57: in function 'WriteMovieInfo'
+	content_by_lua(nginx.conf:107):3: in main chunk, client: 10.0.0.5, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-10-2.us-east-2.compute.internal:8080"
+2020/12/07 10:40:32 [error] 49133#49133: *1121 [lua] compose.lua:55: Upload movie_id failed: E11000 duplicate key error collection: movie-review.movie-review index: movie_id_1 dup key: { movie_id: "201088" }, client: 10.0.0.5, server: localhost, request: "POST http://127.0.0.1:8080/wrk2-api/review/compose HTTP/1.1", host: "ip-172-31-10-2.us-east-2.compute.internal:8080"

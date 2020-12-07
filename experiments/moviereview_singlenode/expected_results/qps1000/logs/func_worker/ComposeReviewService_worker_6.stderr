@@ -1,0 +1,33 @@
+I1207 10:38:13.185714 Main     thread.cpp:100] Register main thread: tid=225962
+I1207 10:38:13.185760 Main     func_worker.cpp:51] My client_id is 15
+[2020-12-07 10:38:13.188807] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+I1207 10:38:13.188883 Main     func_config.cpp:135] Load configuration for function UniqueIdService[1]
+I1207 10:38:13.188891 Main     func_config.cpp:135] Load configuration for function MovieIdService[2]
+I1207 10:38:13.188895 Main     func_config.cpp:135] Load configuration for function TextService[3]
+I1207 10:38:13.188898 Main     func_config.cpp:135] Load configuration for function RatingService[4]
+I1207 10:38:13.188901 Main     func_config.cpp:135] Load configuration for function UserService[5]
+I1207 10:38:13.188904 Main     func_config.cpp:135] Load configuration for function ComposeReviewService[6]
+I1207 10:38:13.188907 Main     func_config.cpp:135] Load configuration for function ReviewStorageService[7]
+I1207 10:38:13.188912 Main     func_config.cpp:135] Load configuration for function UserReviewService[8]
+I1207 10:38:13.188915 Main     func_config.cpp:135] Load configuration for function MovieReviewService[9]
+I1207 10:38:13.188918 Main     func_config.cpp:135] Load configuration for function CastInfoService[10]
+I1207 10:38:13.188921 Main     func_config.cpp:135] Load configuration for function PlotService[11]
+I1207 10:38:13.188924 Main     func_config.cpp:135] Load configuration for function MovieInfoService[12]
+I1207 10:38:13.188946 Main     func_worker.cpp:118] Use extra pipes for messages
+I1207 10:38:13.189073 Main     func_worker.cpp:137] Handshake done
+[2020-12-07 10:38:13.189091] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-07 10:38:13.189107] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-07 10:38:13.189118] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-07 10:40:32.015831] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-07 10:40:32.015881] <info>: (ClientPool.h:233:Pop) New compose-review-service client, total_client=1
+I1207 10:40:32.018750 Main     buffer_pool.h:25] BufferPool[Pipes]: Allocate new buffer, current buffer count is 1
+[2020-12-07 10:40:32.018774] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-07 10:40:32.018796] <info>: (ClientPool.h:233:Pop) New user-review-service client, total_client=1
+I1207 10:40:32.021134 Main     buffer_pool.h:25] BufferPool[Pipes]: Allocate new buffer, current buffer count is 2
+[2020-12-07 10:40:32.021162] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-07 10:40:32.021180] <info>: (ClientPool.h:233:Pop) New movie-review-service client, total_client=1
+I1207 10:40:32.023360 Main     buffer_pool.h:25] BufferPool[Pipes]: Allocate new buffer, current buffer count is 3
+[2020-12-07 10:40:32.907507] <info>: (ClientPool.h:294:Remove) Remove movie-review-service client, total_client=0
+[2020-12-07 10:40:32.907534] <error>: (ComposeReviewHandler.h:189:_ComposeAndUpload) Failed to upload review to movie-review-service
+[2020-12-07 10:40:32.911316] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-07 10:40:32.911339] <info>: (ClientPool.h:233:Pop) New movie-review-service client, total_client=1

@@ -1,0 +1,37 @@
+{
+    "machines": {
+        "nightcore-mm-middle": { "type": "c5.2xlarge", "role": "manager" },
+        "nightcore-mm-mongodb": { "type": "c5.2xlarge", "role": "worker" },
+        "nightcore-mm-cache": { "type": "c5.2xlarge", "role": "worker" },
+        "nightcore-mm-front": { "type": "c5.2xlarge", "role": "worker" },
+        "nightcore-mm-client": { "type": "c5.xlarge", "role": "client" }
+    },
+    "services": {
+        "media-mongodb": { "placement": "nightcore-mm-mongodb" },
+        "unique-id-service": { "placement": "nightcore-mm-middle" },
+        "movie-id-service": { "placement": "nightcore-mm-middle" },
+        "movie-id-memcached": { "placement": "nightcore-mm-cache" },
+        "text-service": { "placement": "nightcore-mm-middle" },
+        "rating-service": { "placement": "nightcore-mm-middle" },
+        "rating-redis": { "placement": "nightcore-mm-cache" },
+        "user-service": { "placement": "nightcore-mm-middle" },
+        "user-memcached": { "placement": "nightcore-mm-cache" },
+        "compose-review-service": { "placement": "nightcore-mm-middle" },
+        "compose-review-memcached": { "placement": "nightcore-mm-cache" },
+        "review-storage-service": { "placement": "nightcore-mm-middle" },
+        "review-storage-memcached": { "placement": "nightcore-mm-cache" },
+        "user-review-service": { "placement": "nightcore-mm-middle" },
+        "user-review-redis": { "placement": "nightcore-mm-cache" },
+        "movie-review-service": { "placement": "nightcore-mm-middle" },
+        "movie-review-redis": { "placement": "nightcore-mm-cache" },
+        "cast-info-service": { "placement": "nightcore-mm-middle" },
+        "cast-info-memcached": { "placement": "nightcore-mm-cache" },
+        "plot-service": { "placement": "nightcore-mm-middle" },
+        "plot-memcached": { "placement": "nightcore-mm-cache" },
+        "movie-info-service": { "placement": "nightcore-mm-middle" },
+        "movie-info-memcached": { "placement": "nightcore-mm-cache" },
+        "nginx-thrift": { "placement": "nightcore-mm-front" },
+        "nightcore-engine": { "placement": "nightcore-mm-middle" },
+        "nightcore-gateway": { "placement": "nightcore-mm-front" }
+    }
+}

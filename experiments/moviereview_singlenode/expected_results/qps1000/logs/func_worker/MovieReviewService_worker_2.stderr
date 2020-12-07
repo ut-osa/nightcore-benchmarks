@@ -1,0 +1,20 @@
+I1207 10:38:14.934095 Main     thread.cpp:100] Register main thread: tid=226480
+I1207 10:38:14.934161 Main     func_worker.cpp:51] My client_id is 35
+[2020-12-07 10:38:14.941637] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+I1207 10:38:14.951014 Main     func_config.cpp:135] Load configuration for function UniqueIdService[1]
+I1207 10:38:14.951031 Main     func_config.cpp:135] Load configuration for function MovieIdService[2]
+I1207 10:38:14.951037 Main     func_config.cpp:135] Load configuration for function TextService[3]
+I1207 10:38:14.951042 Main     func_config.cpp:135] Load configuration for function RatingService[4]
+I1207 10:38:14.951047 Main     func_config.cpp:135] Load configuration for function UserService[5]
+I1207 10:38:14.951057 Main     func_config.cpp:135] Load configuration for function ComposeReviewService[6]
+I1207 10:38:14.951063 Main     func_config.cpp:135] Load configuration for function ReviewStorageService[7]
+I1207 10:38:14.951069 Main     func_config.cpp:135] Load configuration for function UserReviewService[8]
+I1207 10:38:14.951074 Main     func_config.cpp:135] Load configuration for function MovieReviewService[9]
+I1207 10:38:14.951079 Main     func_config.cpp:135] Load configuration for function CastInfoService[10]
+I1207 10:38:14.951084 Main     func_config.cpp:135] Load configuration for function PlotService[11]
+I1207 10:38:14.951089 Main     func_config.cpp:135] Load configuration for function MovieInfoService[12]
+I1207 10:38:14.951117 Main     func_worker.cpp:118] Use extra pipes for messages
+I1207 10:38:14.951492 Main     func_worker.cpp:137] Handshake done
+[2020-12-07 10:38:14.951510] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-07 10:40:32.022574] <info>: (ClientPool.h:233:Pop) New movie-review-redis client, total_client=1
+[2020-12-07 10:40:32.907297] <error>: (MovieReviewHandler.h:105:UploadMovieReview) Failed to insert movie review of movie 201088 to MongoDB: E11000 duplicate key error collection: movie-review.movie-review index: movie_id_1 dup key: { movie_id: "201088" }

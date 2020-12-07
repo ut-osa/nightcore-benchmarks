@@ -1,0 +1,26 @@
+I1207 10:52:37.476207 Main     thread.cpp:100] Register main thread: tid=242714
+I1207 10:52:37.476269 Main     func_worker.cpp:51] My client_id is 19
+[2020-12-07 10:52:37.480322] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+I1207 10:52:37.480426 Main     func_config.cpp:135] Load configuration for function UniqueIdService[1]
+I1207 10:52:37.480437 Main     func_config.cpp:135] Load configuration for function MovieIdService[2]
+I1207 10:52:37.480442 Main     func_config.cpp:135] Load configuration for function TextService[3]
+I1207 10:52:37.480446 Main     func_config.cpp:135] Load configuration for function RatingService[4]
+I1207 10:52:37.480450 Main     func_config.cpp:135] Load configuration for function UserService[5]
+I1207 10:52:37.480455 Main     func_config.cpp:135] Load configuration for function ComposeReviewService[6]
+I1207 10:52:37.480460 Main     func_config.cpp:135] Load configuration for function ReviewStorageService[7]
+I1207 10:52:37.480465 Main     func_config.cpp:135] Load configuration for function UserReviewService[8]
+I1207 10:52:37.480476 Main     func_config.cpp:135] Load configuration for function MovieReviewService[9]
+I1207 10:52:37.480480 Main     func_config.cpp:135] Load configuration for function CastInfoService[10]
+I1207 10:52:37.480485 Main     func_config.cpp:135] Load configuration for function PlotService[11]
+I1207 10:52:37.480489 Main     func_config.cpp:135] Load configuration for function MovieInfoService[12]
+I1207 10:52:37.480617 Main     func_worker.cpp:118] Use extra pipes for messages
+I1207 10:52:37.480807 Main     func_worker.cpp:137] Handshake done
+[2020-12-07 10:52:37.480825] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-07 10:54:53.772882] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-07 10:54:53.772912] <info>: (ClientPool.h:233:Pop) New compose-review-client client, total_client=1
+I1207 10:54:53.774090 Main     buffer_pool.h:25] BufferPool[Pipes]: Allocate new buffer, current buffer count is 1
+[2020-12-07 10:54:53.774137] <info>: (ClientPool.h:233:Pop) New rating-redis client, total_client=1
+[2020-12-07 10:54:54.849282] <info>: (ClientPool.h:294:Remove) Remove compose-review-client client, total_client=0
+[2020-12-07 10:54:54.849358] <error>: (RatingHandler.h:71:UploadRating) Failed to upload rating to compose-review-service
+[2020-12-07 10:54:54.857779] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-07 10:54:54.857808] <info>: (ClientPool.h:233:Pop) New compose-review-client client, total_client=1
