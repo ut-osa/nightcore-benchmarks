@@ -15,12 +15,18 @@ function build {
         -f $ROOT_DIR/dockerfiles/Dockerfile.socialnetwork \
         --build-arg NUM_CPUS=$(nproc) \
         $ROOT_DIR/workloads/DeathStarBench
+
+    docker build -t zjia/nightcore-moviereview:asplos-ae \
+        -f $ROOT_DIR/dockerfiles/Dockerfile.moviereview \
+        --build-arg NUM_CPUS=$(nproc) \
+        $ROOT_DIR/workloads/DeathStarBench
 }
 
 function push {
     docker push zjia/cpp-microservice-deps:asplos-ae
     docker push zjia/nightcore:asplos-ae
     docker push zjia/nightcore-socialnetwork:asplos-ae
+    docker push zjia/nightcore-moviereview:asplos-ae
 }
 
 case "$1" in
