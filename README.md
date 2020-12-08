@@ -1,4 +1,4 @@
-Benchmark workloads of [Nightcore](https://github.com/ut-osa/nightcore) for ASPLOS '21
+Benchmark workloads of [Nightcore](https://github.com/ut-osa/nightcore)
 ==================================
 
 This repository includes source code of evaluation workloads of Nightcore,
