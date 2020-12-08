@@ -1,0 +1,28 @@
+{
+    "machines": {
+        "nightcore-hr-gateway": { "type": "c5.2xlarge", "role": "worker" },
+        "nightcore-hr-middle": { "type": "c5.2xlarge", "role": "manager" },
+        "nightcore-hr-mongodb": { "type": "c5.2xlarge", "role": "worker" },
+        "nightcore-hr-cache": { "type": "c5.2xlarge", "role": "worker" },
+        "nightcore-hr-client": { "type": "c5.xlarge", "role": "client" }
+    },
+    "services": {
+        "nightcore-gateway": { "placement": "nightcore-hr-gateway" },
+        "nightcore-engine": { "placement": "nightcore-hr-middle" },
+        "frontend-search": { "placement": "nightcore-hr-middle" },
+        "frontend-recommend": { "placement": "nightcore-hr-middle" },
+        "frontend-user": { "placement": "nightcore-hr-middle" },
+        "frontend-reservation": { "placement": "nightcore-hr-middle" },
+        "profile": { "placement": "nightcore-hr-middle" },
+        "search": { "placement": "nightcore-hr-middle" },
+        "geo": { "placement": "nightcore-hr-middle" },
+        "rate": { "placement": "nightcore-hr-middle" },
+        "recommendation": { "placement": "nightcore-hr-middle" },
+        "user": { "placement": "nightcore-hr-middle" },
+        "reservation": { "placement": "nightcore-hr-middle" },
+        "memcached-rate": { "placement": "nightcore-hr-cache" },
+        "memcached-profile": { "placement": "nightcore-hr-cache" },
+        "memcached-reserve": { "placement": "nightcore-hr-cache" },
+        "mongodb-hotelresv": { "placement": "nightcore-hr-mongodb" }
+    }
+}

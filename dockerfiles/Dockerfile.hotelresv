@@ -1,8 +1,9 @@
 FROM zjia/nightcore:asplos-ae as nightcore
 FROM golang:1.14-buster
 
-COPY ./hotelReservation /hotelReservation
-COPY --from=nightcore /src/nightcore /src/nightcore
+COPY ./hotelReservation /go/src/github.com/harlow/go-micro-services
+COPY --from=nightcore /src/nightcore       /src/nightcore
+COPY --from=nightcore /nightcore/launcher  /nightcore/launcher
 
-WORKDIR /hotelReservation
+WORKDIR /go/src/github.com/harlow/go-micro-services
 RUN ./build.sh

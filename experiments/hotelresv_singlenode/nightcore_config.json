@@ -1,0 +1,13 @@
+[
+    { "funcName": "hotels", "funcId": 1, "allowHttpGet": true, "qsAsInput": true, "minWorkers": 8, "maxWorkers": 32 },
+    { "funcName": "recommendations", "funcId": 2, "allowHttpGet": true, "qsAsInput": true, "minWorkers": 8, "maxWorkers": 32 },
+    { "funcName": "user", "funcId": 3, "allowHttpGet": true, "qsAsInput": true, "minWorkers": 8, "maxWorkers": 32 },
+    { "funcName": "reservation", "funcId": 4, "qsAsInput": true, "minWorkers": 8, "maxWorkers": 32 },
+    { "funcName": "grpc:geo.Geo", "funcId": 5, "grpcMethods": ["Nearby"], "minWorkers": 8, "maxWorkers": 32 },
+    { "funcName": "grpc:profile.Profile", "funcId": 6, "grpcMethods": ["GetProfiles"], "minWorkers": 8, "maxWorkers": 32 },
+    { "funcName": "grpc:rate.Rate", "funcId": 7, "grpcMethods": ["GetRates"], "minWorkers": 8, "maxWorkers": 32 },
+    { "funcName": "grpc:recommendation.Recommendation", "funcId": 8, "grpcMethods": ["GetRecommendations"], "minWorkers": 8, "maxWorkers": 32 },
+    { "funcName": "grpc:reservation.Reservation", "funcId": 9, "grpcMethods": ["MakeReservation", "CheckAvailability"], "minWorkers": 8, "maxWorkers": 32 },
+    { "funcName": "grpc:search.Search", "funcId": 10, "grpcMethods": ["Nearby"], "minWorkers": 8, "maxWorkers": 32 },
+    { "funcName": "grpc:user.User", "funcId": 11, "grpcMethods": ["CheckUser"], "minWorkers": 8, "maxWorkers": 32 }
+  ]
