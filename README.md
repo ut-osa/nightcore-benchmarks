@@ -28,11 +28,9 @@ Thus no compilation is needed. But it requires a controller machine setting up t
 
 #### Setting up the controller machine ####
 
-Our setup requires a controller machine in AWS `us-east-2` region.
-The controller machine can use very small EC2 instance type,
-as it only coordinates VMs for experiments but does not affect experimental results.
-In our setup, we use a `t3.micro` EC2 instance installed with Ubuntu 20.04 as the
-controller machine.
+Our scripts require a controller machine in AWS `us-east-2` region to provision and control experiment VMs.
+The controller machine can use very small EC2 instance type, as it does not affect experimental results.
+In our setup, we use a `t3.micro` EC2 instance installed with Ubuntu 20.04 as the controller machine.
 
 The controller machine needs `bash`, `python3`, `rsync`, and AWS CLI version 1 installed.
 `python3` and `rsync` can be installed with `apt`,
@@ -50,7 +48,7 @@ Please read the notice in `scripts/setup_sshkey.sh` before executing it to see i
 
 #### Setting up EC2 security group and placement group ####
 
-Our VM provisioning script needs security group `nightcore` and placement group `nightcore-experiments` created in `us-east-2` region.
+Our VM provisioning script creates EC2 instances with security group `nightcore` and placement group `nightcore-experiments`.
 The security group includes firewall rules for experiment VMs (including allowing the controller machine to SSH into them),
 while the placement group instructs AWS to place experiment VMs close together.
 Executing `scripts/aws_provision.sh` will create these groups with the correct configurations.
