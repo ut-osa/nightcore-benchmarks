@@ -1,7 +1,9 @@
-Artifact Evaluation of [Nightcore](https://github.com/ut-osa/nightcore) for ASPLOS '21
+Benchmark workloads of [Nightcore](https://github.com/ut-osa/nightcore) for ASPLOS '21
 ==================================
 
-This repository includes materials for the artifact evaluation of our ASPLOS '21 paper.
+This repository includes source code of evaluation workloads of Nightcore,
+and scripts for running experiments.
+It includes all materials for the artifact evaluation of our ASPLOS '21 paper.
 
 ### Structure of this repository ###
 
