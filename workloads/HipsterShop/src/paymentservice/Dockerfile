@@ -27,6 +27,6 @@ COPY ./index.js  /usr/src/app/index.js
 COPY ./proto     /usr/src/app/proto
 
 ENTRYPOINT [ "/nightcore/launcher", \
-             "--fprocess=node server.js", \
+             "--fprocess=node index.js", \
              "--fprocess_working_dir=/usr/src/app", \
              "--fprocess_mode=nodejs" ]

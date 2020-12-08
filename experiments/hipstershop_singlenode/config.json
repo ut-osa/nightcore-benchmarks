@@ -1,0 +1,30 @@
+{
+    "machines": {
+        "nightcore-hs-middle": { "type": "c5.2xlarge", "role": "manager" },
+        "nightcore-hs-mongodb": { "type": "c5.xlarge", "role": "worker" },
+        "nightcore-hs-cache": { "type": "c5.2xlarge", "role": "worker" },
+        "nightcore-hs-front": { "type": "c5.xlarge", "role": "worker" },
+        "nightcore-hs-client": { "type": "c5.xlarge", "role": "client" }
+    },
+    "services": {
+        "frontend-api-home": { "placement": "nightcore-hs-middle" },
+        "frontend-api-product": { "placement": "nightcore-hs-middle" },
+        "frontend-api-view-cart": { "placement": "nightcore-hs-middle" },
+        "frontend-api-add-to-cart": { "placement": "nightcore-hs-middle" },
+        "frontend-api-checkout": { "placement": "nightcore-hs-middle" },
+        "productcatalog-service": { "placement": "nightcore-hs-middle" },
+        "shipping-service": { "placement": "nightcore-hs-middle" },
+        "checkout-service": { "placement": "nightcore-hs-middle" },
+        "currency-service": { "placement": "nightcore-hs-middle" },
+        "payment-service": { "placement": "nightcore-hs-middle" },
+        "recommendation-service": { "placement": "nightcore-hs-middle" },
+        "ad-service": { "placement": "nightcore-hs-middle" },
+        "cart-service": { "placement": "nightcore-hs-middle" },
+        "cart-redis": { "placement": "nightcore-hs-cache" },
+        "productcatalog-redis": { "placement": "nightcore-hs-cache" },
+        "ad-redis": { "placement": "nightcore-hs-cache" },
+        "hipstershop-mongodb": { "placement": "nightcore-hs-mongodb" },
+        "nightcore-engine": { "placement": "nightcore-hs-middle" },
+        "nightcore-gateway": { "placement": "nightcore-hs-front" }
+    }
+}

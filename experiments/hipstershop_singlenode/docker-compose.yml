@@ -1,0 +1,277 @@
+version: "3.8"
+services:
+  nightcore-engine:
+    image: zjia/nightcore:asplos-ae
+    entrypoint:
+      - /nightcore/engine
+      - --gateway_addr=nightcore-gateway
+      - --root_path_for_ipc=/tmp/nightcore/ipc
+      - --func_config_file=/tmp/nightcore/func_config.json
+      - --num_io_workers=1
+      - --gateway_conn_per_worker=32
+      - --disable_monitor
+      - --instant_rps_p_norm=0.8
+    depends_on:
+      - nightcore-gateway
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+      - /sys/fs/cgroup:/tmp/root_cgroupfs
+    environment:
+      - FAAS_CGROUP_FS_ROOT=/tmp/root_cgroupfs
+
+  nightcore-gateway:
+    image: zjia/nightcore:asplos-ae
+    entrypoint:
+      - /nightcore/gateway
+      - --listen_addr=0.0.0.0
+      - --http_port=8080
+      - --grpc_port=50051
+      - --func_config_file=/tmp/nightcore/func_config.json
+      - --num_io_workers=4
+      - --max_running_requests=48
+      - --lb_pick_least_load
+    ports:
+      - 8080:8080
+    volumes:
+      - /tmp/nightcore_config.json:/tmp/nightcore/func_config.json
+
+  frontend-api-home:
+    image: zjia/nightcore-hipstershop:frontend-api-asplos-ae
+    command:
+      - --func_id=10
+      - --root_path_for_ipc=/tmp/nightcore/ipc
+      - --fprocess_output_dir=/tmp/nightcore/output
+    env_file:
+      - common.env
+    environment:
+      - GOGC=1000
+      - FAAS_GO_MAX_PROC_FACTOR=8
+      - SWARM_TASK_SLOT={{.Task.Slot}}
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    depends_on:
+      - nightcore-engine
+
+  frontend-api-product:
+    image: zjia/nightcore-hipstershop:frontend-api-asplos-ae
+    command:
+      - --func_id=11
+      - --root_path_for_ipc=/tmp/nightcore/ipc
+      - --fprocess_output_dir=/tmp/nightcore/output
+    env_file:
+      - common.env
+    environment:
+      - GOGC=1000
+      - FAAS_GO_MAX_PROC_FACTOR=8
+      - SWARM_TASK_SLOT={{.Task.Slot}}
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    depends_on:
+      - nightcore-engine
+
+  frontend-api-view-cart:
+    image: zjia/nightcore-hipstershop:frontend-api-asplos-ae
+    command:
+      - --func_id=12
+      - --root_path_for_ipc=/tmp/nightcore/ipc
+      - --fprocess_output_dir=/tmp/nightcore/output
+    env_file:
+      - common.env
+    environment:
+      - GOGC=1000
+      - FAAS_GO_MAX_PROC_FACTOR=8
+      - SWARM_TASK_SLOT={{.Task.Slot}}
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    depends_on:
+      - nightcore-engine
+
+  frontend-api-add-to-cart:
+    image: zjia/nightcore-hipstershop:frontend-api-asplos-ae
+    command:
+      - --func_id=13
+      - --root_path_for_ipc=/tmp/nightcore/ipc
+      - --fprocess_output_dir=/tmp/nightcore/output
+    env_file:
+      - common.env
+    environment:
+      - GOGC=1000
+      - FAAS_GO_MAX_PROC_FACTOR=8
+      - SWARM_TASK_SLOT={{.Task.Slot}}
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    depends_on:
+      - nightcore-engine
+
+  frontend-api-checkout:
+    image: zjia/nightcore-hipstershop:frontend-api-asplos-ae
+    command:
+      - --func_id=14
+      - --root_path_for_ipc=/tmp/nightcore/ipc
+      - --fprocess_output_dir=/tmp/nightcore/output
+    env_file:
+      - common.env
+    environment:
+      - GOGC=1000
+      - FAAS_GO_MAX_PROC_FACTOR=8
+      - SWARM_TASK_SLOT={{.Task.Slot}}
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    depends_on:
+      - nightcore-engine
+
+  productcatalog-service:
+    image: zjia/nightcore-hipstershop:productcatalogservice-asplos-ae
+    command:
+      - --func_id=1
+      - --root_path_for_ipc=/tmp/nightcore/ipc
+      - --fprocess_output_dir=/tmp/nightcore/output
+    env_file:
+      - common.env
+    environment:
+      - GOGC=1000
+      - FAAS_GO_MAX_PROC_FACTOR=8
+      - REDIS_HOST=productcatalog-redis
+      - SWARM_TASK_SLOT={{.Task.Slot}}
+    volumes:
+      - /tmp/data/products.json:/productcatalogservice/products.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    depends_on:
+      - nightcore-engine
+      - productcatalog-redis
+
+  shipping-service:
+    image: zjia/nightcore-hipstershop:shippingservice-asplos-ae
+    command:
+      - --func_id=2
+      - --root_path_for_ipc=/tmp/nightcore/ipc
+      - --fprocess_output_dir=/tmp/nightcore/output
+    env_file:
+      - common.env
+    environment:
+      - GOGC=1000
+      - FAAS_GO_MAX_PROC_FACTOR=8
+      - SWARM_TASK_SLOT={{.Task.Slot}}
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    depends_on:
+      - nightcore-engine
+      - hipstershop-mongodb
+
+  checkout-service:
+    image: zjia/nightcore-hipstershop:checkoutservice-asplos-ae
+    command:
+      - --func_id=3
+      - --root_path_for_ipc=/tmp/nightcore/ipc
+      - --fprocess_output_dir=/tmp/nightcore/output
+    env_file:
+      - common.env
+    environment:
+      - GOGC=1000
+      - FAAS_GO_MAX_PROC_FACTOR=8
+      - SWARM_TASK_SLOT={{.Task.Slot}}
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    depends_on:
+      - nightcore-engine
+
+  currency-service:
+    image: zjia/nightcore-hipstershop:currencyservice-asplos-ae
+    command:
+      - --func_id=4
+      - --root_path_for_ipc=/tmp/nightcore/ipc
+      - --fprocess_output_dir=/tmp/nightcore/output
+    env_file:
+      - common.env
+    environment:
+      - SWARM_TASK_SLOT={{.Task.Slot}}
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    depends_on:
+      - nightcore-engine
+
+  payment-service:
+    image: zjia/nightcore-hipstershop:paymentservice-asplos-ae
+    command:
+      - --func_id=5
+      - --root_path_for_ipc=/tmp/nightcore/ipc
+      - --fprocess_output_dir=/tmp/nightcore/output
+    env_file:
+      - common.env
+    environment:
+      - SWARM_TASK_SLOT={{.Task.Slot}}
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    depends_on:
+      - nightcore-engine
+      - hipstershop-mongodb
+
+  recommendation-service:
+    image: zjia/nightcore-hipstershop:recommendationservice-asplos-ae
+    command:
+      - --func_id=6
+      - --root_path_for_ipc=/tmp/nightcore/ipc
+      - --fprocess_output_dir=/tmp/nightcore/output
+    env_file:
+      - common.env
+    environment:
+      - SWARM_TASK_SLOT={{.Task.Slot}}
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    depends_on:
+      - nightcore-engine
+
+  ad-service:
+    image: zjia/nightcore-hipstershop:adservice-asplos-ae
+    command:
+      - --func_id=8
+      - --root_path_for_ipc=/tmp/nightcore/ipc
+      - --fprocess_output_dir=/tmp/nightcore/output
+    env_file:
+      - common.env
+    environment:
+      - GOGC=1000
+      - FAAS_GO_MAX_PROC_FACTOR=8
+      - REDIS_HOST=ad-redis
+      - SWARM_TASK_SLOT={{.Task.Slot}}
+    volumes:
+      - /tmp/data/ads.json:/adservice/ads.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    depends_on:
+      - nightcore-engine
+      - ad-redis
+
+  cart-service:
+    image: zjia/nightcore-hipstershop:cartservice-asplos-ae
+    command:
+      - --func_id=9
+      - --root_path_for_ipc=/tmp/nightcore/ipc
+      - --fprocess_output_dir=/tmp/nightcore/output
+    env_file:
+      - common.env
+    environment:
+      - REDIS_HOST=cart-redis
+      - SWARM_TASK_SLOT={{.Task.Slot}}
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    depends_on:
+      - cart-redis
+      - nightcore-engine
+
+  productcatalog-redis:
+    image: redis:6.0.5
+    command: ["redis-server", "--save", "", "--io-threads", "4"]
+
+  ad-redis:
+    image: redis:6.0.5
+    command: ["redis-server", "--save", "", "--io-threads", "4"]
+
+  cart-redis:
+    image: redis:6.0.5
+    command: ["redis-server", "--save", "", "--io-threads", "4"]
+
+  hipstershop-mongodb:
+    image: mongo:4.2.8-bionic
+    command: ["mongod", "--nojournal"]
+    volumes:
+      - /mnt/inmem/db:/data/db
