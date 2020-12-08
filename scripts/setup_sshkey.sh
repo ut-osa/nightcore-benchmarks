@@ -1,0 +1,72 @@
+#!/bin/bash
+
+# ==== READ BEFORE USE ====
+# This sccript will setup ssh client on the current machine to use the SSH
+# key below to login all hosts matching `*.compute.internal`. Please check
+# your current `~/.ssh/config` to see if it conflicts with other entires.
+# Nightcore's base VM image (`ami-06e206d7334bff2ec`) is hard-coded to trust
+# the private key below. But be aware that this key is not really private,
+# and do not use this key beyond the scope of Nightcore experiments.
+
+cat >> ~/.ssh/config << EOF1
+
+Host *.compute.internal
+    User ubuntu
+    IdentityFile ~/.ssh/nightcore-experiments.pem
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+EOF1
+
+cat > ~/.ssh/nightcore-experiments.pem << EOF2
+-----BEGIN OPENSSH PRIVATE KEY-----
+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
+-----END OPENSSH PRIVATE KEY-----
+EOF2
+
+chmod 0600 ~/.ssh/nightcore-experiments.pem
