@@ -1,0 +1,95 @@
+2020-12-08T05:14:24.315+0000 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2020-12-08T05:14:24.317+0000 W  ASIO     [main] No TransportLayer configured during NetworkInterface startup
+2020-12-08T05:14:24.317+0000 I  CONTROL  [initandlisten] MongoDB starting : pid=2358 port=27017 dbpath=/data/db 64-bit host=eb6ba666d577
+2020-12-08T05:14:24.317+0000 I  CONTROL  [initandlisten] db version v4.2.8
+2020-12-08T05:14:24.317+0000 I  CONTROL  [initandlisten] git version: 43d25964249164d76d5e04dd6cf38f6111e21f5f
+2020-12-08T05:14:24.317+0000 I  CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1  11 Sep 2018
+2020-12-08T05:14:24.317+0000 I  CONTROL  [initandlisten] allocator: tcmalloc
+2020-12-08T05:14:24.317+0000 I  CONTROL  [initandlisten] modules: none
+2020-12-08T05:14:24.317+0000 I  CONTROL  [initandlisten] build environment:
+2020-12-08T05:14:24.317+0000 I  CONTROL  [initandlisten]     distmod: ubuntu1804
+2020-12-08T05:14:24.317+0000 I  CONTROL  [initandlisten]     distarch: x86_64
+2020-12-08T05:14:24.317+0000 I  CONTROL  [initandlisten]     target_arch: x86_64
+2020-12-08T05:14:24.317+0000 I  CONTROL  [initandlisten] options: { net: { bindIp: "*" }, storage: { journal: { enabled: false } } }
+2020-12-08T05:14:24.318+0000 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7262M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],,log=(enabled=false),
+2020-12-08T05:14:24.770+0000 I  STORAGE  [initandlisten] WiredTiger message [1607404464:770571][2358:0x7f7ad6055b00], txn-recover: Set global recovery timestamp: (0, 0)
+2020-12-08T05:14:24.773+0000 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2020-12-08T05:14:24.775+0000 I  STORAGE  [initandlisten] Timestamp monitor starting
+2020-12-08T05:14:24.775+0000 I  CONTROL  [initandlisten] 
+2020-12-08T05:14:24.775+0000 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2020-12-08T05:14:24.775+0000 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2020-12-08T05:14:24.775+0000 I  CONTROL  [initandlisten] 
+2020-12-08T05:14:24.776+0000 I  STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: e8c636e3-3dfc-472e-a669-c02ecf63db98 and options: { uuid: UUID("e8c636e3-3dfc-472e-a669-c02ecf63db98") }
+2020-12-08T05:14:24.778+0000 I  INDEX    [initandlisten] index build: done building index _id_ on ns admin.system.version
+2020-12-08T05:14:24.778+0000 I  SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+2020-12-08T05:14:24.778+0000 I  COMMAND  [initandlisten] setting featureCompatibilityVersion to 4.2
+2020-12-08T05:14:24.778+0000 I  SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+2020-12-08T05:14:24.778+0000 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2020-12-08T05:14:24.778+0000 I  SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+2020-12-08T05:14:24.778+0000 I  STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 3d40a6c5-8429-40ee-9119-92cc4ce26410 and options: { capped: true, size: 10485760 }
+2020-12-08T05:14:24.780+0000 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.startup_log
+2020-12-08T05:14:24.780+0000 I  SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+2020-12-08T05:14:24.780+0000 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2020-12-08T05:14:24.782+0000 I  SHARDING [LogicalSessionCacheRefresh] Marking collection config.system.sessions as collection version: <unsharded>
+2020-12-08T05:14:24.782+0000 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: config.system.sessions does not exist
+2020-12-08T05:14:24.782+0000 I  STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with provided UUID: bb05de1b-4e5c-4872-a288-a19bc81f6cb3 and options: { uuid: UUID("bb05de1b-4e5c-4872-a288-a19bc81f6cb3") }
+2020-12-08T05:14:24.782+0000 I  NETWORK  [listener] Listening on /tmp/mongodb-27017.sock
+2020-12-08T05:14:24.782+0000 I  NETWORK  [listener] Listening on 0.0.0.0
+2020-12-08T05:14:24.782+0000 I  NETWORK  [listener] waiting for connections on port 27017
+2020-12-08T05:14:24.784+0000 I  INDEX    [LogicalSessionCacheRefresh] index build: done building index _id_ on ns config.system.sessions
+2020-12-08T05:14:24.786+0000 I  INDEX    [LogicalSessionCacheRefresh] index build: starting on config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 } using method: Hybrid
+2020-12-08T05:14:24.786+0000 I  INDEX    [LogicalSessionCacheRefresh] build may temporarily use up to 200 megabytes of RAM
+2020-12-08T05:14:24.786+0000 I  INDEX    [LogicalSessionCacheRefresh] index build: collection scan done. scanned 0 total records in 0 seconds
+2020-12-08T05:14:24.786+0000 I  INDEX    [LogicalSessionCacheRefresh] index build: inserted 0 keys from external sorter into index in 0 seconds
+2020-12-08T05:14:24.786+0000 I  INDEX    [LogicalSessionCacheRefresh] index build: done building index lsidTTLIndex on ns config.system.sessions
+2020-12-08T05:14:25.000+0000 I  SHARDING [ftdc] Marking collection local.oplog.rs as collection version: <unsharded>
+2020-12-08T05:14:27.297+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:57724 #1 (1 connection now open)
+2020-12-08T05:14:27.297+0000 I  NETWORK  [conn1] received client metadata from 10.0.1.4:57724 conn1: { driver: { name: "mongo-go-driver", version: "v1.3.5" }, os: { type: "linux", architecture: "amd64" }, platform: "go1.14.13" }
+2020-12-08T05:14:30.819+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:55234 #2 (2 connections now open)
+2020-12-08T05:14:30.822+0000 I  NETWORK  [conn2] received client metadata from 10.0.1.4:55234 conn2: { driver: { name: "nodejs", version: "3.5.9" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.41-zjiabuild+" }, platform: "'Node.js v10.22.0, LE (legacy)" }
+2020-12-08T05:14:30.874+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:55236 #3 (3 connections now open)
+2020-12-08T05:14:30.874+0000 I  NETWORK  [conn3] received client metadata from 10.0.1.4:55236 conn3: { driver: { name: "nodejs", version: "3.5.9" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.41-zjiabuild+" }, platform: "'Node.js v10.22.0, LE (legacy)" }
+2020-12-08T05:14:30.894+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:55238 #4 (4 connections now open)
+2020-12-08T05:14:30.894+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:55240 #5 (5 connections now open)
+2020-12-08T05:14:30.894+0000 I  NETWORK  [conn4] received client metadata from 10.0.1.4:55238 conn4: { driver: { name: "nodejs", version: "3.5.9" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.41-zjiabuild+" }, platform: "'Node.js v10.22.0, LE (legacy)" }
+2020-12-08T05:14:30.894+0000 I  NETWORK  [conn5] received client metadata from 10.0.1.4:55240 conn5: { driver: { name: "nodejs", version: "3.5.9" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.41-zjiabuild+" }, platform: "'Node.js v10.22.0, LE (legacy)" }
+2020-12-08T05:14:30.913+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:55242 #6 (6 connections now open)
+2020-12-08T05:14:30.914+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:55244 #7 (7 connections now open)
+2020-12-08T05:14:30.914+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:55246 #8 (8 connections now open)
+2020-12-08T05:14:30.914+0000 I  NETWORK  [conn6] received client metadata from 10.0.1.4:55242 conn6: { driver: { name: "nodejs", version: "3.5.9" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.41-zjiabuild+" }, platform: "'Node.js v10.22.0, LE (legacy)" }
+2020-12-08T05:14:30.914+0000 I  NETWORK  [conn7] received client metadata from 10.0.1.4:55244 conn7: { driver: { name: "nodejs", version: "3.5.9" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.41-zjiabuild+" }, platform: "'Node.js v10.22.0, LE (legacy)" }
+2020-12-08T05:14:30.914+0000 I  NETWORK  [conn8] received client metadata from 10.0.1.4:55246 conn8: { driver: { name: "nodejs", version: "3.5.9" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.41-zjiabuild+" }, platform: "'Node.js v10.22.0, LE (legacy)" }
+2020-12-08T05:14:30.915+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:55248 #9 (9 connections now open)
+2020-12-08T05:14:30.915+0000 I  NETWORK  [conn9] received client metadata from 10.0.1.4:55248 conn9: { driver: { name: "nodejs", version: "3.5.9" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.41-zjiabuild+" }, platform: "'Node.js v10.22.0, LE (legacy)" }
+2020-12-08T05:14:30.941+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:55250 #10 (10 connections now open)
+2020-12-08T05:14:30.942+0000 I  NETWORK  [conn10] received client metadata from 10.0.1.4:55250 conn10: { driver: { name: "nodejs", version: "3.5.9" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.41-zjiabuild+" }, platform: "'Node.js v10.22.0, LE (legacy)" }
+2020-12-08T05:14:30.986+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:55252 #11 (11 connections now open)
+2020-12-08T05:14:30.986+0000 I  NETWORK  [conn11] received client metadata from 10.0.1.4:55252 conn11: { driver: { name: "nodejs", version: "3.5.9" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.41-zjiabuild+" }, platform: "'Node.js v10.22.0, LE (legacy)" }
+2020-12-08T05:14:31.018+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:55254 #12 (12 connections now open)
+2020-12-08T05:14:31.018+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:55256 #13 (13 connections now open)
+2020-12-08T05:14:31.018+0000 I  NETWORK  [conn12] received client metadata from 10.0.1.4:55254 conn12: { driver: { name: "nodejs", version: "3.5.9" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.41-zjiabuild+" }, platform: "'Node.js v10.22.0, LE (legacy)" }
+2020-12-08T05:14:31.019+0000 I  NETWORK  [conn13] received client metadata from 10.0.1.4:55256 conn13: { driver: { name: "nodejs", version: "3.5.9" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.41-zjiabuild+" }, platform: "'Node.js v10.22.0, LE (legacy)" }
+2020-12-08T05:14:31.074+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:55258 #14 (14 connections now open)
+2020-12-08T05:14:31.074+0000 I  NETWORK  [conn14] received client metadata from 10.0.1.4:55258 conn14: { driver: { name: "nodejs", version: "3.5.9" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.41-zjiabuild+" }, platform: "'Node.js v10.22.0, LE (legacy)" }
+2020-12-08T05:14:31.138+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:55260 #15 (15 connections now open)
+2020-12-08T05:14:31.138+0000 I  NETWORK  [conn15] received client metadata from 10.0.1.4:55260 conn15: { driver: { name: "nodejs", version: "3.5.9" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.41-zjiabuild+" }, platform: "'Node.js v10.22.0, LE (legacy)" }
+2020-12-08T05:14:31.210+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:55262 #16 (16 connections now open)
+2020-12-08T05:14:31.210+0000 I  NETWORK  [conn16] received client metadata from 10.0.1.4:55262 conn16: { driver: { name: "nodejs", version: "3.5.9" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.41-zjiabuild+" }, platform: "'Node.js v10.22.0, LE (legacy)" }
+2020-12-08T05:14:31.246+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:55264 #17 (17 connections now open)
+2020-12-08T05:14:31.246+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:55266 #18 (18 connections now open)
+2020-12-08T05:14:31.246+0000 I  NETWORK  [conn17] received client metadata from 10.0.1.4:55264 conn17: { driver: { name: "nodejs", version: "3.5.9" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.41-zjiabuild+" }, platform: "'Node.js v10.22.0, LE (legacy)" }
+2020-12-08T05:14:31.246+0000 I  NETWORK  [conn18] received client metadata from 10.0.1.4:55266 conn18: { driver: { name: "nodejs", version: "3.5.9" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.41-zjiabuild+" }, platform: "'Node.js v10.22.0, LE (legacy)" }
+2020-12-08T05:14:31.250+0000 I  STORAGE  [conn3] createCollection: payment.transactions with generated UUID: d12832f3-2446-4088-96bf-bdfc78ccdbdd and options: {}
+2020-12-08T05:14:31.252+0000 I  INDEX    [conn3] index build: done building index _id_ on ns payment.transactions
+2020-12-08T05:15:41.364+0000 I  SHARDING [conn15] Marking collection payment.transactions as collection version: <unsharded>
+2020-12-08T05:15:41.368+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:57860 #19 (19 connections now open)
+2020-12-08T05:15:41.368+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:57862 #20 (20 connections now open)
+2020-12-08T05:15:41.368+0000 I  NETWORK  [conn19] received client metadata from 10.0.1.4:57860 conn19: { driver: { name: "mongo-go-driver", version: "v1.3.5" }, os: { type: "linux", architecture: "amd64" }, platform: "go1.14.13" }
+2020-12-08T05:15:41.368+0000 I  NETWORK  [conn20] received client metadata from 10.0.1.4:57862 conn20: { driver: { name: "mongo-go-driver", version: "v1.3.5" }, os: { type: "linux", architecture: "amd64" }, platform: "go1.14.13" }
+2020-12-08T05:15:41.368+0000 I  SHARDING [conn19] Marking collection shipping.shipOrders as collection version: <unsharded>
+2020-12-08T05:15:41.368+0000 I  STORAGE  [conn19] createCollection: shipping.shipOrders with generated UUID: a4b9908d-0dfb-4aec-9135-77c729f2507b and options: {}
+2020-12-08T05:15:41.370+0000 I  INDEX    [conn19] index build: done building index _id_ on ns shipping.shipOrders
+2020-12-08T05:15:43.703+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:57890 #21 (21 connections now open)
+2020-12-08T05:15:43.703+0000 I  NETWORK  [conn21] received client metadata from 10.0.1.4:57890 conn21: { driver: { name: "mongo-go-driver", version: "v1.3.5" }, os: { type: "linux", architecture: "amd64" }, platform: "go1.14.13" }
+2020-12-08T05:16:16.985+0000 I  NETWORK  [listener] connection accepted from 10.0.1.4:57902 #22 (22 connections now open)
+2020-12-08T05:16:16.985+0000 I  NETWORK  [conn22] received client metadata from 10.0.1.4:57902 conn22: { driver: { name: "mongo-go-driver", version: "v1.3.5" }, os: { type: "linux", architecture: "amd64" }, platform: "go1.14.13" }

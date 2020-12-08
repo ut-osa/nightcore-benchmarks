@@ -17,33 +17,33 @@ MONGO_HOST=`$HELPER_SCRIPT get-service-host --base-dir=$BASE_DIR --service=hipst
 ENGINE_HOST=`$HELPER_SCRIPT get-service-host --base-dir=$BASE_DIR --service=nightcore-engine`
 ALL_HOSTS=`$HELPER_SCRIPT get-all-server-hosts --base-dir=$BASE_DIR`
 
-# $HELPER_SCRIPT generate-docker-compose --base-dir=$BASE_DIR
-# scp -q $BASE_DIR/docker-compose.yml           $MANAGER_HOST:~
-# scp -q $BASE_DIR/docker-compose-placement.yml $MANAGER_HOST:~
-# scp -q $BASE_DIR/common.env                   $MANAGER_HOST:~
+$HELPER_SCRIPT generate-docker-compose --base-dir=$BASE_DIR
+scp -q $BASE_DIR/docker-compose.yml           $MANAGER_HOST:~
+scp -q $BASE_DIR/docker-compose-placement.yml $MANAGER_HOST:~
+scp -q $BASE_DIR/common.env                   $MANAGER_HOST:~
 
-# ssh -q $MANAGER_HOST -- docker stack rm hipstershop
-# sleep 20
-# ssh -q $MONGO_HOST -- sudo rm -rf /mnt/inmem/db
-# ssh -q $MONGO_HOST -- sudo mkdir -p /mnt/inmem/db
-# ssh -q $ENGINE_HOST -- sudo rm -rf /mnt/inmem/nightcore
-# ssh -q $ENGINE_HOST -- sudo mkdir -p /mnt/inmem/nightcore
-# ssh -q $ENGINE_HOST -- sudo mkdir -p /mnt/inmem/nightcore/output /mnt/inmem/nightcore/ipc
+ssh -q $MANAGER_HOST -- docker stack rm hipstershop
+sleep 20
+ssh -q $MONGO_HOST -- sudo rm -rf /mnt/inmem/db
+ssh -q $MONGO_HOST -- sudo mkdir -p /mnt/inmem/db
+ssh -q $ENGINE_HOST -- sudo rm -rf /mnt/inmem/nightcore
+ssh -q $ENGINE_HOST -- sudo mkdir -p /mnt/inmem/nightcore
+ssh -q $ENGINE_HOST -- sudo mkdir -p /mnt/inmem/nightcore/output /mnt/inmem/nightcore/ipc
 
-# for host in $ALL_HOSTS; do
-#     scp -q $BASE_DIR/nightcore_config.json  $host:/tmp/nightcore_config.json
-# done
+for host in $ALL_HOSTS; do
+    scp -q $BASE_DIR/nightcore_config.json  $host:/tmp/nightcore_config.json
+done
 
-# scp -qr $SRC_DIR/data $ENGINE_HOST:~
-# ssh -q $ENGINE_HOST -- sudo cp -r ~/data /tmp
-# ssh -q $ENGINE_HOST -- sudo cp /tmp/nightcore_config.json /mnt/inmem/nightcore/func_config.json
+scp -qr $SRC_DIR/data $ENGINE_HOST:~
+ssh -q $ENGINE_HOST -- sudo cp -r ~/data /tmp
+ssh -q $ENGINE_HOST -- sudo cp /tmp/nightcore_config.json /mnt/inmem/nightcore/func_config.json
 
-# ssh -q $MANAGER_HOST -- docker stack deploy \
-#     -c ~/docker-compose.yml -c ~/docker-compose-placement.yml hipstershop
-# sleep 60
+ssh -q $MANAGER_HOST -- docker stack deploy \
+    -c ~/docker-compose.yml -c ~/docker-compose-placement.yml hipstershop
+sleep 60
 
-# ENGINE_CONTAINER_ID=`$HELPER_SCRIPT get-container-id --service nightcore-engine`
-# echo 4096 | ssh -q $ENGINE_HOST -- sudo tee /sys/fs/cgroup/cpu,cpuacct/docker/$ENGINE_CONTAINER_ID/cpu.shares
+ENGINE_CONTAINER_ID=`$HELPER_SCRIPT get-container-id --service nightcore-engine`
+echo 4096 | ssh -q $ENGINE_HOST -- sudo tee /sys/fs/cgroup/cpu,cpuacct/docker/$ENGINE_CONTAINER_ID/cpu.shares
 
 scp -q $SRC_DIR/scripts/wrk2/$WRK_SCRIPT $CLIENT_HOST:~
 
