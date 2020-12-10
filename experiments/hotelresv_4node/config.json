@@ -1,0 +1,31 @@
+{
+    "machines": {
+        "nightcore-hr-gateway": { "type": "c5.4xlarge", "role": "manager" },
+        "nightcore-hr-middle1": { "type": "c5.xlarge", "role": "worker", "labels": ["engine_node=true"] },
+        "nightcore-hr-middle2": { "type": "c5.xlarge", "role": "worker", "labels": ["engine_node=true"] },
+        "nightcore-hr-middle3": { "type": "c5.xlarge", "role": "worker", "labels": ["engine_node=true"] },
+        "nightcore-hr-middle4": { "type": "c5.xlarge", "role": "worker", "labels": ["engine_node=true"] },
+        "nightcore-hr-mongodb": { "type": "c5.4xlarge", "role": "worker" },
+        "nightcore-hr-cache": { "type": "c5.4xlarge", "role": "worker" },
+        "nightcore-hr-client": { "type": "c5.2xlarge", "role": "client" }
+    },
+    "services": {
+        "nightcore-gateway": { "placement": "nightcore-hr-gateway" },
+        "nightcore-engine": { "placement_label": "engine_node", "replicas": 4 },
+        "frontend-search": { "placement_label": "engine_node", "replicas": 4 },
+        "frontend-recommend": { "placement_label": "engine_node", "replicas": 4 },
+        "frontend-user": { "placement_label": "engine_node", "replicas": 4 },
+        "frontend-reservation": { "placement_label": "engine_node", "replicas": 4 },
+        "profile": { "placement_label": "engine_node", "replicas": 4 },
+        "search": { "placement_label": "engine_node", "replicas": 4 },
+        "geo": { "placement_label": "engine_node", "replicas": 4 },
+        "rate": { "placement_label": "engine_node", "replicas": 4 },
+        "recommendation": { "placement_label": "engine_node", "replicas": 4 },
+        "user": { "placement_label": "engine_node", "replicas": 4 },
+        "reservation": { "placement_label": "engine_node", "replicas": 4 },
+        "memcached-rate": { "placement": "nightcore-hr-cache" },
+        "memcached-profile": { "placement": "nightcore-hr-cache" },
+        "memcached-reserve": { "placement": "nightcore-hr-cache" },
+        "mongodb-hotelresv": { "placement": "nightcore-hr-mongodb" }
+    }
+}

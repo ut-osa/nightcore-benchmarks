@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SRC_PATH=/go/src/github.com/harlow/go-micro-services
+
+/nightcore/launcher \
+    --fprocess_mode=go \
+    --fprocess_working_dir=$SRC_PATH \
+    --root_path_for_ipc=/tmp/nightcore/ipc \
+    --fprocess_output_dir=/tmp/nightcore/output \
+    --fprocess="$SRC_PATH/build/$1" \
+    --func_id=$2

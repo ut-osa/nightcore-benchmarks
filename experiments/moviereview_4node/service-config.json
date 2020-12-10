@@ -1,0 +1,166 @@
+{
+  "secret": "secret",
+  "unique-id-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/UniqueIdService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16
+  },
+  "movie-id-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/MovieIdService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16
+  },
+  "movie-id-mongodb": {
+    "addr": "media-mongodb",
+    "port": 27017
+  },
+  "movie-id-memcached": {
+    "addr": "movie-id-memcached",
+    "port": 11211
+  },
+  "user-mongodb": {
+    "addr": "media-mongodb",
+    "port": 27017
+  },
+  "user-memcached": {
+    "addr": "user-memcached",
+    "port": 11211
+  },
+  "text-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/TextService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16
+  },
+  "rating-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/RatingService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16
+  },
+  "rating-redis": {
+    "addr": "rating-redis",
+    "port": 6379
+  },
+  "user-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/UserService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16
+  },
+  "compose-review-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/ComposeReviewService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16
+  },
+  "compose-review-memcached": {
+    "addr": "compose-review-memcached",
+    "port": 11211
+  },
+  "review-storage-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/ReviewStorageService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16
+  },
+  "review-storage-mongodb": {
+    "addr": "media-mongodb",
+    "port": 27017
+  },
+  "review-storage-memcached": {
+    "addr": "review-storage-memcached",
+    "port": 11211
+  },
+  "user-review-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/UserReviewService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16
+  },
+  "user-review-mongodb": {
+    "addr": "media-mongodb",
+    "port": 27017
+  },
+  "user-review-redis": {
+    "addr": "user-review-redis",
+    "port": 6379
+  },
+  "movie-review-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/MovieReviewService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16
+  },
+  "movie-review-mongodb": {
+    "addr": "media-mongodb",
+    "port": 27017
+  },
+  "movie-review-redis": {
+    "addr": "movie-review-redis",
+    "port": 6379
+  },
+  "cast-info-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/CastInfoService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16
+  },
+  "cast-info-mongodb": {
+    "addr": "media-mongodb",
+    "port": 27017
+  },
+  "cast-info-memcached": {
+    "addr": "cast-info-memcached",
+    "port": 11211
+  },
+  "plot-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/PlotService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16
+  },
+  "plot-mongodb": {
+    "addr": "media-mongodb",
+    "port": 27017
+  },
+  "plot-memcached": {
+    "addr": "plot-memcached",
+    "port": 11211
+  },
+  "movie-info-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/MovieInfoService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16
+  },
+  "movie-info-mongodb": {
+    "addr": "media-mongodb",
+    "port": 27017
+  },
+  "movie-info-memcached": {
+    "addr": "movie-info-memcached",
+    "port": 11211
+  },
+  "page-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/PageService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16
+  }
+}

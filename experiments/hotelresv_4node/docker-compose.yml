@@ -1,0 +1,213 @@
+version: "3.8"
+services:
+  nightcore-engine:
+    image: zjia/nightcore:asplos-ae
+    entrypoint:
+      - /nightcore/engine
+      - --gateway_addr=nightcore-gateway
+      - --root_path_for_ipc=/tmp/nightcore/ipc
+      - --func_config_file=/tmp/nightcore/func_config.json
+      - --num_io_workers=1
+      - --gateway_conn_per_worker=32
+      - --disable_monitor
+      - --instant_rps_p_norm=0.8
+    depends_on:
+      - nightcore-gateway
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+      - /sys/fs/cgroup:/tmp/root_cgroupfs
+    environment:
+      - FAAS_CGROUP_FS_ROOT=/tmp/root_cgroupfs
+
+  nightcore-gateway:
+    image: zjia/nightcore:asplos-ae
+    ports:
+      - 8080:8080
+    entrypoint:
+      - /nightcore/gateway
+      - --listen_addr=0.0.0.0
+      - --http_port=8080
+      - --func_config_file=/tmp/nightcore/func_config.json
+      - --num_io_workers=8
+      - --lb_pick_least_load
+      - --max_running_requests=24
+    volumes:
+      - /tmp/nightcore_config.json:/tmp/nightcore/func_config.json
+
+  frontend-search:
+    image: zjia/nightcore-hotelresv:asplos-ae
+    entrypoint: ["/tmp/nightcore/run_launcher", "frontend", "1"]
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    environment:
+      - FAAS_GO_MAX_PROC_FACTOR=8
+      - GOGC=1000
+    depends_on:
+      - nightcore-engine
+    restart: always
+
+  frontend-recommend:
+    image: zjia/nightcore-hotelresv:asplos-ae
+    entrypoint: ["/tmp/nightcore/run_launcher", "frontend", "2"]
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    environment:
+      - FAAS_GO_MAX_PROC_FACTOR=8
+      - GOGC=1000
+    depends_on:
+      - nightcore-engine
+    restart: always
+  
+  frontend-user:
+    image: zjia/nightcore-hotelresv:asplos-ae
+    entrypoint: ["/tmp/nightcore/run_launcher", "frontend", "3"]
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    environment:
+      - FAAS_GO_MAX_PROC_FACTOR=8
+      - GOGC=1000
+    depends_on:
+      - nightcore-engine
+    restart: always
+
+  frontend-reservation:
+    image: zjia/nightcore-hotelresv:asplos-ae
+    entrypoint: ["/tmp/nightcore/run_launcher", "frontend", "4"]
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    environment:
+      - FAAS_GO_MAX_PROC_FACTOR=8
+      - GOGC=1000
+    depends_on:
+      - nightcore-engine
+    restart: always
+
+  geo:
+    image: zjia/nightcore-hotelresv:asplos-ae
+    entrypoint: ["/tmp/nightcore/run_launcher", "geo", "5"]
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    environment:
+      - SWARM_TASK_SLOT={{.Task.Slot}}
+      - FAAS_GO_MAX_PROC_FACTOR=8
+      - GOGC=1000
+    depends_on:
+      - nightcore-engine
+      - mongodb-hotelresv
+    restart: always
+
+  profile:
+    image: zjia/nightcore-hotelresv:asplos-ae
+    entrypoint: ["/tmp/nightcore/run_launcher", "profile", "6"]
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    environment:
+      - SWARM_TASK_SLOT={{.Task.Slot}}
+      - FAAS_GO_MAX_PROC_FACTOR=8
+      - GOGC=1000
+    depends_on:
+      - nightcore-engine
+      - mongodb-hotelresv
+      - memcached-profile
+    restart: always
+
+  rate:
+    image: zjia/nightcore-hotelresv:asplos-ae
+    entrypoint: ["/tmp/nightcore/run_launcher", "rate", "7"]
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    environment:
+      - SWARM_TASK_SLOT={{.Task.Slot}}
+      - FAAS_GO_MAX_PROC_FACTOR=8
+      - GOGC=1000
+    depends_on:
+      - nightcore-engine
+      - mongodb-hotelresv
+      - memcached-rate
+    restart: always
+
+  recommendation:
+    image: zjia/nightcore-hotelresv:asplos-ae
+    entrypoint: ["/tmp/nightcore/run_launcher", "recommendation", "8"]
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    environment:
+      - SWARM_TASK_SLOT={{.Task.Slot}}
+      - FAAS_GO_MAX_PROC_FACTOR=8
+      - GOGC=1000
+    depends_on:
+      - nightcore-engine
+      - mongodb-hotelresv
+
+  reservation:
+    image: zjia/nightcore-hotelresv:asplos-ae
+    entrypoint: ["/tmp/nightcore/run_launcher", "reservation", "9"]
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    environment:
+      - SWARM_TASK_SLOT={{.Task.Slot}}
+      - FAAS_GO_MAX_PROC_FACTOR=8
+      - GOGC=1000
+    depends_on:
+      - nightcore-engine
+      - mongodb-hotelresv
+      - memcached-reserve
+
+  search:
+    image: zjia/nightcore-hotelresv:asplos-ae
+    entrypoint: ["/tmp/nightcore/run_launcher", "search", "10"]
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    environment:
+      - FAAS_GO_MAX_PROC_FACTOR=8
+      - GOGC=1000
+    depends_on:
+      - nightcore-engine
+    restart: always
+
+  user:
+    image: zjia/nightcore-hotelresv:asplos-ae
+    entrypoint: ["/tmp/nightcore/run_launcher", "user", "11"]
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    environment:
+      - SWARM_TASK_SLOT={{.Task.Slot}}
+      - FAAS_GO_MAX_PROC_FACTOR=8
+      - GOGC=1000
+    depends_on:
+      - nightcore-engine
+      - mongodb-hotelresv
+
+  memcached-rate:
+    image: memcached:1.5.22
+    hostname: memcached-rate
+    command: ["memcached", "-m", "4096"]
+    restart: always
+    logging:
+      options:
+        max-size: 50m
+
+  memcached-profile:
+    image: memcached:1.5.22
+    hostname: memcached-profile
+    command: ["memcached", "-m", "4096"]
+    restart: always
+    logging:
+      options:
+        max-size: 50m
+
+  memcached-reserve:
+    image: memcached:1.5.22
+    hostname: memcached-reserve
+    command: ["memcached", "-m", "4096"]
+    restart: always
+    logging:
+      options:
+        max-size: 50m
+
+  mongodb-hotelresv:
+    image: mongo:4.2.8-bionic
+    hostname: socialnetwork-mongodb
+    command: ["mongod", "--nojournal"]
+    volumes:
+      - /mnt/inmem/db:/data/db

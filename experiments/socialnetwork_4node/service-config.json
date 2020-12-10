@@ -1,0 +1,160 @@
+{
+  "secret": "secret",
+  "social-graph-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/SocialGraphService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16,
+    "redis_client_pool_size": 128,
+    "user_client_pool_size": 128
+  },
+  "social-graph-mongodb": {
+    "addr": "socialnetwork-mongodb",
+    "port": 27017
+  },
+  "social-graph-redis": {
+    "addr": "social-graph-redis",
+    "port": 6379
+  },
+  "write-home-timeline-service": {
+    "addr": "write-home-timeline-service",
+    "port": 9090,
+    "http_path": "/",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16,
+    "social_graph_client_pool_size": 128,
+    "redis_client_pool_size": 128
+  },
+  "write-home-timeline-rabbitmq": {
+    "addr": "write-home-timeline-rabbitmq",
+    "port": 5672
+  },
+  "home-timeline-redis": {
+    "addr": "home-timeline-redis",
+    "port": 6379
+  },
+  "compose-post-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/ComposePostService",
+    "server_num_io_threads": 2,
+    "server_threadpool_size": 16,
+    "redis_client_pool_size": 128,
+    "post_storage_client_pool_size": 128,
+    "user_timeline_client_pool_size": 128,
+    "rabbitmq_client_pool_size": 128
+  },
+  "compose-post-redis": {
+    "addr": "compose-post-redis",
+    "port": 6379
+  },
+  "user-timeline-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/UserTimelineService",
+    "server_num_io_threads": 2,
+    "server_threadpool_size": 16,
+    "post_storage_client_pool_size": 128,
+    "redis_client_pool_size": 128
+  },
+  "user-timeline-mongodb": {
+    "addr": "socialnetwork-mongodb",
+    "port": 27017
+  },
+  "user-timeline-redis": {
+    "addr": "user-timeline-redis",
+    "port": 6379
+  },
+  "post-storage-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/PostStorageService",
+    "server_num_io_threads": 2,
+    "server_threadpool_size": 16
+  },
+  "post-storage-mongodb": {
+    "addr": "socialnetwork-mongodb",
+    "port": 27017
+  },
+  "post-storage-memcached": {
+    "addr": "post-storage-memcached",
+    "port": 11211
+  },
+  "unique-id-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/UniqueIdService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16,
+    "compose_post_client_pool_size": 128
+  },
+  "media-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/MediaService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16,
+    "compose_post_client_pool_size": 128
+  },
+  "text-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/TextService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16,
+    "compose_client_pool_size": 128,
+    "url_client_pool_size": 128,
+    "user_mention_pool_size": 128
+  },
+  "user-mention-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/UserMentionService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16,
+    "compose_post_client_pool_size": 128
+  },
+  "url-shorten-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/UrlShortenService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16,
+    "compose_post_client_pool_size": 128
+  },
+  "url-shorten-memcached": {
+    "addr": "url-shorten-memcached",
+    "port": 11211
+  },
+  "url-shorten-mongodb": {
+    "addr": "socialnetwork-mongodb",
+    "port": 27017
+  },
+  "user-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/UserService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16,
+    "compose_post_client_pool_size": 128,
+    "social_graph_client_pool_size": 128
+  },
+  "user-memcached": {
+    "addr": "user-memcached",
+    "port": 11211
+  },
+  "user-mongodb": {
+    "addr": "socialnetwork-mongodb",
+    "port": 27017
+  },
+  "home-timeline-service": {
+    "addr": "nightcore-gateway",
+    "port": 8080,
+    "http_path": "/function/HomeTimelineService",
+    "server_num_io_threads": 1,
+    "server_threadpool_size": 16,
+    "redis_client_pool_size": 128,
+    "post_storage_client_pool_size": 128
+  }
+}

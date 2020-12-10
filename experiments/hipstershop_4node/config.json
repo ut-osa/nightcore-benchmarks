@@ -1,0 +1,33 @@
+{
+    "machines": {
+        "nightcore-hs-middle1": { "type": "c5.xlarge", "role": "worker", "labels": ["engine_node=true"] },
+        "nightcore-hs-middle2": { "type": "c5.xlarge", "role": "worker", "labels": ["engine_node=true"] },
+        "nightcore-hs-middle3": { "type": "c5.xlarge", "role": "worker", "labels": ["engine_node=true"] },
+        "nightcore-hs-middle4": { "type": "c5.xlarge", "role": "worker", "labels": ["engine_node=true"] },
+        "nightcore-hs-mongodb": { "type": "c5.4xlarge", "role": "worker" },
+        "nightcore-hs-cache": { "type": "c5.4xlarge", "role": "worker" },
+        "nightcore-hs-front": { "type": "c5.4xlarge", "role": "manager" },
+        "nightcore-hs-client": { "type": "c5.2xlarge", "role": "client" }
+    },
+    "services": {
+        "frontend-api-home": { "placement_label": "engine_node", "replicas": 4 },
+        "frontend-api-product": { "placement_label": "engine_node", "replicas": 4 },
+        "frontend-api-view-cart": { "placement_label": "engine_node", "replicas": 4 },
+        "frontend-api-add-to-cart": { "placement_label": "engine_node", "replicas": 4 },
+        "frontend-api-checkout": { "placement_label": "engine_node", "replicas": 4 },
+        "productcatalog-service": { "placement_label": "engine_node", "replicas": 4 },
+        "shipping-service": { "placement_label": "engine_node", "replicas": 4 },
+        "checkout-service": { "placement_label": "engine_node", "replicas": 4 },
+        "currency-service": { "placement_label": "engine_node", "replicas": 4 },
+        "payment-service": { "placement_label": "engine_node", "replicas": 4 },
+        "recommendation-service": { "placement_label": "engine_node", "replicas": 4 },
+        "ad-service": { "placement_label": "engine_node", "replicas": 4 },
+        "cart-service": { "placement_label": "engine_node", "replicas": 4 },
+        "cart-redis": { "placement": "nightcore-hs-cache" },
+        "productcatalog-redis": { "placement": "nightcore-hs-cache" },
+        "ad-redis": { "placement": "nightcore-hs-cache" },
+        "hipstershop-mongodb": { "placement": "nightcore-hs-mongodb" },
+        "nightcore-engine": { "placement_label": "engine_node", "replicas": 4 },
+        "nightcore-gateway": { "placement": "nightcore-hs-front" }
+    }
+}

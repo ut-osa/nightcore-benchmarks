@@ -1,0 +1,101 @@
+[
+    {
+        "funcName": "grpc:hipstershop.ProductCatalogService",
+        "funcId": 1,
+        "grpcMethods": [ "ListProducts", "GetProduct", "SearchProducts" ],
+        "minWorkers": 8,
+        "maxWorkers": 24
+    },
+    {
+        "funcName": "grpc:hipstershop.ShippingService",
+        "funcId": 2,
+        "grpcMethods": [ "GetQuote", "ShipOrder" ],
+        "minWorkers": 8,
+        "maxWorkers": 24
+    },
+    {
+        "funcName": "grpc:hipstershop.CheckoutService",
+        "funcId": 3,
+        "grpcMethods": [ "PlaceOrder" ],
+        "minWorkers": 8,
+        "maxWorkers": 24
+    },
+    {
+        "funcName": "grpc:hipstershop.CurrencyService",
+        "funcId": 4,
+        "grpcMethods": [ "GetSupportedCurrencies", "Convert" ],
+        "minWorkers": 8,
+        "maxWorkers": 24
+    },
+    {
+        "funcName": "grpc:hipstershop.PaymentService",
+        "funcId": 5,
+        "grpcMethods": [ "Charge" ],
+        "minWorkers": 8,
+        "maxWorkers": 24
+    },
+    {
+        "funcName": "grpc:hipstershop.RecommendationService",
+        "funcId": 6,
+        "grpcMethods": [ "ListRecommendations" ],
+        "minWorkers": 8,
+        "maxWorkers": 24
+    },
+    {
+        "funcName": "grpc:hipstershop.EmailService",
+        "funcId": 7,
+        "grpcMethods": [ "SendOrderConfirmation" ],
+        "minWorkers": 8,
+        "maxWorkers": 24
+    },
+    {
+        "funcName": "grpc:hipstershop.AdService",
+        "funcId": 8,
+        "grpcMethods": [ "GetAds" ],
+        "minWorkers": 8,
+        "maxWorkers": 24
+    },
+    {
+        "funcName": "grpc:hipstershop.CartService",
+        "funcId": 9,
+        "grpcMethods": [ "AddItem", "GetCart", "EmptyCart" ],
+        "minWorkers": 8,
+        "maxWorkers": 24
+    },
+    {
+        "funcName": "home",
+        "funcId": 10,
+        "allowHttpGet": true,
+        "qsAsInput": true,
+        "minWorkers": 8,
+        "maxWorkers": 24
+    },
+    {
+        "funcName": "product",
+        "funcId": 11,
+        "allowHttpGet": true,
+        "qsAsInput": true,
+        "minWorkers": 8,
+        "maxWorkers": 24
+    },
+    {
+        "funcName": "viewCart",
+        "funcId": 12,
+        "allowHttpGet": true,
+        "qsAsInput": true,
+        "minWorkers": 8,
+        "maxWorkers": 24
+    },
+    {
+        "funcName": "addToCart",
+        "funcId": 13,
+        "minWorkers": 8,
+        "maxWorkers": 24
+    },
+    {
+        "funcName": "checkout",
+        "funcId": 14,
+        "minWorkers": 8,
+        "maxWorkers": 24
+    }
+]

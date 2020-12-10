@@ -1,0 +1,259 @@
+version: "3.8"
+services:
+  nightcore-engine:
+    image: zjia/nightcore:asplos-ae
+    entrypoint:
+      - /nightcore/engine
+      - --gateway_addr=nightcore-gateway
+      - --root_path_for_ipc=/tmp/nightcore/ipc
+      - --func_config_file=/tmp/nightcore/func_config.json
+      - --num_io_workers=1
+      - --gateway_conn_per_worker=32
+      - --disable_monitor
+      - --instant_rps_p_norm=0.7
+    depends_on:
+      - nightcore-gateway
+    volumes:
+      - /mnt/inmem/nightcore:/tmp/nightcore
+      - /sys/fs/cgroup:/tmp/root_cgroupfs
+    environment:
+      - FAAS_CGROUP_FS_ROOT=/tmp/root_cgroupfs
+
+  nightcore-gateway:
+    image: zjia/nightcore:asplos-ae
+    entrypoint:
+      - /nightcore/gateway
+      - --listen_addr=0.0.0.0
+      - --http_port=8080
+      - --func_config_file=/tmp/nightcore/func_config.json
+      - --num_io_workers=8
+      - --lb_pick_least_load
+      - --max_running_requests=20
+    volumes:
+      - /tmp/nightcore_config.json:/tmp/nightcore/func_config.json
+  
+  unique-id-service:
+    image: zjia/nightcore-moviereview:asplos-ae
+    hostname: unique-id-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/UniqueIdService/libUniqueIdService.so", "1"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/mediaMicroservices/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/mediaMicroservices
+    depends_on:
+      - nightcore-engine
+
+  movie-id-service:
+    image: zjia/nightcore-moviereview:asplos-ae
+    hostname: movie-id-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/MovieIdService/libMovieIdService.so", "2"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/mediaMicroservices/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/mediaMicroservices
+    depends_on:
+      - nightcore-engine
+
+  text-service:
+    image: zjia/nightcore-moviereview:asplos-ae
+    hostname: text-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/TextService/libTextService.so", "3"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/mediaMicroservices/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/mediaMicroservices
+    depends_on:
+      - nightcore-engine
+
+  rating-service:
+    image: zjia/nightcore-moviereview:asplos-ae
+    hostname: rating-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/RatingService/libRatingService.so", "4"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/mediaMicroservices/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/mediaMicroservices
+    depends_on:
+      - nightcore-engine
+
+  user-service:
+    image: zjia/nightcore-moviereview:asplos-ae
+    hostname: user-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/UserService/libUserService.so", "5"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/mediaMicroservices/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/mediaMicroservices
+    depends_on:
+      - nightcore-engine
+
+  compose-review-service:
+    image: zjia/nightcore-moviereview:asplos-ae
+    hostname: compose-review-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/ComposeReviewService/libComposeReviewService.so", "6"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/mediaMicroservices/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/mediaMicroservices
+    depends_on:
+      - nightcore-engine
+
+  review-storage-service:
+    image: zjia/nightcore-moviereview:asplos-ae
+    hostname: review-storage-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/ReviewStorageService/libReviewStorageService.so", "7"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/mediaMicroservices/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/mediaMicroservices
+    depends_on:
+      - nightcore-engine
+
+  user-review-service:
+    image: zjia/nightcore-moviereview:asplos-ae
+    hostname: user-review-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/UserReviewService/libUserReviewService.so", "8"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/mediaMicroservices/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/mediaMicroservices
+    depends_on:
+      - nightcore-engine
+
+  movie-review-service:
+    image: zjia/nightcore-moviereview:asplos-ae
+    hostname: movie-review-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/MovieReviewService/libMovieReviewService.so", "9"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/mediaMicroservices/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/mediaMicroservices
+    depends_on:
+      - nightcore-engine
+
+  cast-info-service:
+    image: zjia/nightcore-moviereview:asplos-ae
+    hostname: cast-info-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/CastInfoService/libCastInfoService.so", "10"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/mediaMicroservices/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/mediaMicroservices
+    depends_on:
+      - nightcore-engine
+
+  plot-service:
+    image: zjia/nightcore-moviereview:asplos-ae
+    hostname: plot-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/PlotService/libPlotService.so", "11"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/mediaMicroservices/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/mediaMicroservices
+    depends_on:
+      - nightcore-engine
+
+  movie-info-service:
+    image: zjia/nightcore-moviereview:asplos-ae
+    hostname: movie-info-service
+    restart: always
+    entrypoint: ["/tmp/nightcore/run_launcher", "./build/src/MovieInfoService/libMovieInfoService.so", "12"]
+    volumes:
+      - /tmp/service-config.json:/DeathStarBench/mediaMicroservices/config/service-config.json
+      - /mnt/inmem/nightcore:/tmp/nightcore
+    working_dir: /DeathStarBench/mediaMicroservices
+    depends_on:
+      - nightcore-engine
+
+  media-mongodb:
+    image: mongo:4.2.8-bionic
+    hostname: media-mongodb
+    command: ["mongod", "--nojournal"]
+    volumes:
+      - /mnt/inmem/db:/data/db
+    restart: always
+
+  movie-id-memcached:
+    image: memcached:1.5.22
+    hostname: movie-id-memcached
+    command: ["memcached", "-m", "4096"]
+    restart: always
+
+  rating-redis:
+    image: redis:6.0.5
+    hostname: rating-redis
+    command: ["redis-server", "--save", "", "--io-threads", "4"]
+    restart: always
+
+  user-memcached:
+    image: memcached:1.5.22
+    hostname: user-memcached
+    command: ["memcached", "-m", "4096"]
+    restart: always
+
+  compose-review-memcached:
+    image: memcached:1.5.22
+    hostname: compose-review-memcached
+    command: ["memcached", "-m", "4096"]
+    restart: always
+
+  review-storage-memcached:
+    image: memcached:1.5.22
+    hostname: review-storage-memcached
+    command: ["memcached", "-m", "4096"]
+    restart: always
+
+  user-review-redis:
+    image: redis:6.0.5
+    hostname: user-review-redis
+    command: ["redis-server", "--save", "", "--io-threads", "4"]
+    restart: always
+
+  movie-review-redis:
+    image: redis:6.0.5
+    hostname: movie-review-redis
+    command: ["redis-server", "--save", "", "--io-threads", "4"]
+    restart: always
+
+  nginx-thrift:
+    image: zjia/openresty-thrift:xenial
+    hostname: nginx-thrift
+    ports:
+      - 8080:8080
+    restart: always
+    volumes:
+      - /tmp/service-config.json:/media-microservices/config/service-config.json
+      - /tmp/mediaMicroservices/nginx-web-server/lua-scripts:/usr/local/openresty/nginx/lua-scripts
+      - /tmp/mediaMicroservices/nginx-web-server/conf/nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf
+      - /tmp/mediaMicroservices/nginx-web-server/jaeger-config.json:/usr/local/openresty/nginx/jaeger-config.json
+      - /tmp/mediaMicroservices/gen-lua:/gen-lua
+      - /tmp/mediaMicroservices/docker/openresty-thrift/lua-thrift:/usr/local/openresty/lualib/thrift
+
+  cast-info-memcached:
+    image: memcached:1.5.22
+    hostname: cast-info-memcached
+    command: ["memcached", "-m", "4096"]
+    restart: always
+
+  plot-memcached:
+    image: memcached:1.5.22
+    hostname: plot-memcached
+    command: ["memcached", "-m", "4096"]
+    restart: always
+
+  movie-info-memcached:
+    image: memcached:1.5.22
+    hostname: movie-info-memcached
+    command: ["memcached", "-m", "4096"]
+    restart: always

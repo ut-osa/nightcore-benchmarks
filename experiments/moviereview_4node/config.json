@@ -1,0 +1,40 @@
+{
+    "machines": {
+        "nightcore-mm-middle1": { "type": "c5.xlarge", "role": "worker", "labels": ["engine_node=true"] },
+        "nightcore-mm-middle2": { "type": "c5.xlarge", "role": "worker", "labels": ["engine_node=true"] },
+        "nightcore-mm-middle3": { "type": "c5.xlarge", "role": "worker", "labels": ["engine_node=true"] },
+        "nightcore-mm-middle4": { "type": "c5.xlarge", "role": "worker", "labels": ["engine_node=true"] },
+        "nightcore-mm-mongodb": { "type": "c5.4xlarge", "role": "worker" },
+        "nightcore-mm-cache": { "type": "c5.4xlarge", "role": "worker" },
+        "nightcore-mm-front": { "type": "c5.4xlarge", "role": "manager" },
+        "nightcore-mm-client": { "type": "c5.2xlarge", "role": "client" }
+    },
+    "services": {
+        "media-mongodb": { "placement": "nightcore-mm-mongodb" },
+        "unique-id-service": { "placement_label": "engine_node", "replicas": 4 },
+        "movie-id-service": { "placement_label": "engine_node", "replicas": 4 },
+        "movie-id-memcached": { "placement": "nightcore-mm-cache" },
+        "text-service": { "placement_label": "engine_node", "replicas": 4 },
+        "rating-service": { "placement_label": "engine_node", "replicas": 4 },
+        "rating-redis": { "placement": "nightcore-mm-cache" },
+        "user-service": { "placement_label": "engine_node", "replicas": 4 },
+        "user-memcached": { "placement": "nightcore-mm-cache" },
+        "compose-review-service": { "placement_label": "engine_node", "replicas": 4 },
+        "compose-review-memcached": { "placement": "nightcore-mm-cache" },
+        "review-storage-service": { "placement_label": "engine_node", "replicas": 4 },
+        "review-storage-memcached": { "placement": "nightcore-mm-cache" },
+        "user-review-service": { "placement_label": "engine_node", "replicas": 4 },
+        "user-review-redis": { "placement": "nightcore-mm-cache" },
+        "movie-review-service": { "placement_label": "engine_node", "replicas": 4 },
+        "movie-review-redis": { "placement": "nightcore-mm-cache" },
+        "cast-info-service": { "placement_label": "engine_node", "replicas": 4 },
+        "cast-info-memcached": { "placement": "nightcore-mm-cache" },
+        "plot-service": { "placement_label": "engine_node", "replicas": 4 },
+        "plot-memcached": { "placement": "nightcore-mm-cache" },
+        "movie-info-service": { "placement_label": "engine_node", "replicas": 4 },
+        "movie-info-memcached": { "placement": "nightcore-mm-cache" },
+        "nginx-thrift": { "placement": "nightcore-mm-front" },
+        "nightcore-engine": { "placement_label": "engine_node", "replicas": 4 },
+        "nightcore-gateway": { "placement": "nightcore-mm-front" }
+    }
+}
