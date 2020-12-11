@@ -1,0 +1,742 @@
+I1210 23:55:05.426560 Main     thread.cpp:100] Register main thread: tid=5652
+I1210 23:55:05.426745 Main     func_config.cpp:108] Load configuration for gRPC service hipstershop.ProductCatalogService[1]
+I1210 23:55:05.426756 Main     func_config.cpp:128] Register method ListProducts for gRPC service hipstershop.ProductCatalogService
+I1210 23:55:05.426761 Main     func_config.cpp:128] Register method GetProduct for gRPC service hipstershop.ProductCatalogService
+I1210 23:55:05.426764 Main     func_config.cpp:128] Register method SearchProducts for gRPC service hipstershop.ProductCatalogService
+I1210 23:55:05.426772 Main     func_config.cpp:108] Load configuration for gRPC service hipstershop.ShippingService[2]
+I1210 23:55:05.426777 Main     func_config.cpp:128] Register method GetQuote for gRPC service hipstershop.ShippingService
+I1210 23:55:05.426780 Main     func_config.cpp:128] Register method ShipOrder for gRPC service hipstershop.ShippingService
+I1210 23:55:05.426784 Main     func_config.cpp:108] Load configuration for gRPC service hipstershop.CheckoutService[3]
+I1210 23:55:05.426786 Main     func_config.cpp:128] Register method PlaceOrder for gRPC service hipstershop.CheckoutService
+I1210 23:55:05.426789 Main     func_config.cpp:108] Load configuration for gRPC service hipstershop.CurrencyService[4]
+I1210 23:55:05.426792 Main     func_config.cpp:128] Register method GetSupportedCurrencies for gRPC service hipstershop.CurrencyService
+I1210 23:55:05.426796 Main     func_config.cpp:128] Register method Convert for gRPC service hipstershop.CurrencyService
+I1210 23:55:05.426800 Main     func_config.cpp:108] Load configuration for gRPC service hipstershop.PaymentService[5]
+I1210 23:55:05.426806 Main     func_config.cpp:128] Register method Charge for gRPC service hipstershop.PaymentService
+I1210 23:55:05.426809 Main     func_config.cpp:108] Load configuration for gRPC service hipstershop.RecommendationService[6]
+I1210 23:55:05.426812 Main     func_config.cpp:128] Register method ListRecommendations for gRPC service hipstershop.RecommendationService
+I1210 23:55:05.426820 Main     func_config.cpp:108] Load configuration for gRPC service hipstershop.EmailService[7]
+I1210 23:55:05.426823 Main     func_config.cpp:128] Register method SendOrderConfirmation for gRPC service hipstershop.EmailService
+I1210 23:55:05.426829 Main     func_config.cpp:108] Load configuration for gRPC service hipstershop.AdService[8]
+I1210 23:55:05.426835 Main     func_config.cpp:128] Register method GetAds for gRPC service hipstershop.AdService
+I1210 23:55:05.426838 Main     func_config.cpp:108] Load configuration for gRPC service hipstershop.CartService[9]
+I1210 23:55:05.426841 Main     func_config.cpp:128] Register method AddItem for gRPC service hipstershop.CartService
+I1210 23:55:05.426844 Main     func_config.cpp:128] Register method GetCart for gRPC service hipstershop.CartService
+I1210 23:55:05.426849 Main     func_config.cpp:128] Register method EmptyCart for gRPC service hipstershop.CartService
+I1210 23:55:05.426859 Main     func_config.cpp:135] Load configuration for function home[10]
+I1210 23:55:05.426863 Main     func_config.cpp:138] Allow HTTP GET enabled for home
+I1210 23:55:05.426867 Main     func_config.cpp:142] Query string used as input for home
+I1210 23:55:05.426870 Main     func_config.cpp:135] Load configuration for function product[11]
+I1210 23:55:05.426872 Main     func_config.cpp:138] Allow HTTP GET enabled for product
+I1210 23:55:05.426874 Main     func_config.cpp:142] Query string used as input for product
+I1210 23:55:05.426877 Main     func_config.cpp:135] Load configuration for function viewCart[12]
+I1210 23:55:05.426879 Main     func_config.cpp:138] Allow HTTP GET enabled for viewCart
+I1210 23:55:05.426881 Main     func_config.cpp:142] Query string used as input for viewCart
+I1210 23:55:05.426884 Main     func_config.cpp:135] Load configuration for function addToCart[13]
+I1210 23:55:05.426887 Main     func_config.cpp:135] Load configuration for function checkout[14]
+I1210 23:55:05.426895 Main     server.cpp:80] Server: Start 8 IO workers
+I1210 23:55:05.427030 IO-0/EL  thread.cpp:40] Start thread: IO-0/EL
+I1210 23:55:05.427070 IO-0/EL  io_worker.cpp:167] IO-0: Event loop starts
+I1210 23:55:05.427093 IO-1/EL  thread.cpp:40] Start thread: IO-1/EL
+I1210 23:55:05.427141 IO-1/EL  io_worker.cpp:167] IO-1: Event loop starts
+I1210 23:55:05.427151 IO-2/EL  thread.cpp:40] Start thread: IO-2/EL
+I1210 23:55:05.427202 IO-2/EL  io_worker.cpp:167] IO-2: Event loop starts
+I1210 23:55:05.427215 IO-3/EL  thread.cpp:40] Start thread: IO-3/EL
+I1210 23:55:05.427260 IO-3/EL  io_worker.cpp:167] IO-3: Event loop starts
+I1210 23:55:05.427279 IO-4/EL  thread.cpp:40] Start thread: IO-4/EL
+I1210 23:55:05.427311 IO-4/EL  io_worker.cpp:167] IO-4: Event loop starts
+I1210 23:55:05.427334 IO-5/EL  thread.cpp:40] Start thread: IO-5/EL
+I1210 23:55:05.427370 IO-5/EL  io_worker.cpp:167] IO-5: Event loop starts
+I1210 23:55:05.427386 IO-6/EL  thread.cpp:40] Start thread: IO-6/EL
+I1210 23:55:05.427423 IO-6/EL  io_worker.cpp:167] IO-6: Event loop starts
+I1210 23:55:05.456986 IO-7/EL  thread.cpp:40] Start thread: IO-7/EL
+I1210 23:55:05.457022 IO-7/EL  io_worker.cpp:167] IO-7: Event loop starts
+I1210 23:55:05.457053 Main     server.cpp:92] Server: Listen on 0.0.0.0:10007 for engine connections
+I1210 23:55:05.457078 Main     server.cpp:100] Server: Listen on 0.0.0.0:8080 for HTTP requests
+I1210 23:55:05.457086 Main     server.cpp:107] Server: Listen on 0.0.0.0:50051 for gRPC requests
+I1210 23:55:05.457143 Server/E thread.cpp:40] Start thread: Server/EL
+I1210 23:55:05.457171 Server/E server_base.cpp:50] Server: Event loop starts
+I1210 23:55:08.046151 Server/E buffer_pool.h:25] BufferPool[HandshakeRead]: Allocate new buffer, current buffer count is 1
+I1210 23:55:08.046217 Server/E server.cpp:410] Server: Number of connected nodes: 1
+I1210 23:55:08.046223 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=0) assigned to IO worker 0
+I1210 23:55:08.046269 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=1) assigned to IO worker 1
+I1210 23:55:08.046293 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=2) assigned to IO worker 2
+I1210 23:55:08.046316 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 10015, total of type 10015 is 1
+I1210 23:55:08.046350 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 10015, total of type 10015 is 1
+I1210 23:55:08.046335 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 10015, total of type 10015 is 1
+I1210 23:55:08.046341 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=3) assigned to IO worker 3
+I1210 23:55:08.049659 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=4) assigned to IO worker 4
+I1210 23:55:08.049672 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 10015, total of type 10015 is 1
+I1210 23:55:08.049686 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=5) assigned to IO worker 5
+I1210 23:55:08.049714 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 10015, total of type 10015 is 1
+I1210 23:55:08.049741 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=6) assigned to IO worker 6
+I1210 23:55:08.049764 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 10015, total of type 10015 is 1
+I1210 23:55:08.049795 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 10015, total of type 10015 is 1
+I1210 23:55:08.049776 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=7) assigned to IO worker 7
+I1210 23:55:08.049837 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=8) assigned to IO worker 0
+I1210 23:55:08.049856 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=9) assigned to IO worker 1
+I1210 23:55:08.049859 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 10015, total of type 10015 is 1
+I1210 23:55:08.049892 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 10015, total of type 10015 is 2
+I1210 23:55:08.049876 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=10) assigned to IO worker 2
+I1210 23:55:08.049875 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 10015, total of type 10015 is 2
+I1210 23:55:08.049927 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=11) assigned to IO worker 3
+I1210 23:55:08.049945 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 10015, total of type 10015 is 2
+I1210 23:55:08.049964 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=12) assigned to IO worker 4
+I1210 23:55:08.049983 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=13) assigned to IO worker 5
+I1210 23:55:08.049981 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 10015, total of type 10015 is 2
+I1210 23:55:08.049992 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 10015, total of type 10015 is 2
+I1210 23:55:08.050003 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=14) assigned to IO worker 6
+I1210 23:55:08.050021 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=15) assigned to IO worker 7
+I1210 23:55:08.050029 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 10015, total of type 10015 is 2
+I1210 23:55:08.050020 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 10015, total of type 10015 is 2
+I1210 23:55:08.050041 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=16) assigned to IO worker 0
+I1210 23:55:08.050050 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 10015, total of type 10015 is 2
+I1210 23:55:08.050054 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=17) assigned to IO worker 1
+I1210 23:55:08.050070 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 10015, total of type 10015 is 3
+I1210 23:55:08.050085 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=18) assigned to IO worker 2
+I1210 23:55:08.050095 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 10015, total of type 10015 is 3
+I1210 23:55:08.050111 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=19) assigned to IO worker 3
+I1210 23:55:08.050127 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=20) assigned to IO worker 4
+I1210 23:55:08.050140 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 10015, total of type 10015 is 3
+I1210 23:55:08.050150 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 10015, total of type 10015 is 3
+I1210 23:55:08.050144 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=21) assigned to IO worker 5
+I1210 23:55:08.050141 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 10015, total of type 10015 is 3
+I1210 23:55:08.050185 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=22) assigned to IO worker 6
+I1210 23:55:08.050199 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 10015, total of type 10015 is 3
+I1210 23:55:08.050202 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=23) assigned to IO worker 7
+I1210 23:55:08.050209 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 10015, total of type 10015 is 3
+I1210 23:55:08.050223 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=24) assigned to IO worker 0
+I1210 23:55:08.050230 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 10015, total of type 10015 is 3
+I1210 23:55:08.050251 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=25) assigned to IO worker 1
+I1210 23:55:08.050269 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=26) assigned to IO worker 2
+I1210 23:55:08.050264 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 10015, total of type 10015 is 4
+I1210 23:55:08.050280 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 10015, total of type 10015 is 4
+I1210 23:55:08.050295 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 10015, total of type 10015 is 4
+I1210 23:55:08.050282 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=27) assigned to IO worker 3
+I1210 23:55:08.050334 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=28) assigned to IO worker 4
+I1210 23:55:08.050351 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=29) assigned to IO worker 5
+I1210 23:55:08.050358 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 10015, total of type 10015 is 4
+I1210 23:55:08.050350 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 10015, total of type 10015 is 4
+I1210 23:55:08.050372 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=30) assigned to IO worker 6
+I1210 23:55:08.050383 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 10015, total of type 10015 is 4
+I1210 23:55:08.050399 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 10015, total of type 10015 is 4
+I1210 23:55:08.050385 Server/E server.cpp:414] Server: New engine connection (node_id=10013, conn_id=31) assigned to IO worker 7
+I1210 23:55:08.050429 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 10015, total of type 10015 is 4
+I1210 23:55:08.096954 Server/E server.cpp:410] Server: Number of connected nodes: 2
+I1210 23:55:08.096970 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=0) assigned to IO worker 0
+I1210 23:55:08.096988 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=1) assigned to IO worker 1
+I1210 23:55:08.097005 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=2) assigned to IO worker 2
+I1210 23:55:08.097022 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=3) assigned to IO worker 3
+I1210 23:55:08.097018 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 32959, total of type 32959 is 1
+I1210 23:55:08.097039 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=4) assigned to IO worker 4
+I1210 23:55:08.097039 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 32959, total of type 32959 is 1
+I1210 23:55:08.097059 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=5) assigned to IO worker 5
+I1210 23:55:08.097066 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 32959, total of type 32959 is 1
+I1210 23:55:08.097078 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=6) assigned to IO worker 6
+I1210 23:55:08.097083 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 32959, total of type 32959 is 1
+I1210 23:55:08.097096 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=7) assigned to IO worker 7
+I1210 23:55:08.097070 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 32959, total of type 32959 is 1
+I1210 23:55:08.097107 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 32959, total of type 32959 is 1
+I1210 23:55:08.097110 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=8) assigned to IO worker 0
+I1210 23:55:08.097131 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 32959, total of type 32959 is 1
+I1210 23:55:08.097141 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=9) assigned to IO worker 1
+I1210 23:55:08.097140 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 32959, total of type 32959 is 1
+I1210 23:55:08.097155 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 32959, total of type 32959 is 2
+I1210 23:55:08.097175 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 32959, total of type 32959 is 2
+I1210 23:55:08.097161 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=10) assigned to IO worker 2
+I1210 23:55:08.097197 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=11) assigned to IO worker 3
+I1210 23:55:08.097209 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=12) assigned to IO worker 4
+I1210 23:55:08.097222 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 32959, total of type 32959 is 2
+I1210 23:55:08.097231 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=13) assigned to IO worker 5
+I1210 23:55:08.097211 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 32959, total of type 32959 is 2
+I1210 23:55:08.097245 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 32959, total of type 32959 is 2
+I1210 23:55:08.097251 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=14) assigned to IO worker 6
+I1210 23:55:08.097264 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 32959, total of type 32959 is 2
+I1210 23:55:08.097279 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 32959, total of type 32959 is 2
+I1210 23:55:08.097269 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=15) assigned to IO worker 7
+I1210 23:55:08.097301 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=16) assigned to IO worker 0
+I1210 23:55:08.097312 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 32959, total of type 32959 is 2
+I1210 23:55:08.097316 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=17) assigned to IO worker 1
+I1210 23:55:08.097329 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 32959, total of type 32959 is 3
+I1210 23:55:08.097344 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 32959, total of type 32959 is 3
+I1210 23:55:08.097332 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=18) assigned to IO worker 2
+I1210 23:55:08.097380 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=19) assigned to IO worker 3
+I1210 23:55:08.097390 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 32959, total of type 32959 is 3
+I1210 23:55:08.097396 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=20) assigned to IO worker 4
+I1210 23:55:08.097408 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=21) assigned to IO worker 5
+I1210 23:55:08.097411 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 32959, total of type 32959 is 3
+I1210 23:55:08.097418 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 32959, total of type 32959 is 3
+I1210 23:55:08.097423 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=22) assigned to IO worker 6
+I1210 23:55:08.097434 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 32959, total of type 32959 is 3
+I1210 23:55:08.097446 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 32959, total of type 32959 is 3
+I1210 23:55:08.097438 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=23) assigned to IO worker 7
+I1210 23:55:08.097468 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=24) assigned to IO worker 0
+I1210 23:55:08.097480 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 32959, total of type 32959 is 3
+I1210 23:55:08.097492 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 32959, total of type 32959 is 4
+I1210 23:55:08.097486 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=26) assigned to IO worker 2
+I1210 23:55:08.097510 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=25) assigned to IO worker 1
+I1210 23:55:08.097522 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=27) assigned to IO worker 3
+I1210 23:55:08.097535 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 32959, total of type 32959 is 4
+I1210 23:55:08.097522 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 32959, total of type 32959 is 4
+I1210 23:55:08.097551 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=28) assigned to IO worker 4
+I1210 23:55:08.097565 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=29) assigned to IO worker 5
+I1210 23:55:08.097575 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 32959, total of type 32959 is 4
+I1210 23:55:08.097564 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 32959, total of type 32959 is 4
+I1210 23:55:08.097586 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=30) assigned to IO worker 6
+I1210 23:55:08.097595 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 32959, total of type 32959 is 4
+I1210 23:55:08.097603 Server/E server.cpp:414] Server: New engine connection (node_id=32957, conn_id=31) assigned to IO worker 7
+I1210 23:55:08.097614 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 32959, total of type 32959 is 4
+I1210 23:55:08.097633 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 32959, total of type 32959 is 4
+I1210 23:55:08.154064 Server/E server.cpp:410] Server: Number of connected nodes: 3
+I1210 23:55:08.154083 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=0) assigned to IO worker 0
+I1210 23:55:08.154124 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 22223, total of type 22223 is 1
+I1210 23:55:08.154137 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=1) assigned to IO worker 1
+I1210 23:55:08.154197 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=2) assigned to IO worker 2
+I1210 23:55:08.154217 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 22223, total of type 22223 is 1
+I1210 23:55:08.154239 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=3) assigned to IO worker 3
+I1210 23:55:08.154236 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 22223, total of type 22223 is 1
+I1210 23:55:08.154281 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 22223, total of type 22223 is 1
+I1210 23:55:08.154303 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=4) assigned to IO worker 4
+I1210 23:55:08.154342 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 22223, total of type 22223 is 1
+I1210 23:55:08.154390 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=5) assigned to IO worker 5
+I1210 23:55:08.154427 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 22223, total of type 22223 is 1
+I1210 23:55:08.154438 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=6) assigned to IO worker 6
+I1210 23:55:08.154473 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=7) assigned to IO worker 7
+I1210 23:55:08.154483 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 22223, total of type 22223 is 1
+I1210 23:55:08.154516 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 22223, total of type 22223 is 1
+I1210 23:55:08.154545 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=9) assigned to IO worker 1
+I1210 23:55:08.154568 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=8) assigned to IO worker 0
+I1210 23:55:08.154579 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 22223, total of type 22223 is 2
+I1210 23:55:08.154591 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=10) assigned to IO worker 2
+I1210 23:55:08.154604 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 22223, total of type 22223 is 2
+I1210 23:55:08.154614 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=11) assigned to IO worker 3
+I1210 23:55:08.154634 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=12) assigned to IO worker 4
+I1210 23:55:08.154633 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 22223, total of type 22223 is 2
+I1210 23:55:08.154648 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 22223, total of type 22223 is 2
+I1210 23:55:08.154673 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 22223, total of type 22223 is 2
+I1210 23:55:08.154677 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=13) assigned to IO worker 5
+I1210 23:55:08.154718 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 22223, total of type 22223 is 2
+I1210 23:55:08.154730 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=14) assigned to IO worker 6
+I1210 23:55:08.154760 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 22223, total of type 22223 is 2
+I1210 23:55:08.154776 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=15) assigned to IO worker 7
+I1210 23:55:08.154801 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=16) assigned to IO worker 0
+I1210 23:55:08.154812 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 22223, total of type 22223 is 2
+I1210 23:55:08.154836 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 22223, total of type 22223 is 3
+I1210 23:55:08.154857 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=17) assigned to IO worker 1
+I1210 23:55:08.154898 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=18) assigned to IO worker 2
+I1210 23:55:08.154903 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 22223, total of type 22223 is 3
+I1210 23:55:08.154929 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 22223, total of type 22223 is 3
+I1210 23:55:08.154941 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=19) assigned to IO worker 3
+I1210 23:55:08.154974 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 22223, total of type 22223 is 3
+I1210 23:55:08.154976 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=20) assigned to IO worker 4
+I1210 23:55:08.155014 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=21) assigned to IO worker 5
+I1210 23:55:08.155023 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 22223, total of type 22223 is 3
+I1210 23:55:08.155055 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 22223, total of type 22223 is 3
+I1210 23:55:08.155070 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=22) assigned to IO worker 6
+I1210 23:55:08.155094 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=23) assigned to IO worker 7
+I1210 23:55:08.155106 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 22223, total of type 22223 is 3
+I1210 23:55:08.155117 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=24) assigned to IO worker 0
+I1210 23:55:08.155127 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 22223, total of type 22223 is 3
+I1210 23:55:08.155150 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 22223, total of type 22223 is 4
+I1210 23:55:08.155169 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=25) assigned to IO worker 1
+I1210 23:55:08.155194 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 22223, total of type 22223 is 4
+I1210 23:55:08.155201 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=26) assigned to IO worker 2
+I1210 23:55:08.155233 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 22223, total of type 22223 is 4
+I1210 23:55:08.155239 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=27) assigned to IO worker 3
+I1210 23:55:08.155283 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 22223, total of type 22223 is 4
+I1210 23:55:08.155298 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=28) assigned to IO worker 4
+I1210 23:55:08.155325 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 22223, total of type 22223 is 4
+I1210 23:55:08.155336 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=29) assigned to IO worker 5
+I1210 23:55:08.155358 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=30) assigned to IO worker 6
+I1210 23:55:08.155367 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 22223, total of type 22223 is 4
+I1210 23:55:08.155393 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 22223, total of type 22223 is 4
+I1210 23:55:08.155413 Server/E server.cpp:414] Server: New engine connection (node_id=22221, conn_id=31) assigned to IO worker 7
+I1210 23:55:08.155441 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 22223, total of type 22223 is 4
+I1210 23:55:08.308999 Server/E server.cpp:410] Server: Number of connected nodes: 4
+I1210 23:55:08.309026 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=0) assigned to IO worker 0
+I1210 23:55:08.309070 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=1) assigned to IO worker 1
+I1210 23:55:08.309082 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 57051, total of type 57051 is 1
+I1210 23:55:08.309116 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 57051, total of type 57051 is 1
+I1210 23:55:08.309125 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=2) assigned to IO worker 2
+I1210 23:55:08.309161 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=3) assigned to IO worker 3
+I1210 23:55:08.309173 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 57051, total of type 57051 is 1
+I1210 23:55:08.309205 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=4) assigned to IO worker 4
+I1210 23:55:08.309213 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 57051, total of type 57051 is 1
+I1210 23:55:08.309244 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 57051, total of type 57051 is 1
+I1210 23:55:08.309248 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=5) assigned to IO worker 5
+I1210 23:55:08.309283 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=6) assigned to IO worker 6
+I1210 23:55:08.309293 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 57051, total of type 57051 is 1
+I1210 23:55:08.309317 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 57051, total of type 57051 is 1
+I1210 23:55:08.309321 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=7) assigned to IO worker 7
+I1210 23:55:08.309340 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=8) assigned to IO worker 0
+I1210 23:55:08.309367 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 57051, total of type 57051 is 2
+I1210 23:55:08.309364 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 57051, total of type 57051 is 1
+I1210 23:55:08.309378 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=9) assigned to IO worker 1
+I1210 23:55:08.309402 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 57051, total of type 57051 is 2
+I1210 23:55:08.309418 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=10) assigned to IO worker 2
+I1210 23:55:08.309443 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 57051, total of type 57051 is 2
+I1210 23:55:08.309469 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=11) assigned to IO worker 3
+I1210 23:55:08.309503 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 57051, total of type 57051 is 2
+I1210 23:55:08.309524 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=12) assigned to IO worker 4
+I1210 23:55:08.309545 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 57051, total of type 57051 is 2
+I1210 23:55:08.309561 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=13) assigned to IO worker 5
+I1210 23:55:08.309591 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 57051, total of type 57051 is 2
+I1210 23:55:08.309600 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=14) assigned to IO worker 6
+I1210 23:55:08.309626 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 57051, total of type 57051 is 2
+I1210 23:55:08.309639 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=15) assigned to IO worker 7
+I1210 23:55:08.309668 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 57051, total of type 57051 is 2
+I1210 23:55:08.309680 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=16) assigned to IO worker 0
+I1210 23:55:08.309703 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=17) assigned to IO worker 1
+I1210 23:55:08.309708 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 57051, total of type 57051 is 3
+I1210 23:55:08.309731 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 57051, total of type 57051 is 3
+I1210 23:55:08.309758 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=18) assigned to IO worker 2
+I1210 23:55:08.309778 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=19) assigned to IO worker 3
+I1210 23:55:08.309788 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 57051, total of type 57051 is 3
+I1210 23:55:08.309808 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 57051, total of type 57051 is 3
+I1210 23:55:08.309851 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=20) assigned to IO worker 4
+I1210 23:55:08.309877 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 57051, total of type 57051 is 3
+I1210 23:55:08.309884 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=21) assigned to IO worker 5
+I1210 23:55:08.309913 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 57051, total of type 57051 is 3
+I1210 23:55:08.309929 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=22) assigned to IO worker 6
+I1210 23:55:08.309955 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 57051, total of type 57051 is 3
+I1210 23:55:08.309967 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=23) assigned to IO worker 7
+I1210 23:55:08.309995 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 57051, total of type 57051 is 3
+I1210 23:55:08.310027 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=24) assigned to IO worker 0
+I1210 23:55:08.310081 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=25) assigned to IO worker 1
+I1210 23:55:08.310088 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 57051, total of type 57051 is 4
+I1210 23:55:08.310101 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=26) assigned to IO worker 2
+I1210 23:55:08.310107 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 57051, total of type 57051 is 4
+I1210 23:55:08.310125 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 57051, total of type 57051 is 4
+I1210 23:55:08.310179 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=27) assigned to IO worker 3
+I1210 23:55:08.310213 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 57051, total of type 57051 is 4
+I1210 23:55:08.310222 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=28) assigned to IO worker 4
+I1210 23:55:08.310243 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 57051, total of type 57051 is 4
+I1210 23:55:08.310306 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=29) assigned to IO worker 5
+I1210 23:55:08.310327 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=30) assigned to IO worker 6
+I1210 23:55:08.310333 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 57051, total of type 57051 is 4
+I1210 23:55:08.310346 Server/E server.cpp:414] Server: New engine connection (node_id=57049, conn_id=31) assigned to IO worker 7
+I1210 23:55:08.310353 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 57051, total of type 57051 is 4
+I1210 23:55:08.310371 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 57051, total of type 57051 is 4
+I1210 23:56:33.776385 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 1
+I1210 23:56:33.776437 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Read]: Allocate new buffer, current buffer count is 1
+I1210 23:56:33.776503 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 0
+I1210 23:56:33.776859 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 1
+I1210 23:56:33.776917 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Read]: Allocate new buffer, current buffer count is 1
+I1210 23:56:33.776966 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Write]: Allocate new buffer, current buffer count is 1
+I1210 23:56:33.777123 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 1
+I1210 23:56:33.777161 IO-2/EL  buffer_pool.h:25] BufferPool[IO-2_Read]: Allocate new buffer, current buffer count is 1
+I1210 23:56:33.777217 IO-2/EL  buffer_pool.h:25] BufferPool[IO-2_Write]: Allocate new buffer, current buffer count is 1
+I1210 23:56:33.777325 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 1
+I1210 23:56:33.777362 IO-3/EL  buffer_pool.h:25] BufferPool[IO-3_Read]: Allocate new buffer, current buffer count is 1
+I1210 23:56:33.777402 IO-3/EL  buffer_pool.h:25] BufferPool[IO-3_Write]: Allocate new buffer, current buffer count is 1
+I1210 23:56:33.777584 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 1
+I1210 23:56:33.777616 IO-4/EL  buffer_pool.h:25] BufferPool[IO-4_Read]: Allocate new buffer, current buffer count is 1
+I1210 23:56:33.777646 IO-4/EL  buffer_pool.h:25] BufferPool[IO-4_Write]: Allocate new buffer, current buffer count is 1
+I1210 23:56:33.781755 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 1
+I1210 23:56:33.781782 IO-5/EL  buffer_pool.h:25] BufferPool[IO-5_Read]: Allocate new buffer, current buffer count is 1
+I1210 23:56:33.781820 IO-5/EL  buffer_pool.h:25] BufferPool[IO-5_Write]: Allocate new buffer, current buffer count is 1
+I1210 23:56:33.782102 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 1
+I1210 23:56:33.782123 IO-6/EL  buffer_pool.h:25] BufferPool[IO-6_Read]: Allocate new buffer, current buffer count is 1
+I1210 23:56:33.782153 IO-6/EL  buffer_pool.h:25] BufferPool[IO-6_Write]: Allocate new buffer, current buffer count is 1
+I1210 23:56:33.782331 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 1
+I1210 23:56:33.782368 IO-7/EL  buffer_pool.h:25] BufferPool[IO-7_Read]: Allocate new buffer, current buffer count is 1
+I1210 23:56:33.782409 IO-7/EL  buffer_pool.h:25] BufferPool[IO-7_Write]: Allocate new buffer, current buffer count is 1
+I1210 23:56:33.782542 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 1
+I1210 23:56:33.782582 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Write]: Allocate new buffer, current buffer count is 1
+I1210 23:56:33.786908 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 2
+I1210 23:56:33.787311 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 2
+I1210 23:56:33.787441 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 2
+I1210 23:56:33.787758 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 2
+I1210 23:56:33.792033 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 2
+I1210 23:56:33.792562 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 2
+I1210 23:56:33.792626 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 2
+I1210 23:56:33.792640 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 2
+I1210 23:56:33.797031 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 3
+I1210 23:56:33.797237 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 3
+I1210 23:56:33.797514 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 3
+I1210 23:56:33.797633 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 3
+I1210 23:56:33.802061 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 3
+I1210 23:56:33.802197 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 3
+I1210 23:56:33.802378 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 3
+I1210 23:56:33.802654 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 3
+I1210 23:56:33.806765 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 4
+I1210 23:56:33.806979 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 4
+I1210 23:56:33.807409 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 4
+I1210 23:56:33.807530 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 4
+I1210 23:56:33.811744 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 4
+I1210 23:56:33.811880 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 4
+I1210 23:56:33.811992 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 4
+I1210 23:56:33.812277 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 4
+I1210 23:56:33.816870 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 5
+I1210 23:56:33.816916 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 5
+I1210 23:56:33.817032 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 5
+I1210 23:56:33.817449 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 5
+I1210 23:56:33.822047 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 5
+I1210 23:56:33.822248 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 5
+I1210 23:56:33.822438 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 5
+I1210 23:56:33.822656 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 5
+I1210 23:56:33.826961 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 6
+I1210 23:56:33.826973 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 6
+I1210 23:56:33.827130 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 6
+I1210 23:56:33.827709 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 6
+I1210 23:56:33.832005 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 6
+I1210 23:56:33.832136 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 6
+I1210 23:56:33.832192 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 6
+I1210 23:56:33.832447 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 6
+I1210 23:56:33.836715 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 7
+I1210 23:56:33.836756 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 7
+I1210 23:56:33.836913 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 7
+I1210 23:56:33.837201 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 7
+I1210 23:56:33.841719 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 7
+I1210 23:56:33.841744 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 7
+I1210 23:56:33.842229 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 7
+I1210 23:56:33.842241 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 7
+I1210 23:56:33.846988 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 8
+I1210 23:56:33.859496 IO-5/EL  buffer_pool.h:25] BufferPool[IO-5_Write]: Allocate new buffer, current buffer count is 2
+I1210 23:56:33.859560 IO-5/EL  buffer_pool.h:25] BufferPool[IO-5_Write]: Allocate new buffer, current buffer count is 3
+I1210 23:56:33.859545 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Write]: Allocate new buffer, current buffer count is 2
+I1210 23:56:33.859681 IO-7/EL  buffer_pool.h:25] BufferPool[IO-7_Write]: Allocate new buffer, current buffer count is 2
+I1210 23:56:33.884928 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 8
+I1210 23:56:33.884934 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 8
+I1210 23:56:33.884947 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 8
+I1210 23:56:33.884960 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 8
+I1210 23:56:33.884984 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 8
+I1210 23:56:33.884980 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 8
+I1210 23:56:33.885009 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 9
+I1210 23:56:33.884992 IO-3/EL  buffer_pool.h:25] BufferPool[IO-3_Write]: Allocate new buffer, current buffer count is 2
+I1210 23:56:33.885029 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 9
+I1210 23:56:33.885042 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 9
+I1210 23:56:33.885058 IO-3/EL  buffer_pool.h:25] BufferPool[IO-3_Write]: Allocate new buffer, current buffer count is 3
+I1210 23:56:33.885062 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 9
+I1210 23:56:33.885065 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 9
+I1210 23:56:33.884993 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 8
+I1210 23:56:33.885088 IO-3/EL  buffer_pool.h:25] BufferPool[IO-3_Write]: Allocate new buffer, current buffer count is 4
+I1210 23:56:33.885089 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 10
+I1210 23:56:33.885102 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 9
+I1210 23:56:33.885109 IO-3/EL  buffer_pool.h:25] BufferPool[IO-3_Write]: Allocate new buffer, current buffer count is 5
+I1210 23:56:33.885119 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 10
+I1210 23:56:33.885007 IO-2/EL  buffer_pool.h:25] BufferPool[IO-2_Write]: Allocate new buffer, current buffer count is 2
+I1210 23:56:33.885137 IO-3/EL  buffer_pool.h:25] BufferPool[IO-3_Write]: Allocate new buffer, current buffer count is 6
+I1210 23:56:33.885145 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 10
+I1210 23:56:33.885130 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 10
+I1210 23:56:33.885102 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 10
+I1210 23:56:33.885180 IO-2/EL  buffer_pool.h:25] BufferPool[IO-2_Write]: Allocate new buffer, current buffer count is 3
+I1210 23:56:33.885177 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 10
+I1210 23:56:33.885184 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 11
+I1210 23:56:33.885238 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 11
+I1210 23:56:33.885247 IO-3/EL  buffer_pool.h:25] BufferPool[IO-3_Write]: Allocate new buffer, current buffer count is 7
+I1210 23:56:33.885260 IO-2/EL  buffer_pool.h:25] BufferPool[IO-2_Write]: Allocate new buffer, current buffer count is 4
+I1210 23:56:33.885273 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 11
+I1210 23:56:33.885278 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 11
+I1210 23:56:33.885279 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 11
+I1210 23:56:33.885286 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 9
+I1210 23:56:33.885352 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 11
+I1210 23:56:33.885290 IO-2/EL  buffer_pool.h:25] BufferPool[IO-2_Write]: Allocate new buffer, current buffer count is 5
+I1210 23:56:33.885390 IO-4/EL  buffer_pool.h:25] BufferPool[IO-4_Write]: Allocate new buffer, current buffer count is 2
+I1210 23:56:33.885380 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 10
+I1210 23:56:33.885422 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 11
+I1210 23:56:33.885476 IO-2/EL  buffer_pool.h:25] BufferPool[IO-2_Write]: Allocate new buffer, current buffer count is 6
+I1210 23:56:33.885527 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 9
+I1210 23:56:33.885576 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 10
+I1210 23:56:33.885624 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 11
+I1210 23:56:33.886799 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 12
+I1210 23:56:33.886843 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 12
+I1210 23:56:33.886853 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 12
+I1210 23:56:33.886859 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 12
+I1210 23:56:33.891793 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 12
+I1210 23:56:33.891861 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 12
+I1210 23:56:33.892147 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 12
+I1210 23:56:33.892235 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 12
+I1210 23:56:34.311490 IO-6/EL  buffer_pool.h:25] BufferPool[IO-6_Write]: Allocate new buffer, current buffer count is 2
+I1210 23:56:34.758154 IO-1/EL  buffer_pool.h:25] BufferPool[IO-1_Write]: Allocate new buffer, current buffer count is 2
+I1210 23:57:03.781475 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 11
+I1210 23:57:03.781499 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 11
+I1210 23:57:03.781479 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 11
+I1210 23:57:03.781491 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 11
+I1210 23:57:03.781520 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 11
+I1210 23:57:03.781556 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 11
+I1210 23:57:03.781561 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 10
+I1210 23:57:03.781570 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 10
+I1210 23:57:03.781575 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 10
+I1210 23:57:03.781577 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 9
+I1210 23:57:03.781485 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 11
+I1210 23:57:03.781587 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 9
+I1210 23:57:03.781481 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 11
+I1210 23:57:03.781584 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 9
+I1210 23:57:03.781596 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 10
+I1210 23:57:03.781629 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 8
+I1210 23:57:03.781638 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 7
+I1210 23:57:03.781639 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 9
+I1210 23:57:03.781639 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 8
+I1210 23:57:03.781648 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 8
+I1210 23:57:03.781651 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 7
+I1210 23:57:03.781661 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 6
+I1210 23:57:03.781676 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 8
+I1210 23:57:03.781691 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 10
+I1210 23:57:03.781700 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 6
+I1210 23:57:03.781706 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 5
+I1210 23:57:03.781708 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 9
+I1210 23:57:03.781712 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 7
+I1210 23:57:03.781721 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 6
+I1210 23:57:03.781723 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 8
+I1210 23:57:03.781727 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 5
+I1210 23:57:03.781731 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 7
+I1210 23:57:03.781737 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 4
+I1210 23:57:03.781744 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 4
+I1210 23:57:03.781684 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 10
+I1210 23:57:03.781709 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 7
+I1210 23:57:03.781709 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 5
+I1210 23:57:03.781681 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 10
+I1210 23:57:03.781777 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 10
+I1210 23:57:03.781912 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 9
+I1210 23:57:03.781776 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 3
+I1210 23:57:03.781930 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 8
+I1210 23:57:03.781778 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 3
+I1210 23:57:03.781952 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 7
+I1210 23:57:03.781962 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 4
+I1210 23:57:03.781787 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 9
+I1210 23:57:03.781926 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 9
+I1210 23:57:03.781988 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 6
+I1210 23:57:03.781793 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 6
+I1210 23:57:03.782009 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 2
+I1210 23:57:03.782016 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 1
+I1210 23:57:03.782023 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 0
+I1210 23:57:03.782025 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 5
+I1210 23:57:03.782001 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 5
+I1210 23:57:03.782002 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 8
+I1210 23:57:03.782063 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 4
+I1210 23:57:03.782064 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 6
+I1210 23:57:03.782069 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 3
+I1210 23:57:03.782071 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 7
+I1210 23:57:03.782073 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 5
+I1210 23:57:03.782079 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 2
+I1210 23:57:03.782080 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 4
+I1210 23:57:03.782087 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 3
+I1210 23:57:03.782088 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 1
+I1210 23:57:03.782097 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 0
+I1210 23:57:03.782005 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 2
+I1210 23:57:03.782101 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 2
+I1210 23:57:03.782108 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 1
+I1210 23:57:03.781973 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 3
+I1210 23:57:03.782044 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 4
+I1210 23:57:03.782113 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 0
+I1210 23:57:03.782153 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 6
+I1210 23:57:03.782115 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 1
+I1210 23:57:03.782191 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 5
+I1210 23:57:03.782196 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 0
+I1210 23:57:03.782196 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 8
+I1210 23:57:03.782205 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 4
+I1210 23:57:03.782210 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 3
+I1210 23:57:03.782214 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 2
+I1210 23:57:03.782155 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 2
+I1210 23:57:03.782217 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 3
+I1210 23:57:03.782243 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 1
+I1210 23:57:03.782221 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 1
+I1210 23:57:03.782253 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 2
+I1210 23:57:03.782254 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 0
+I1210 23:57:03.782222 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 7
+I1210 23:57:03.782261 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 1
+I1210 23:57:03.782261 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 0
+I1210 23:57:03.782268 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 0
+I1210 23:57:03.782267 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 6
+I1210 23:57:03.782278 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 5
+I1210 23:57:03.782291 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 4
+I1210 23:57:03.782295 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 3
+I1210 23:57:03.782299 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 2
+I1210 23:57:03.782307 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 1
+I1210 23:57:03.782317 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 0
+I1210 23:57:09.202843 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 1
+I1210 23:57:09.202912 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 0
+I1210 23:57:09.203345 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 1
+I1210 23:57:09.203541 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 1
+I1210 23:57:09.203764 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 1
+I1210 23:57:09.203904 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 1
+I1210 23:57:09.207794 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 1
+I1210 23:57:09.207881 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 1
+I1210 23:57:09.208877 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 1
+I1210 23:57:09.209422 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 1
+I1210 23:57:09.213179 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 2
+I1210 23:57:09.213533 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 2
+I1210 23:57:09.213957 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 2
+I1210 23:57:09.214302 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 2
+I1210 23:57:09.217598 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 2
+I1210 23:57:09.217994 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 2
+I1210 23:57:09.219001 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 2
+I1210 23:57:09.219191 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 2
+I1210 23:57:09.222739 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 3
+I1210 23:57:09.223336 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 3
+I1210 23:57:09.223786 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 3
+I1210 23:57:09.224227 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 3
+I1210 23:57:09.227613 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 3
+I1210 23:57:09.228113 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 3
+I1210 23:57:09.229149 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 3
+I1210 23:57:09.229327 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 3
+I1210 23:57:09.232836 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 4
+I1210 23:57:09.232989 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 4
+I1210 23:57:09.233891 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 4
+I1210 23:57:09.234386 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 4
+I1210 23:57:09.237698 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 4
+I1210 23:57:09.238547 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 4
+I1210 23:57:09.238734 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 4
+I1210 23:57:09.238841 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 4
+I1210 23:57:09.242847 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 5
+I1210 23:57:09.243351 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 5
+I1210 23:57:09.243816 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 5
+I1210 23:57:09.244102 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 5
+I1210 23:57:09.247901 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 5
+I1210 23:57:09.248186 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 5
+I1210 23:57:09.249270 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 5
+I1210 23:57:09.249471 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 5
+I1210 23:57:09.252660 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 6
+I1210 23:57:09.252734 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 6
+I1210 23:57:09.253689 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 6
+I1210 23:57:09.253841 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 6
+I1210 23:57:09.257980 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 6
+I1210 23:57:09.258075 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 6
+I1210 23:57:09.258988 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 6
+I1210 23:57:09.259010 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 6
+I1210 23:57:09.262592 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 7
+I1210 23:57:09.263519 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 7
+I1210 23:57:09.263725 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 7
+I1210 23:57:09.263832 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 7
+I1210 23:57:09.267616 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 7
+I1210 23:57:09.268311 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 7
+I1210 23:57:09.268882 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 7
+I1210 23:57:09.269241 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 7
+I1210 23:57:09.272760 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 8
+I1210 23:57:09.287332 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 8
+I1210 23:57:09.287351 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 8
+I1210 23:57:09.287356 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 8
+I1210 23:57:09.287368 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 8
+I1210 23:57:09.287376 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 8
+I1210 23:57:09.287380 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 8
+I1210 23:57:09.287387 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 9
+I1210 23:57:09.287389 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 9
+I1210 23:57:09.287399 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 9
+I1210 23:57:09.287434 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 8
+I1210 23:57:09.287501 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 9
+I1210 23:57:09.287570 IO-0/EL  buffer_pool.h:25] BufferPool[IO-0_Write]: Allocate new buffer, current buffer count is 3
+I1210 23:57:09.287628 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 9
+I1210 23:57:09.288541 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 9
+I1210 23:57:09.288619 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 9
+I1210 23:57:09.288694 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 9
+I1210 23:57:09.292863 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 10
+I1210 23:57:09.293051 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 10
+I1210 23:57:09.293581 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 10
+I1210 23:57:09.294004 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 10
+I1210 23:57:09.298138 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 10
+I1210 23:57:09.298253 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 10
+I1210 23:57:09.298850 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 10
+I1210 23:57:09.299257 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 10
+I1210 23:57:09.302684 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 11
+I1210 23:57:09.302697 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 11
+I1210 23:57:09.303834 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 11
+I1210 23:57:09.304078 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 11
+I1210 23:57:09.307752 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 11
+I1210 23:57:09.307866 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 11
+I1210 23:57:09.308772 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 11
+I1210 23:57:09.309297 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 11
+I1210 23:57:09.312966 IO-2/EL  io_worker.cpp:213] IO-2: New connection of type 0, total of type 0 is 12
+I1210 23:57:09.313367 IO-3/EL  io_worker.cpp:213] IO-3: New connection of type 0, total of type 0 is 12
+I1210 23:57:09.314125 IO-4/EL  io_worker.cpp:213] IO-4: New connection of type 0, total of type 0 is 12
+I1210 23:57:09.314198 IO-5/EL  io_worker.cpp:213] IO-5: New connection of type 0, total of type 0 is 12
+I1210 23:57:09.317610 IO-6/EL  io_worker.cpp:213] IO-6: New connection of type 0, total of type 0 is 12
+I1210 23:57:09.317918 IO-7/EL  io_worker.cpp:213] IO-7: New connection of type 0, total of type 0 is 12
+I1210 23:57:09.318611 IO-0/EL  io_worker.cpp:213] IO-0: New connection of type 0, total of type 0 is 12
+I1210 23:57:09.318612 IO-1/EL  io_worker.cpp:213] IO-1: New connection of type 0, total of type 0 is 12
+I1210 23:59:39.209338 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 11
+I1210 23:59:39.209358 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 11
+I1210 23:59:39.209367 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 11
+I1210 23:59:39.209343 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 11
+I1210 23:59:39.209346 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 11
+I1210 23:59:39.209391 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 10
+I1210 23:59:39.209349 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 11
+I1210 23:59:39.209350 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 11
+I1210 23:59:39.209422 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 10
+I1210 23:59:39.209428 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 10
+I1210 23:59:39.209432 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 10
+I1210 23:59:39.209436 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 10
+I1210 23:59:39.209442 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 9
+I1210 23:59:39.209443 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 9
+I1210 23:59:39.209350 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 11
+I1210 23:59:39.209459 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 9
+I1210 23:59:39.209465 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 10
+I1210 23:59:39.209477 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 8
+I1210 23:59:39.209455 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 9
+I1210 23:59:39.209480 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 9
+I1210 23:59:39.209485 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 9
+I1210 23:59:39.209491 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 8
+I1210 23:59:39.209493 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 8
+I1210 23:59:39.209500 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 7
+I1210 23:59:39.209495 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 8
+I1210 23:59:39.209497 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 10
+I1210 23:59:39.209532 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 8
+I1210 23:59:39.209541 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 7
+I1210 23:59:39.209542 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 10
+I1210 23:59:39.209545 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 9
+I1210 23:59:39.209548 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 7
+I1210 23:59:39.209554 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 9
+I1210 23:59:39.209556 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 8
+I1210 23:59:39.209561 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 8
+I1210 23:59:39.209566 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 6
+I1210 23:59:39.209568 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 7
+I1210 23:59:39.209571 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 7
+I1210 23:59:39.209581 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 6
+I1210 23:59:39.209523 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 8
+I1210 23:59:39.209586 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 5
+I1210 23:59:39.209546 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 6
+I1210 23:59:39.209596 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 6
+I1210 23:59:39.209527 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 7
+I1210 23:59:39.209608 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 5
+I1210 23:59:39.209614 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 5
+I1210 23:59:39.209606 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 5
+I1210 23:59:39.209622 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 4
+I1210 23:59:39.209626 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 6
+I1210 23:59:39.209632 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 7
+I1210 23:59:39.209634 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 6
+I1210 23:59:39.209624 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 4
+I1210 23:59:39.209642 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 6
+I1210 23:59:39.209644 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 5
+I1210 23:59:39.209650 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 5
+I1210 23:59:39.209657 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 4
+I1210 23:59:39.209658 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 4
+I1210 23:59:39.209660 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 4
+I1210 23:59:39.209667 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 3
+I1210 23:59:39.209673 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 4
+I1210 23:59:39.209643 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 3
+I1210 23:59:39.209682 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 2
+I1210 23:59:39.209682 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 3
+I1210 23:59:39.209690 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 3
+I1210 23:59:39.209698 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 5
+I1210 23:59:39.209700 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 2
+I1210 23:59:39.209707 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 4
+I1210 23:59:39.209708 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 3
+I1210 23:59:39.209713 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 1
+I1210 23:59:39.209714 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 3
+I1210 23:59:39.209717 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 2
+I1210 23:59:39.209721 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 2
+I1210 23:59:39.209721 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 3
+I1210 23:59:39.209727 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 1
+I1210 23:59:39.209716 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 2
+I1210 23:59:39.209732 IO-6/EL  io_worker.cpp:151] IO-6: One connection of type 0 closed, total of type 0 is 0
+I1210 23:59:39.209737 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 1
+I1210 23:59:39.209738 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 1
+I1210 23:59:39.209745 IO-2/EL  io_worker.cpp:151] IO-2: One connection of type 0 closed, total of type 0 is 0
+I1210 23:59:39.209748 IO-3/EL  io_worker.cpp:151] IO-3: One connection of type 0 closed, total of type 0 is 0
+I1210 23:59:39.209732 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 2
+I1210 23:59:39.209768 IO-0/EL  io_worker.cpp:151] IO-0: One connection of type 0 closed, total of type 0 is 0
+I1210 23:59:39.209772 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 2
+I1210 23:59:39.209773 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 1
+I1210 23:59:39.209780 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 1
+I1210 23:59:39.209774 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 1
+I1210 23:59:39.209788 IO-5/EL  io_worker.cpp:151] IO-5: One connection of type 0 closed, total of type 0 is 0
+I1210 23:59:39.209791 IO-4/EL  io_worker.cpp:151] IO-4: One connection of type 0 closed, total of type 0 is 0
+I1210 23:59:39.209809 IO-7/EL  io_worker.cpp:151] IO-7: One connection of type 0 closed, total of type 0 is 0
+I1210 23:59:39.209833 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 7
+I1210 23:59:39.209848 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 6
+I1210 23:59:39.209852 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 5
+I1210 23:59:39.209856 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 4
+I1210 23:59:39.209860 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 3
+I1210 23:59:39.209866 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 2
+I1210 23:59:39.209894 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 1
+I1210 23:59:39.209906 IO-1/EL  io_worker.cpp:151] IO-1: One connection of type 0 closed, total of type 0 is 0

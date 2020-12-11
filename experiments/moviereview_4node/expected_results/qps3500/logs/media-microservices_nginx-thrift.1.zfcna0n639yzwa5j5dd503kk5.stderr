@@ -1,0 +1,170 @@
+2020/12/10 23:16:36 [error] 15983#15983: *1049 [lua] write.lua:27: WriteMovieInfo(): Empty body, client: 10.0.0.2, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:36 [error] 15979#15979: *1043 [lua] write.lua:27: WriteMovieInfo(): Empty body, client: 10.0.0.2, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:36 [error] 15981#15981: *1046 [lua] write.lua:27: WriteMovieInfo(): Empty body, client: 10.0.0.2, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:36 [error] 15985#15985: *1050 [lua] write.lua:27: WriteMovieInfo(): Empty body, client: 10.0.0.2, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:36 [error] 15979#15979: *1043 [lua] write.lua:27: WriteMovieInfo(): Empty body, client: 10.0.0.2, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:36 [error] 15981#15981: *1046 lua entry thread aborted: runtime error: /usr/local/openresty/lualib/thrift/TBinaryProtocol.lua:135: bad argument #1 to 'len' (string expected, got userdata)
+stack traceback:
+coroutine 0:
+	[builtin:len]: in function 'len'
+	/usr/local/openresty/lualib/thrift/TBinaryProtocol.lua:135: in function 'writeString'
+	/gen-lua/media_service_MovieInfoService.lua:186: in function 'write'
+	/gen-lua/media_service_MovieInfoService.lua:543: in function 'send_WriteMovieInfo'
+	/gen-lua/media_service_MovieInfoService.lua:525: in function 'WriteMovieInfo'
+	...penresty/nginx/lua-scripts/wrk2-api/movie-info/write.lua:57: in function 'WriteMovieInfo'
+	content_by_lua(nginx.conf:107):3: in main chunk, client: 10.0.0.2, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:36 [error] 15985#15985: *1044 [lua] write.lua:27: WriteMovieInfo(): Empty body, client: 10.0.0.2, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:36 [error] 15979#15979: *1047 [lua] write.lua:27: WriteMovieInfo(): Empty body, client: 10.0.0.2, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:37 [error] 15985#15985: *1044 [lua] write.lua:27: WriteMovieInfo(): Empty body, client: 10.0.0.2, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:37 [error] 15979#15979: *1043 lua entry thread aborted: runtime error: unknown reason
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/gen-lua/media_service_MovieIdService.lua:326: in function 'recv_RegisterMovieId'
+	/gen-lua/media_service_MovieIdService.lua:299: in function 'RegisterMovieId'
+	.../openresty/nginx/lua-scripts/wrk2-api/movie/register.lua:37: in function 'RegisterMovie'
+	content_by_lua(nginx.conf:93):3: in main chunk, client: 10.0.0.2, server: localhost, request: "POST /wrk2-api/movie/register HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:37 [error] 15983#15983: *1049 lua entry thread aborted: runtime error: /usr/local/openresty/lualib/thrift/TBinaryProtocol.lua:135: bad argument #1 to 'len' (string expected, got userdata)
+stack traceback:
+coroutine 0:
+	[builtin:len]: in function 'len'
+	/usr/local/openresty/lualib/thrift/TBinaryProtocol.lua:135: in function 'writeString'
+	/gen-lua/media_service_MovieInfoService.lua:186: in function 'write'
+	/gen-lua/media_service_MovieInfoService.lua:543: in function 'send_WriteMovieInfo'
+	/gen-lua/media_service_MovieInfoService.lua:525: in function 'WriteMovieInfo'
+	...penresty/nginx/lua-scripts/wrk2-api/movie-info/write.lua:57: in function 'WriteMovieInfo'
+	content_by_lua(nginx.conf:107):3: in main chunk, client: 10.0.0.2, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:37 [error] 15979#15979: *1047 [lua] write.lua:27: WriteMovieInfo(): Empty body, client: 10.0.0.2, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:37 [error] 15986#15986: *1055 lua entry thread aborted: runtime error: unknown reason
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/gen-lua/media_service_MovieIdService.lua:326: in function 'recv_RegisterMovieId'
+	/gen-lua/media_service_MovieIdService.lua:299: in function 'RegisterMovieId'
+	.../openresty/nginx/lua-scripts/wrk2-api/movie/register.lua:37: in function 'RegisterMovie'
+	content_by_lua(nginx.conf:93):3: in main chunk, client: 10.0.0.2, server: localhost, request: "POST /wrk2-api/movie/register HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:37 [error] 15984#15984: *1048 lua entry thread aborted: runtime error: unknown reason
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/gen-lua/media_service_MovieIdService.lua:326: in function 'recv_RegisterMovieId'
+	/gen-lua/media_service_MovieIdService.lua:299: in function 'RegisterMovieId'
+	.../openresty/nginx/lua-scripts/wrk2-api/movie/register.lua:37: in function 'RegisterMovie'
+	content_by_lua(nginx.conf:93):3: in main chunk, client: 10.0.0.2, server: localhost, request: "POST /wrk2-api/movie/register HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:37 [error] 15979#15979: *1045 lua entry thread aborted: runtime error: unknown reason
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/gen-lua/media_service_MovieIdService.lua:326: in function 'recv_RegisterMovieId'
+	/gen-lua/media_service_MovieIdService.lua:299: in function 'RegisterMovieId'
+	.../openresty/nginx/lua-scripts/wrk2-api/movie/register.lua:37: in function 'RegisterMovie'
+	content_by_lua(nginx.conf:93):3: in main chunk, client: 10.0.0.2, server: localhost, request: "POST /wrk2-api/movie/register HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:38 [error] 15978#15978: *1058 lua entry thread aborted: runtime error: unknown reason
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/gen-lua/media_service_MovieIdService.lua:326: in function 'recv_RegisterMovieId'
+	/gen-lua/media_service_MovieIdService.lua:299: in function 'RegisterMovieId'
+	.../openresty/nginx/lua-scripts/wrk2-api/movie/register.lua:37: in function 'RegisterMovie'
+	content_by_lua(nginx.conf:93):3: in main chunk, client: 10.0.0.2, server: localhost, request: "POST /wrk2-api/movie/register HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:38 [error] 15985#15985: *1044 lua entry thread aborted: runtime error: /usr/local/openresty/lualib/thrift/TBinaryProtocol.lua:135: bad argument #1 to 'len' (string expected, got userdata)
+stack traceback:
+coroutine 0:
+	[builtin:len]: in function 'len'
+	/usr/local/openresty/lualib/thrift/TBinaryProtocol.lua:135: in function 'writeString'
+	/gen-lua/media_service_MovieInfoService.lua:186: in function 'write'
+	/gen-lua/media_service_MovieInfoService.lua:543: in function 'send_WriteMovieInfo'
+	/gen-lua/media_service_MovieInfoService.lua:525: in function 'WriteMovieInfo'
+	...penresty/nginx/lua-scripts/wrk2-api/movie-info/write.lua:57: in function 'WriteMovieInfo'
+	content_by_lua(nginx.conf:107):3: in main chunk, client: 10.0.0.2, server: localhost, request: "POST /wrk2-api/movie-info/write HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:48 [error] 15985#15985: *1107 [lua] compose.lua:55: Upload movie_id failed: E11000 duplicate key error collection: movie-review.movie-review index: movie_id_1 dup key: { movie_id: "953" }, client: 10.0.0.2, server: localhost, request: "POST http://127.0.0.1:8080/wrk2-api/review/compose HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:49 [error] 15981#15981: *1220 lua tcp socket connect timed out, when connecting to 10.0.4.101:8080, client: 10.0.0.2, server: localhost, request: "POST http://127.0.0.1:8080/wrk2-api/review/compose HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:49 [error] 15981#15981: *1220 lua user thread aborted: runtime error: /usr/local/openresty/lualib/thrift/Thrift.lua:37: TTransportException: Could not connect to nightcore-gateway:8080 (timeout)
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/usr/local/openresty/lualib/thrift/Thrift.lua:37: in function 'terror'
+	/usr/local/openresty/lualib/thrift/TSocket.lua:88: in function 'open'
+	/usr/local/openresty/lualib/thrift/RpcClient.lua:33: in function 'init'
+	/usr/local/openresty/lualib/thrift/RpcClientFactory.lua:11: in function 'createClient'
+	/usr/local/openresty/lualib/thrift/GenericObjectPool.lua:20: in function 'connection'
+	.../openresty/nginx/lua-scripts/wrk2-api/review/compose.lua:46: in function <.../openresty/nginx/lua-scripts/wrk2-api/review/compose.lua:43>
+coroutine 1:
+	[C]: in function 'wait'
+	.../openresty/nginx/lua-scripts/wrk2-api/review/compose.lua:113: in function 'ComposeReview'
+	content_by_lua(nginx.conf:100):3: in main chunk, client: 10.0.0.2, server: localhost, request: "POST http://127.0.0.1:8080/wrk2-api/review/compose HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:49 [error] 15981#15981: *1220 lua tcp socket connect timed out, when connecting to 10.0.4.101:8080, client: 10.0.0.2, server: localhost, request: "POST http://127.0.0.1:8080/wrk2-api/review/compose HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:49 [error] 15981#15981: *1220 lua user thread aborted: runtime error: /usr/local/openresty/lualib/thrift/Thrift.lua:37: TTransportException: Could not connect to nightcore-gateway:8080 (timeout)
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/usr/local/openresty/lualib/thrift/Thrift.lua:37: in function 'terror'
+	/usr/local/openresty/lualib/thrift/TSocket.lua:88: in function 'open'
+	/usr/local/openresty/lualib/thrift/RpcClient.lua:33: in function 'init'
+	/usr/local/openresty/lualib/thrift/RpcClientFactory.lua:11: in function 'createClient'
+	/usr/local/openresty/lualib/thrift/GenericObjectPool.lua:20: in function 'connection'
+	.../openresty/nginx/lua-scripts/wrk2-api/review/compose.lua:28: in function <.../openresty/nginx/lua-scripts/wrk2-api/review/compose.lua:25>
+coroutine 1:
+	[C]: in function 'wait'
+	.../openresty/nginx/lua-scripts/wrk2-api/review/compose.lua:113: in function 'ComposeReview'
+	content_by_lua(nginx.conf:100):3: in main chunk, client: 10.0.0.2, server: localhost, request: "POST http://127.0.0.1:8080/wrk2-api/review/compose HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:49 [error] 15981#15981: *1220 lua tcp socket connect timed out, when connecting to 10.0.4.101:8080, client: 10.0.0.2, server: localhost, request: "POST http://127.0.0.1:8080/wrk2-api/review/compose HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:49 [error] 15981#15981: *1220 lua user thread aborted: runtime error: /usr/local/openresty/lualib/thrift/Thrift.lua:37: TTransportException: Could not connect to nightcore-gateway:8080 (timeout)
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/usr/local/openresty/lualib/thrift/Thrift.lua:37: in function 'terror'
+	/usr/local/openresty/lualib/thrift/TSocket.lua:88: in function 'open'
+	/usr/local/openresty/lualib/thrift/RpcClient.lua:33: in function 'init'
+	/usr/local/openresty/lualib/thrift/RpcClientFactory.lua:11: in function 'createClient'
+	/usr/local/openresty/lualib/thrift/GenericObjectPool.lua:20: in function 'connection'
+	.../openresty/nginx/lua-scripts/wrk2-api/review/compose.lua:64: in function <.../openresty/nginx/lua-scripts/wrk2-api/review/compose.lua:61>
+coroutine 1:
+	[C]: in function 'wait'
+	.../openresty/nginx/lua-scripts/wrk2-api/review/compose.lua:113: in function 'ComposeReview'
+	content_by_lua(nginx.conf:100):3: in main chunk, client: 10.0.0.2, server: localhost, request: "POST http://127.0.0.1:8080/wrk2-api/review/compose HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:49 [error] 15980#15980: *1215 lua tcp socket connect timed out, when connecting to 10.0.4.101:8080, client: 10.0.0.2, server: localhost, request: "POST http://127.0.0.1:8080/wrk2-api/review/compose HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:49 [error] 15980#15980: *1215 lua user thread aborted: runtime error: /usr/local/openresty/lualib/thrift/Thrift.lua:37: TTransportException: Could not connect to nightcore-gateway:8080 (timeout)
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/usr/local/openresty/lualib/thrift/Thrift.lua:37: in function 'terror'
+	/usr/local/openresty/lualib/thrift/TSocket.lua:88: in function 'open'
+	/usr/local/openresty/lualib/thrift/RpcClient.lua:33: in function 'init'
+	/usr/local/openresty/lualib/thrift/RpcClientFactory.lua:11: in function 'createClient'
+	/usr/local/openresty/lualib/thrift/GenericObjectPool.lua:20: in function 'connection'
+	.../openresty/nginx/lua-scripts/wrk2-api/review/compose.lua:46: in function <.../openresty/nginx/lua-scripts/wrk2-api/review/compose.lua:43>
+coroutine 1:
+	[C]: in function 'wait'
+	.../openresty/nginx/lua-scripts/wrk2-api/review/compose.lua:113: in function 'ComposeReview'
+	content_by_lua(nginx.conf:100):3: in main chunk, client: 10.0.0.2, server: localhost, request: "POST http://127.0.0.1:8080/wrk2-api/review/compose HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:49 [error] 15980#15980: *1215 lua tcp socket connect timed out, when connecting to 10.0.4.101:8080, client: 10.0.0.2, server: localhost, request: "POST http://127.0.0.1:8080/wrk2-api/review/compose HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:49 [error] 15980#15980: *1215 lua user thread aborted: runtime error: /usr/local/openresty/lualib/thrift/Thrift.lua:37: TTransportException: Could not connect to nightcore-gateway:8080 (timeout)
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/usr/local/openresty/lualib/thrift/Thrift.lua:37: in function 'terror'
+	/usr/local/openresty/lualib/thrift/TSocket.lua:88: in function 'open'
+	/usr/local/openresty/lualib/thrift/RpcClient.lua:33: in function 'init'
+	/usr/local/openresty/lualib/thrift/RpcClientFactory.lua:11: in function 'createClient'
+	/usr/local/openresty/lualib/thrift/GenericObjectPool.lua:20: in function 'connection'
+	.../openresty/nginx/lua-scripts/wrk2-api/review/compose.lua:28: in function <.../openresty/nginx/lua-scripts/wrk2-api/review/compose.lua:25>
+coroutine 1:
+	[C]: in function 'wait'
+	.../openresty/nginx/lua-scripts/wrk2-api/review/compose.lua:113: in function 'ComposeReview'
+	content_by_lua(nginx.conf:100):3: in main chunk, client: 10.0.0.2, server: localhost, request: "POST http://127.0.0.1:8080/wrk2-api/review/compose HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:49 [error] 15980#15980: *1215 lua tcp socket connect timed out, when connecting to 10.0.4.101:8080, client: 10.0.0.2, server: localhost, request: "POST http://127.0.0.1:8080/wrk2-api/review/compose HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"
+2020/12/10 23:16:49 [error] 15980#15980: *1215 lua user thread aborted: runtime error: /usr/local/openresty/lualib/thrift/Thrift.lua:37: TTransportException: Could not connect to nightcore-gateway:8080 (timeout)
+stack traceback:
+coroutine 0:
+	[C]: in function 'error'
+	/usr/local/openresty/lualib/thrift/Thrift.lua:37: in function 'terror'
+	/usr/local/openresty/lualib/thrift/TSocket.lua:88: in function 'open'
+	/usr/local/openresty/lualib/thrift/RpcClient.lua:33: in function 'init'
+	/usr/local/openresty/lualib/thrift/RpcClientFactory.lua:11: in function 'createClient'
+	/usr/local/openresty/lualib/thrift/GenericObjectPool.lua:20: in function 'connection'
+	.../openresty/nginx/lua-scripts/wrk2-api/review/compose.lua:64: in function <.../openresty/nginx/lua-scripts/wrk2-api/review/compose.lua:61>
+coroutine 1:
+	[C]: in function 'wait'
+	.../openresty/nginx/lua-scripts/wrk2-api/review/compose.lua:113: in function 'ComposeReview'
+	content_by_lua(nginx.conf:100):3: in main chunk, client: 10.0.0.2, server: localhost, request: "POST http://127.0.0.1:8080/wrk2-api/review/compose HTTP/1.1", host: "ip-172-31-4-87.us-east-2.compute.internal:8080"

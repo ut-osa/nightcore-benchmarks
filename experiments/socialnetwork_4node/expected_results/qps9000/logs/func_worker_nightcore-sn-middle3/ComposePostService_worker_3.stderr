@@ -1,0 +1,57 @@
+I1210 22:27:23.120052 Main     thread.cpp:100] Register main thread: tid=62759
+I1210 22:27:23.120101 Main     func_worker.cpp:51] My client_id is 44
+[2020-12-10 22:27:23.124656] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-10 22:27:23.124714] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+I1210 22:27:23.124745 Main     func_config.cpp:135] Load configuration for function SocialGraphService[1]
+I1210 22:27:23.124755 Main     func_config.cpp:135] Load configuration for function ComposePostService[2]
+I1210 22:27:23.124761 Main     func_config.cpp:135] Load configuration for function PostStorageService[3]
+I1210 22:27:23.124765 Main     func_config.cpp:135] Load configuration for function UserTimelineService[4]
+I1210 22:27:23.124768 Main     func_config.cpp:135] Load configuration for function UrlShortenService[5]
+I1210 22:27:23.124770 Main     func_config.cpp:135] Load configuration for function UserService[6]
+I1210 22:27:23.124773 Main     func_config.cpp:135] Load configuration for function MediaService[7]
+I1210 22:27:23.124777 Main     func_config.cpp:135] Load configuration for function TextService[8]
+I1210 22:27:23.124781 Main     func_config.cpp:135] Load configuration for function UniqueIdService[9]
+I1210 22:27:23.124786 Main     func_config.cpp:135] Load configuration for function UserMentionService[10]
+I1210 22:27:23.124789 Main     func_config.cpp:135] Load configuration for function HomeTimelineService[11]
+I1210 22:27:23.124813 Main     func_worker.cpp:118] Use extra pipes for messages
+I1210 22:27:23.124989 Main     func_worker.cpp:137] Handshake done
+[2020-12-10 22:27:23.125006] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-10 22:27:23.125019] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-10 22:30:26.581789] <info>: (ClientPool.h:233:Pop) New redis client, total_client=1
+[2020-12-10 22:30:26.596112] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:30:26.596138] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+I1210 22:30:26.596563 Main     buffer_pool.h:25] BufferPool[Pipes]: Allocate new buffer, current buffer count is 1
+[2020-12-10 22:30:26.596593] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:30:26.596610] <info>: (ClientPool.h:233:Pop) New user-timeline-client client, total_client=1
+I1210 22:30:26.597261 Main     buffer_pool.h:25] BufferPool[Pipes]: Allocate new buffer, current buffer count is 2
+[2020-12-10 22:30:26.599345] <info>: (ClientPool.h:233:Pop) New rabbitmq client, total_client=1
+[2020-12-10 22:30:26.649475] <info>: (ClientPool.h:294:Remove) Remove user-timeline-client client, total_client=0
+[2020-12-10 22:30:26.649505] <error>: (ComposePostHandler.h:600:_UploadUserTimelineHelper) Failed to write user-timeline to user-timeline-service
+[2020-12-10 22:30:26.649723] <error>: (ComposePostHandler.h:518:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: user-timeline.user-timeline index: _id_ dup key: { _id: ObjectId('5fd2a182e8416c08db682c73') })
+[2020-12-10 22:30:26.654870] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:30:26.654893] <info>: (ClientPool.h:233:Pop) New user-timeline-client client, total_client=1
+[2020-12-10 22:30:26.765597] <info>: (ClientPool.h:294:Remove) Remove user-timeline-client client, total_client=0
+[2020-12-10 22:30:26.765632] <error>: (ComposePostHandler.h:600:_UploadUserTimelineHelper) Failed to write user-timeline to user-timeline-service
+[2020-12-10 22:30:26.765904] <error>: (ComposePostHandler.h:518:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: user-timeline.user-timeline index: _id_ dup key: { _id: ObjectId('5fd2a182e8416c08db682c84') })
+[2020-12-10 22:30:26.767813] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:30:26.767847] <info>: (ClientPool.h:233:Pop) New user-timeline-client client, total_client=1
+[2020-12-10 22:30:26.855993] <info>: (ClientPool.h:294:Remove) Remove user-timeline-client client, total_client=0
+[2020-12-10 22:30:26.856020] <error>: (ComposePostHandler.h:600:_UploadUserTimelineHelper) Failed to write user-timeline to user-timeline-service
+[2020-12-10 22:30:26.856251] <error>: (ComposePostHandler.h:518:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: user-timeline.user-timeline index: _id_ dup key: { _id: ObjectId('5fd2a182e8416c08db682c87') })
+[2020-12-10 22:30:26.859488] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:30:26.859514] <info>: (ClientPool.h:233:Pop) New user-timeline-client client, total_client=1
+[2020-12-10 22:30:26.888763] <info>: (ClientPool.h:294:Remove) Remove user-timeline-client client, total_client=0
+[2020-12-10 22:30:26.888801] <error>: (ComposePostHandler.h:600:_UploadUserTimelineHelper) Failed to write user-timeline to user-timeline-service
+[2020-12-10 22:30:26.889601] <error>: (ComposePostHandler.h:518:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: user-timeline.user-timeline index: _id_ dup key: { _id: ObjectId('5fd2a182e8416c08db682c90') })
+[2020-12-10 22:30:26.893646] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:30:26.893752] <info>: (ClientPool.h:233:Pop) New user-timeline-client client, total_client=1
+[2020-12-10 22:30:26.906634] <info>: (ClientPool.h:294:Remove) Remove user-timeline-client client, total_client=0
+[2020-12-10 22:30:26.906668] <error>: (ComposePostHandler.h:600:_UploadUserTimelineHelper) Failed to write user-timeline to user-timeline-service
+[2020-12-10 22:30:26.906950] <error>: (ComposePostHandler.h:518:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: user-timeline.user-timeline index: _id_ dup key: { _id: ObjectId('5fd2a182e8416c08db682c94') })
+[2020-12-10 22:30:26.910397] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:30:26.910422] <info>: (ClientPool.h:233:Pop) New user-timeline-client client, total_client=1
+[2020-12-10 22:30:26.941482] <info>: (ClientPool.h:294:Remove) Remove user-timeline-client client, total_client=0
+[2020-12-10 22:30:26.941543] <error>: (ComposePostHandler.h:600:_UploadUserTimelineHelper) Failed to write user-timeline to user-timeline-service
+[2020-12-10 22:30:26.941781] <error>: (ComposePostHandler.h:518:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: user-timeline.user-timeline index: _id_ dup key: { _id: ObjectId('5fd2a182e8416c08db682c96') })
+[2020-12-10 22:30:26.947975] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:30:26.948005] <info>: (ClientPool.h:233:Pop) New user-timeline-client client, total_client=1

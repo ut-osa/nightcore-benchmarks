@@ -1,0 +1,843 @@
+I1210 22:39:18.843531 Main     thread.cpp:100] Register main thread: tid=68562
+I1210 22:39:18.843621 Main     func_worker.cpp:51] My client_id is 45
+[2020-12-10 22:39:18.855899] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-10 22:39:18.855976] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+I1210 22:39:18.856027 Main     func_config.cpp:135] Load configuration for function SocialGraphService[1]
+I1210 22:39:18.856040 Main     func_config.cpp:135] Load configuration for function ComposePostService[2]
+I1210 22:39:18.856046 Main     func_config.cpp:135] Load configuration for function PostStorageService[3]
+I1210 22:39:18.856148 Main     func_config.cpp:135] Load configuration for function UserTimelineService[4]
+I1210 22:39:18.856158 Main     func_config.cpp:135] Load configuration for function UrlShortenService[5]
+I1210 22:39:18.856164 Main     func_config.cpp:135] Load configuration for function UserService[6]
+I1210 22:39:18.856168 Main     func_config.cpp:135] Load configuration for function MediaService[7]
+I1210 22:39:18.856174 Main     func_config.cpp:135] Load configuration for function TextService[8]
+I1210 22:39:18.856179 Main     func_config.cpp:135] Load configuration for function UniqueIdService[9]
+I1210 22:39:18.856184 Main     func_config.cpp:135] Load configuration for function UserMentionService[10]
+I1210 22:39:18.856188 Main     func_config.cpp:135] Load configuration for function HomeTimelineService[11]
+I1210 22:39:18.856223 Main     func_worker.cpp:118] Use extra pipes for messages
+I1210 22:39:18.857402 Main     func_worker.cpp:137] Handshake done
+[2020-12-10 22:39:18.857430] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-10 22:39:18.857556] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-10 22:39:18.857611] <info>: (ClientPool.h:233:Pop) New redis client, total_client=1
+[2020-12-10 22:39:18.859233] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:18.859388] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+I1210 22:39:18.859789 Main     buffer_pool.h:25] BufferPool[Pipes]: Allocate new buffer, current buffer count is 1
+[2020-12-10 22:39:18.859822] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:18.859839] <info>: (ClientPool.h:233:Pop) New user-timeline-client client, total_client=1
+I1210 22:39:18.861436 Main     buffer_pool.h:25] BufferPool[Pipes]: Allocate new buffer, current buffer count is 2
+[2020-12-10 22:39:18.863983] <info>: (ClientPool.h:233:Pop) New rabbitmq client, total_client=1
+[2020-12-10 22:39:20.812303] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:20.812335] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:20.812354] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:20.813619] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986169552896 })
+[2020-12-10 22:39:20.814930] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:20.814954] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:20.815546] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:20.815566] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:20.815580] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:20.816809] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891149099008 })
+[2020-12-10 22:39:20.824851] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:20.824873] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:20.905686] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:20.905734] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:20.905750] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:20.907000] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891149467648 })
+[2020-12-10 22:39:20.916733] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:20.916772] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:21.404807] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:21.404838] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:21.404852] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:21.406111] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986171981824 })
+[2020-12-10 22:39:21.409351] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:21.409380] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:23.760423] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:23.760450] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:23.760494] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:23.761852] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986181627904 })
+[2020-12-10 22:39:23.770925] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:23.770956] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:24.140838] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:24.140860] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:24.140873] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:24.142404] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891162718208 })
+[2020-12-10 22:39:24.144708] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:24.144734] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:28.651234] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:28.651293] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:28.651309] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:28.653170] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986201657344 })
+[2020-12-10 22:39:28.653594] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:28.653614] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:28.668153] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:28.668187] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:28.668200] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:28.669836] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891181260800 })
+[2020-12-10 22:39:28.695078] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:28.695108] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:30.203276] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:30.203305] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:30.203317] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:30.204660] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891187552256 })
+[2020-12-10 22:39:30.207685] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:30.207710] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:30.410601] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:30.410820] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:30.410848] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:30.412422] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891188396032 })
+[2020-12-10 22:39:30.414545] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:30.414574] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:32.099092] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:32.099122] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:32.099141] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:32.100457] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891195314176 })
+[2020-12-10 22:39:32.101855] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:32.101882] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:32.839186] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:32.839218] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:32.839285] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:32.840845] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891198349312 })
+[2020-12-10 22:39:32.842415] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:32.842441] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:33.017291] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:33.017323] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:33.017339] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:33.018874] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986219548672 })
+[2020-12-10 22:39:33.021413] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:33.021462] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:33.696232] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:33.696264] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:33.696279] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:33.697876] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891201855488 })
+[2020-12-10 22:39:33.716633] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:33.716667] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:34.543627] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:34.543655] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:34.543665] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:34.544765] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891205328896 })
+[2020-12-10 22:39:34.547387] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:34.547418] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:35.934986] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:35.935018] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:35.935034] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:35.937064] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986231496704 })
+[2020-12-10 22:39:35.953979] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:35.954011] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:37.301499] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:37.301530] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:37.301544] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:37.303661] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891216625664 })
+[2020-12-10 22:39:37.316141] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:37.316173] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:38.871719] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:38.871743] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:38.871752] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:38.873019] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891223056384 })
+[2020-12-10 22:39:38.875266] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:38.875289] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:39.036164] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:39.036228] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:39.036247] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:39.038524] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891223728128 })
+[2020-12-10 22:39:39.041317] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:39.041345] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:39.042026] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:39.042048] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:39.042064] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:39.044022] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891223752704 })
+[2020-12-10 22:39:39.054013] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:39.054071] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:39.745244] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:39.745274] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:39.745297] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:39.747511] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986247102464 })
+[2020-12-10 22:39:39.764421] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:39.764453] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:39:40.282581] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:39:40.282610] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:39:40.282656] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:39:40.284165] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986249302016 })
+[2020-12-10 22:39:40.293569] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:40.293602] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:13.861965] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:13.862035] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:13.862160] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:13.863789] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986386845696 })
+[2020-12-10 22:40:13.864697] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:13.864720] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:14.107414] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:14.107474] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:14.107498] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:14.109005] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891367383040 })
+[2020-12-10 22:40:14.116683] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:14.116707] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:14.348349] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:14.348376] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:14.348400] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:14.349663] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986388836352 })
+[2020-12-10 22:40:14.352081] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:14.352122] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:14.894938] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:14.895010] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:14.895028] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:14.896422] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891370610688 })
+[2020-12-10 22:40:14.899253] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:14.899405] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:15.377567] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:15.377606] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:15.377662] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:15.379165] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891372584960 })
+[2020-12-10 22:40:15.387445] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:15.387605] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:15.725301] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:15.725364] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:15.725387] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:15.726754] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891374010368 })
+[2020-12-10 22:40:15.727344] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:15.727369] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:15.794101] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:15.794304] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:15.794391] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:15.795875] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891374288896 })
+[2020-12-10 22:40:15.800658] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:15.800713] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:16.049759] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:16.049789] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:16.049804] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:16.051570] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891375337472 })
+[2020-12-10 22:40:16.067733] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:16.067772] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:27.717537] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:27.717565] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:27.717575] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:27.719074] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986443591680 })
+[2020-12-10 22:40:27.726872] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:27.726899] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:27.920025] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:27.920057] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:27.920067] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:27.921479] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986444427264 })
+[2020-12-10 22:40:27.922153] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:27.922172] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:28.092802] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:28.092836] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:28.092853] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:28.094224] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986445131776 })
+[2020-12-10 22:40:28.095771] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:28.095790] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:28.337436] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:28.337469] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:28.337482] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:28.338898] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986446135296 })
+[2020-12-10 22:40:28.346752] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:28.346777] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:30.788124] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:30.788160] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:30.788190] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:30.789799] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986456174592 })
+[2020-12-10 22:40:30.801237] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:30.801268] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:31.099188] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:31.099300] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:31.099319] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:31.101145] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891436978176 })
+[2020-12-10 22:40:31.115792] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:31.115824] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:31.193851] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:31.193893] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:31.193909] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:31.195178] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891437367296 })
+[2020-12-10 22:40:31.210320] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:31.210356] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:33.235448] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:33.235487] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:33.235503] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:33.237395] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986466197504 })
+[2020-12-10 22:40:33.238601] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:33.238628] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:33.257787] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:33.257884] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:33.257928] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:33.259620] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986466287616 })
+[2020-12-10 22:40:33.260279] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:33.260436] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:34.026024] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:34.026077] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:34.026095] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:34.027770] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891448967168 })
+[2020-12-10 22:40:34.029565] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:34.029651] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:35.484496] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:35.484534] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:35.484547] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:35.486139] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986475409408 })
+[2020-12-10 22:40:35.490743] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:35.490768] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:37.141799] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:37.141832] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:37.141847] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:37.143391] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891461730304 })
+[2020-12-10 22:40:37.145497] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:37.145518] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:37.148606] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:37.148634] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:37.148650] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:37.150060] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986482225152 })
+[2020-12-10 22:40:37.155425] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:37.155486] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:38.438071] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:38.438101] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:38.438116] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:38.439686] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891467038720 })
+[2020-12-10 22:40:38.441509] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:38.441538] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:39.512968] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:39.513004] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:39.513019] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:39.514633] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891471441920 })
+[2020-12-10 22:40:39.515385] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:39.515409] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:40.943843] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:40.944038] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:40.944056] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:40.945387] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986497769472 })
+[2020-12-10 22:40:40.948988] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:40.949010] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:41.019329] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:41.019362] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:41.019376] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:41.020846] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986498080768 })
+[2020-12-10 22:40:41.022946] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:41.022974] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:41.772968] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:41.773000] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:41.773015] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:41.774382] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891480698880 })
+[2020-12-10 22:40:41.778693] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:41.778723] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:42.711325] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:42.711364] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:42.711380] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:42.712642] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986505011200 })
+[2020-12-10 22:40:42.714114] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:42.714136] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:43.313408] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:43.313444] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:43.313459] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:43.314977] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891487006720 })
+[2020-12-10 22:40:43.323767] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:43.323870] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:48.536382] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:48.536417] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:48.536427] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:48.538149] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891508404224 })
+[2020-12-10 22:40:48.556699] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:48.556849] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:50.407788] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:50.407817] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:50.407832] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:50.409398] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891516067840 })
+[2020-12-10 22:40:50.410982] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:50.411007] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:51.563293] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:51.563359] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:51.563376] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:51.564887] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986541264896 })
+[2020-12-10 22:40:51.566250] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:51.566274] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:52.832624] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:52.832717] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:52.832737] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:52.834339] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986546466816 })
+[2020-12-10 22:40:52.846713] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:52.846736] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:53.754545] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:53.754582] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:53.754597] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:53.756597] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891529773056 })
+[2020-12-10 22:40:53.766583] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:53.766661] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:54.239946] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:54.240058] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:54.240080] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:54.241951] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891531743232 })
+[2020-12-10 22:40:54.249472] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:54.249504] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:40:54.398292] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:40:54.398328] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:40:54.398339] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:40:54.399766] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986552885248 })
+[2020-12-10 22:40:54.404587] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:40:54.404620] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:01.234020] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:01.234053] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:01.234198] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:01.235662] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986580877312 })
+[2020-12-10 22:41:01.385072] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:01.385118] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:02.164131] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:02.164165] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:02.164179] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:02.165439] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891564224512 })
+[2020-12-10 22:41:02.166832] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:02.166855] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:02.216777] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:02.216838] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:02.216850] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:02.218627] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891564437504 })
+[2020-12-10 22:41:02.222549] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:02.222575] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:02.556388] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:02.556418] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:02.556433] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:02.557808] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891565826048 })
+[2020-12-10 22:41:02.563080] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:02.563108] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:03.096788] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:03.096816] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:03.096829] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:03.098508] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891568041984 })
+[2020-12-10 22:41:03.099461] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:03.099562] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:03.299631] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:03.299659] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:03.299669] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:03.301376] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891568873472 })
+[2020-12-10 22:41:03.303968] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:03.304000] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:03.541481] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:03.541529] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:03.541545] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:03.543449] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891569860608 })
+[2020-12-10 22:41:03.549371] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:03.549408] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:03.629826] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:03.629858] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:03.629879] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:03.631682] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891570221056 })
+[2020-12-10 22:41:03.637004] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:03.637038] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:06.385031] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:06.385063] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:06.385103] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:06.387551] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986601971712 })
+[2020-12-10 22:41:06.391476] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:06.391504] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:08.776509] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:08.776541] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:08.776550] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:08.778074] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891591303168 })
+[2020-12-10 22:41:08.834784] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:08.834823] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:10.246923] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:10.246952] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:10.246966] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:10.248268] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891597328384 })
+[2020-12-10 22:41:10.253650] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:10.253679] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:10.265239] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:10.265263] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:10.265278] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:10.266684] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891597406208 })
+[2020-12-10 22:41:10.269729] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:10.269748] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:10.444709] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:10.444742] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:10.444759] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:10.446447] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891598135296 })
+[2020-12-10 22:41:10.514353] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:10.514385] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:10.722785] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:10.722893] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:10.722914] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:10.724528] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986619744256 })
+[2020-12-10 22:41:10.728616] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:10.728642] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:11.292554] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:11.292588] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:11.292605] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:11.294295] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891601608704 })
+[2020-12-10 22:41:11.295529] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:11.295553] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:11.572420] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:11.572450] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:11.572464] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:11.574236] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891602755584 })
+[2020-12-10 22:41:15.680192] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:15.680347] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:17.127277] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:17.127306] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:17.127320] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:17.129611] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891625504768 })
+[2020-12-10 22:41:17.138606] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:17.138634] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:17.512074] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:17.512116] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:17.512132] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:17.513850] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891627085824 })
+[2020-12-10 22:41:17.517206] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:17.517236] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:17.774137] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:17.774193] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:17.774210] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:17.775647] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891628158976 })
+[2020-12-10 22:41:17.778829] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:17.778862] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:20.091579] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:20.091659] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:20.091679] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:20.093100] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891637649408 })
+[2020-12-10 22:41:20.098161] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:20.098188] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:20.098811] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:20.098830] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:20.098843] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:20.100362] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891637682176 })
+[2020-12-10 22:41:20.107499] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:20.107524] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:20.630801] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:20.630833] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:20.630849] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:20.632434] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891639857152 })
+[2020-12-10 22:41:20.639857] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:20.639889] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:24.372710] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:24.372775] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:24.372794] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:24.374374] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986675654656 })
+[2020-12-10 22:41:24.383123] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:24.383157] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:25.473877] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:25.473908] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:25.473930] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:25.475689] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891659694080 })
+[2020-12-10 22:41:25.482489] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:25.482531] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:25.603347] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:25.603372] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:25.603385] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:25.605128] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891660226560 })
+[2020-12-10 22:41:25.609762] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:25.609840] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:26.527247] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:26.527287] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:26.527301] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:26.528769] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986684481536 })
+[2020-12-10 22:41:26.547976] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:26.548011] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:26.848917] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:26.848949] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:26.848971] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:26.850442] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891665330176 })
+[2020-12-10 22:41:26.871326] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:26.871363] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:27.085523] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:27.085556] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:27.085573] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:27.087313] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986686767104 })
+[2020-12-10 22:41:27.093486] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:27.093511] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:27.324604] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:27.324636] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:27.324663] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:27.326216] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891667275776 })
+[2020-12-10 22:41:27.342407] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:27.342603] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:28.082111] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:28.082134] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:28.082143] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:28.084449] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891670372352 })
+[2020-12-10 22:41:28.098042] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:28.098073] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:28.261664] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:28.261698] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:28.261827] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:28.264032] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986691584000 })
+[2020-12-10 22:41:28.270620] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:28.270643] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:28.303213] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:28.303243] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:28.303258] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:28.304971] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891671281664 })
+[2020-12-10 22:41:28.312883] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:28.312944] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:28.407724] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:28.407762] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:28.407774] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:28.409489] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986692186112 })
+[2020-12-10 22:41:28.424488] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:28.424613] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:29.075890] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:29.075945] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:29.075962] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:29.077644] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986694922240 })
+[2020-12-10 22:41:29.079861] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:29.079884] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:29.125829] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:29.125858] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:29.125873] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:29.127558] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986695122944 })
+[2020-12-10 22:41:29.130573] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:29.130599] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:37.117047] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:37.117078] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:37.117093] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:37.119280] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891707379712 })
+[2020-12-10 22:41:37.166459] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:37.166494] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:37.246037] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:37.246069] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:37.246659] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:37.248668] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986728382464 })
+[2020-12-10 22:41:37.267748] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:37.267780] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:39.428127] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:39.428160] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:39.428171] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:39.429850] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986737324032 })
+[2020-12-10 22:41:39.433853] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:39.433881] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:39.514454] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:39.514486] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:39.514502] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:39.516539] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891717206016 })
+[2020-12-10 22:41:39.521362] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:39.521429] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:39.522420] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:39.522443] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:39.522455] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:39.524214] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891717234688 })
+[2020-12-10 22:41:39.585025] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:39.585062] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:41.787777] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:41.787811] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:41.787821] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:41.789289] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891726516224 })
+[2020-12-10 22:41:41.793469] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:41.793491] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:43.568657] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:43.568692] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:43.568761] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:43.570309] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986754281472 })
+[2020-12-10 22:41:43.571629] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:43.571652] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:47.072910] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:47.072954] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:47.072969] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:47.074453] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986768637952 })
+[2020-12-10 22:41:47.098288] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:47.098325] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:47.699331] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:47.699365] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:47.699381] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:47.701208] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891750727680 })
+[2020-12-10 22:41:47.744436] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:47.744474] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:48.120840] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:48.120872] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:48.120887] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:48.123311] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891752456192 })
+[2020-12-10 22:41:48.125653] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:48.125676] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:48.863085] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:48.863117] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:48.863133] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:48.864759] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891755495424 })
+[2020-12-10 22:41:48.865992] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:48.866033] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:55.658736] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:55.658775] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:55.658789] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:55.660659] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891783331840 })
+[2020-12-10 22:41:55.665816] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:55.665925] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:55.671816] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:55.671884] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:55.671908] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:55.674404] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986803851264 })
+[2020-12-10 22:41:55.721817] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:55.721860] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:55.744157] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:55.744180] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:55.744190] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:55.745908] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891783680000 })
+[2020-12-10 22:41:55.754900] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:55.754932] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:55.759259] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:55.759281] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:55.759291] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:55.760968] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891783741440 })
+[2020-12-10 22:41:55.762170] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:55.762193] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:55.954037] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:55.954069] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:55.954080] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:55.955630] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986805010432 })
+[2020-12-10 22:41:55.957262] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:55.957289] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:57.417348] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:57.417380] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:57.417393] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:57.419484] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891790528512 })
+[2020-12-10 22:41:57.420746] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:57.420771] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:57.425848] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:57.425868] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:57.425877] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:57.427824] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986811039744 })
+[2020-12-10 22:41:57.429401] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:57.429425] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:41:59.580895] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:41:59.580960] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:41:59.580978] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:41:59.582581] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891799392256 })
+[2020-12-10 22:41:59.616347] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:41:59.616383] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:00.485147] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:00.485172] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:00.485187] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:00.486365] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891803103232 })
+[2020-12-10 22:42:00.488278] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:00.488300] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:04.238864] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:04.238893] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:04.238905] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:04.241053] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891818467328 })
+[2020-12-10 22:42:04.255747] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:04.255783] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:04.440348] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:04.440379] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:04.440389] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:04.442319] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986839764992 })
+[2020-12-10 22:42:04.464807] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:04.464847] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:05.021691] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:05.021770] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:05.021786] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:05.023668] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986842157056 })
+[2020-12-10 22:42:05.024530] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:05.024558] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:05.180874] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:05.180905] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:05.180921] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:05.182614] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891822329856 })
+[2020-12-10 22:42:05.183812] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:05.183838] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:05.381289] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:05.381414] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:05.381444] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:05.383438] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891823140864 })
+[2020-12-10 22:42:05.387640] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:05.387669] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:06.849179] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:06.849214] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:06.849225] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:06.850891] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986849640448 })
+[2020-12-10 22:42:06.854139] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:06.854166] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:07.780388] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:07.780412] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:07.780422] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:07.782150] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891832979456 })
+[2020-12-10 22:42:07.789295] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:07.789324] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:07.952474] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:07.952688] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:07.952721] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:07.954538] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891833683968 })
+[2020-12-10 22:42:07.963877] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:07.963907] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:08.332496] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:08.332528] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:08.332543] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:08.335322] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986855710720 })
+[2020-12-10 22:42:08.336405] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:08.336436] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:08.367185] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:08.367215] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:08.367239] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:08.369140] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986855854080 })
+[2020-12-10 22:42:08.372606] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:08.372642] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:08.414698] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:08.414755] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:08.414769] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:08.416535] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986856054784 })
+[2020-12-10 22:42:08.431555] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:08.431589] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:13.912492] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:13.912544] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:13.912557] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:13.914539] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891858092032 })
+[2020-12-10 22:42:13.916047] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:13.916070] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:14.584872] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:14.584935] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:14.584951] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:14.586880] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891860840448 })
+[2020-12-10 22:42:14.591437] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:14.591458] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:15.630299] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:15.630336] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:15.630352] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:15.632023] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891865124864 })
+[2020-12-10 22:42:15.637939] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:15.637967] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:16.034434] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:16.034466] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:16.034502] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:16.036357] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986887258112 })
+[2020-12-10 22:42:16.112818] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:16.112849] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:19.872416] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:19.872447] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:19.872463] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:19.874860] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891882504192 })
+[2020-12-10 22:42:19.882745] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:19.882771] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:19.895780] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:19.895804] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:19.895816] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:19.897795] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891882602496 })
+[2020-12-10 22:42:19.953185] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:19.953232] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:20.656291] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:20.656324] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:20.656340] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:20.658808] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891885715456 })
+[2020-12-10 22:42:20.659452] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:20.659478] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:20.978011] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:20.978067] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:20.978084] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:20.979918] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891887034368 })
+[2020-12-10 22:42:20.981014] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:20.981040] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:21.429072] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:21.429101] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:21.429114] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:21.431131] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986909360128 })
+[2020-12-10 22:42:21.432378] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:21.432412] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:21.755719] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:21.755902] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:21.755916] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:21.757626] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986910695424 })
+[2020-12-10 22:42:21.758460] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:21.758483] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:22.082586] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:22.082968] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:22.083252] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:22.085260] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 8768888891891556352 })
+[2020-12-10 22:42:22.090976] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:22.091014] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:22.564912] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:22.564943] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:22.564958] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:22.566970] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986914009088 })
+[2020-12-10 22:42:22.570466] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:22.570566] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+[2020-12-10 22:42:23.521089] <info>: (ClientPool.h:294:Remove) Remove post-storage-client client, total_client=0
+[2020-12-10 22:42:23.521128] <error>: (ComposePostHandler.h:561:_UploadPostHelper) Failed to store post to post-storage-service
+[2020-12-10 22:42:23.521204] <error>: (ComposePostHandler.h:567:_UploadPostHelper) Failed to connect to post-storage-service
+[2020-12-10 22:42:23.523236] <error>: (ComposePostHandler.h:536:_ComposeAndUpload) Thread exited with exception: TException - service has thrown: ServiceException(errorCode=SE_MONGODB_ERROR, message=E11000 duplicate key error collection: post.post index: post_id_1 dup key: { post_id: 7620470986917916672 })
+[2020-12-10 22:42:23.527915] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:42:23.527967] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1

@@ -1,0 +1,24 @@
+I1210 22:36:14.711491 Main     thread.cpp:100] Register main thread: tid=68896
+I1210 22:36:14.711541 Main     func_worker.cpp:51] My client_id is 42
+[2020-12-10 22:36:14.719703] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-10 22:36:15.023093] <error>: (utils_mongodb.h:70:CreateIndex) Error in createIndexes: No suitable servers found: `serverSelectionTimeoutMS` expired: [Failed to resolve 'socialnetwork-mongodb']
+[2020-12-10 22:36:15.023145] <error>: (SocialGraphService.cpp:42:faas_init) Failed to create mongodb index, try again
+I1210 22:36:16.025053 Main     func_config.cpp:135] Load configuration for function SocialGraphService[1]
+I1210 22:36:16.025072 Main     func_config.cpp:135] Load configuration for function ComposePostService[2]
+I1210 22:36:16.025077 Main     func_config.cpp:135] Load configuration for function PostStorageService[3]
+I1210 22:36:16.025080 Main     func_config.cpp:135] Load configuration for function UserTimelineService[4]
+I1210 22:36:16.025083 Main     func_config.cpp:135] Load configuration for function UrlShortenService[5]
+I1210 22:36:16.025086 Main     func_config.cpp:135] Load configuration for function UserService[6]
+I1210 22:36:16.025092 Main     func_config.cpp:135] Load configuration for function MediaService[7]
+I1210 22:36:16.025095 Main     func_config.cpp:135] Load configuration for function TextService[8]
+I1210 22:36:16.025098 Main     func_config.cpp:135] Load configuration for function UniqueIdService[9]
+I1210 22:36:16.025101 Main     func_config.cpp:135] Load configuration for function UserMentionService[10]
+I1210 22:36:16.025104 Main     func_config.cpp:135] Load configuration for function HomeTimelineService[11]
+I1210 22:36:16.025128 Main     func_worker.cpp:118] Use extra pipes for messages
+I1210 22:36:16.025322 Main     func_worker.cpp:137] Handshake done
+[2020-12-10 22:36:16.025355] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-10 22:37:18.298033] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:37:18.298064] <info>: (ClientPool.h:233:Pop) New social-graph client, total_client=1
+I1210 22:37:18.300401 Main     buffer_pool.h:25] BufferPool[Pipes]: Allocate new buffer, current buffer count is 1
+I1210 22:37:18.300675 Main     buffer_pool.h:25] BufferPool[Pipes]: Allocate new buffer, current buffer count is 2
+[2020-12-10 22:37:18.301625] <info>: (ClientPool.h:233:Pop) New redis client, total_client=1

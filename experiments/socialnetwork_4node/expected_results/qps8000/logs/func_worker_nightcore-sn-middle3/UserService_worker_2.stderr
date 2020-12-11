@@ -1,0 +1,334 @@
+I1210 22:18:32.715904 Main     thread.cpp:100] Register main thread: tid=54098
+I1210 22:18:32.715957 Main     func_worker.cpp:51] My client_id is 11
+[2020-12-10 22:18:32.724045] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-10 22:18:32.724341] <info>: (UserHandler.h:998:GetMachineId) mac_hash=344
+I1210 22:18:32.738914 Main     func_config.cpp:135] Load configuration for function SocialGraphService[1]
+I1210 22:18:32.738934 Main     func_config.cpp:135] Load configuration for function ComposePostService[2]
+I1210 22:18:32.738941 Main     func_config.cpp:135] Load configuration for function PostStorageService[3]
+I1210 22:18:32.738948 Main     func_config.cpp:135] Load configuration for function UserTimelineService[4]
+I1210 22:18:32.738954 Main     func_config.cpp:135] Load configuration for function UrlShortenService[5]
+I1210 22:18:32.738965 Main     func_config.cpp:135] Load configuration for function UserService[6]
+I1210 22:18:32.738970 Main     func_config.cpp:135] Load configuration for function MediaService[7]
+I1210 22:18:32.738976 Main     func_config.cpp:135] Load configuration for function TextService[8]
+I1210 22:18:32.738982 Main     func_config.cpp:135] Load configuration for function UniqueIdService[9]
+I1210 22:18:32.738987 Main     func_config.cpp:135] Load configuration for function UserMentionService[10]
+I1210 22:18:32.738993 Main     func_config.cpp:135] Load configuration for function HomeTimelineService[11]
+I1210 22:18:32.739019 Main     func_worker.cpp:118] Use extra pipes for messages
+I1210 22:18:32.739438 Main     func_worker.cpp:137] Handshake done
+[2020-12-10 22:18:32.739470] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-10 22:18:32.739496] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-10 22:18:32.739506] <info>: (UserHandler.h:137:UserHandler) machine_id=344
+[2020-12-10 22:19:36.608649] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:19:36.608692] <info>: (ClientPool.h:233:Pop) New social-graph client, total_client=1
+I1210 22:19:36.609680 Main     buffer_pool.h:25] BufferPool[Pipes]: Allocate new buffer, current buffer count is 1
+[2020-12-10 22:19:36.642327] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_75 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a45') }
+[2020-12-10 22:19:36.649466] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_92 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a46') }
+[2020-12-10 22:19:36.650223] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_94 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a47') }
+[2020-12-10 22:19:36.666065] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_123 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a49') }
+[2020-12-10 22:19:36.673437] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_141 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a4a') }
+[2020-12-10 22:19:36.681758] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_156 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a4b') }
+[2020-12-10 22:19:36.705618] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_204 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a4e') }
+[2020-12-10 22:19:36.713947] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_221 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a4f') }
+[2020-12-10 22:19:36.730549] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_251 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a51') }
+[2020-12-10 22:19:36.746891] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_284 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a53') }
+[2020-12-10 22:19:36.755180] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_301 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a54') }
+[2020-12-10 22:19:36.763816] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_320 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a55') }
+[2020-12-10 22:19:36.772091] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_330 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a56') }
+[2020-12-10 22:19:36.781084] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_348 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a57') }
+[2020-12-10 22:19:36.789219] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_363 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a58') }
+[2020-12-10 22:19:36.798064] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_377 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a59') }
+[2020-12-10 22:19:36.806369] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_388 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a5a') }
+[2020-12-10 22:19:36.815415] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_416 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a5b') }
+[2020-12-10 22:19:36.823883] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_429 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a5c') }
+[2020-12-10 22:19:36.842063] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_459 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a5d') }
+[2020-12-10 22:19:36.850490] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_470 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a5e') }
+[2020-12-10 22:19:36.859863] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_491 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a5f') }
+[2020-12-10 22:19:36.868509] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_504 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a60') }
+[2020-12-10 22:19:36.877958] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_526 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a61') }
+[2020-12-10 22:19:36.895064] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_534 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a62') }
+[2020-12-10 22:19:36.904597] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_553 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a63') }
+[2020-12-10 22:19:36.913357] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_574 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a64') }
+[2020-12-10 22:19:36.923092] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_583 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a65') }
+[2020-12-10 22:19:36.931943] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_608 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a66') }
+[2020-12-10 22:19:36.941820] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_622 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a67') }
+[2020-12-10 22:19:36.950730] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_633 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a68') }
+[2020-12-10 22:19:36.960305] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_655 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a69') }
+[2020-12-10 22:19:36.969790] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_666 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a6a') }
+[2020-12-10 22:19:36.979162] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_686 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a6b') }
+[2020-12-10 22:19:36.988823] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_702 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a6c') }
+[2020-12-10 22:19:36.998446] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_714 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef8fc579f67c9472a6d') }
+[2020-12-10 22:19:37.027744] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_765 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef9fc579f67c9472a70') }
+[2020-12-10 22:19:37.037422] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_783 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef9fc579f67c9472a71') }
+[2020-12-10 22:19:37.047633] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_795 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef9fc579f67c9472a72') }
+[2020-12-10 22:19:37.057441] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_813 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef9fc579f67c9472a73') }
+[2020-12-10 22:19:37.067456] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_832 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef9fc579f67c9472a74') }
+[2020-12-10 22:19:37.077618] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_848 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef9fc579f67c9472a75') }
+[2020-12-10 22:19:37.087913] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_863 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef9fc579f67c9472a76') }
+[2020-12-10 22:19:37.097647] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_865 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef9fc579f67c9472a77') }
+[2020-12-10 22:19:37.108038] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_896 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef9fc579f67c9472a78') }
+[2020-12-10 22:19:37.118037] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_906 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef9fc579f67c9472a79') }
+[2020-12-10 22:19:37.128537] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_927 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef9fc579f67c9472a7a') }
+[2020-12-10 22:19:37.138839] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_943 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef9fc579f67c9472a7b') }
+[2020-12-10 22:19:37.149411] <error>: (UserHandler.h:221:RegisterUserWithId) Failed to insert user username_958 to MongoDB: E11000 duplicate key error collection: user.user index: _id_ dup key: { _id: ObjectId('5fd29ef9fc579f67c9472a7c') }
+[2020-12-10 22:19:37.185575] <warning>: (UserHandler.h:910:GetUserId) User: username_204 doesn't exist in MongoDB
+[2020-12-10 22:19:37.258958] <warning>: (UserHandler.h:910:GetUserId) User: username_574 doesn't exist in MongoDB
+[2020-12-10 22:19:37.273781] <warning>: (UserHandler.h:910:GetUserId) User: username_958 doesn't exist in MongoDB
+[2020-12-10 22:19:37.287936] <warning>: (UserHandler.h:910:GetUserId) User: username_47 doesn't exist in MongoDB
+[2020-12-10 22:19:37.321508] <warning>: (UserHandler.h:910:GetUserId) User: username_348 doesn't exist in MongoDB
+[2020-12-10 22:19:37.490553] <warning>: (UserHandler.h:910:GetUserId) User: username_633 doesn't exist in MongoDB
+[2020-12-10 22:19:37.570375] <warning>: (UserHandler.h:910:GetUserId) User: username_574 doesn't exist in MongoDB
+[2020-12-10 22:19:37.663126] <warning>: (UserHandler.h:910:GetUserId) User: username_633 doesn't exist in MongoDB
+[2020-12-10 22:19:37.889438] <warning>: (UserHandler.h:910:GetUserId) User: username_204 doesn't exist in MongoDB
+[2020-12-10 22:19:38.085034] <warning>: (UserHandler.h:910:GetUserId) User: username_714 doesn't exist in MongoDB
+[2020-12-10 22:19:38.107088] <warning>: (UserHandler.h:910:GetUserId) User: username_31 doesn't exist in MongoDB
+[2020-12-10 22:19:38.121530] <warning>: (UserHandler.h:910:GetUserId) User: username_31 doesn't exist in MongoDB
+[2020-12-10 22:19:38.121993] <warning>: (UserHandler.h:910:GetUserId) User: username_31 doesn't exist in MongoDB
+[2020-12-10 22:19:38.125203] <warning>: (UserHandler.h:910:GetUserId) User: username_31 doesn't exist in MongoDB
+[2020-12-10 22:19:38.141375] <warning>: (UserHandler.h:910:GetUserId) User: username_31 doesn't exist in MongoDB
+[2020-12-10 22:19:38.341239] <warning>: (UserHandler.h:910:GetUserId) User: username_958 doesn't exist in MongoDB
+[2020-12-10 22:19:38.602282] <warning>: (UserHandler.h:910:GetUserId) User: username_204 doesn't exist in MongoDB
+[2020-12-10 22:19:38.903158] <warning>: (UserHandler.h:910:GetUserId) User: username_284 doesn't exist in MongoDB
+[2020-12-10 22:19:39.102315] <warning>: (UserHandler.h:910:GetUserId) User: username_633 doesn't exist in MongoDB
+[2020-12-10 22:19:39.300448] <warning>: (UserHandler.h:910:GetUserId) User: username_927 doesn't exist in MongoDB
+[2020-12-10 22:19:39.438029] <warning>: (UserHandler.h:910:GetUserId) User: username_204 doesn't exist in MongoDB
+[2020-12-10 22:19:39.460412] <warning>: (UserHandler.h:910:GetUserId) User: username_388 doesn't exist in MongoDB
+[2020-12-10 22:19:39.761722] <warning>: (UserHandler.h:910:GetUserId) User: username_526 doesn't exist in MongoDB
+[2020-12-10 22:19:39.824442] <warning>: (UserHandler.h:910:GetUserId) User: username_943 doesn't exist in MongoDB
+[2020-12-10 22:19:39.848460] <warning>: (UserHandler.h:910:GetUserId) User: username_377 doesn't exist in MongoDB
+[2020-12-10 22:19:40.218656] <warning>: (UserHandler.h:910:GetUserId) User: username_633 doesn't exist in MongoDB
+[2020-12-10 22:19:40.286828] <warning>: (UserHandler.h:910:GetUserId) User: username_504 doesn't exist in MongoDB
+[2020-12-10 22:19:40.369728] <warning>: (UserHandler.h:910:GetUserId) User: username_75 doesn't exist in MongoDB
+[2020-12-10 22:19:40.398444] <warning>: (UserHandler.h:910:GetUserId) User: username_75 doesn't exist in MongoDB
+[2020-12-10 22:19:40.427296] <warning>: (UserHandler.h:910:GetUserId) User: username_75 doesn't exist in MongoDB
+[2020-12-10 22:19:40.456459] <warning>: (UserHandler.h:910:GetUserId) User: username_75 doesn't exist in MongoDB
+[2020-12-10 22:19:40.460378] <warning>: (UserHandler.h:910:GetUserId) User: username_75 doesn't exist in MongoDB
+[2020-12-10 22:19:40.615888] <warning>: (UserHandler.h:910:GetUserId) User: username_622 doesn't exist in MongoDB
+[2020-12-10 22:19:41.026849] <warning>: (UserHandler.h:910:GetUserId) User: username_156 doesn't exist in MongoDB
+[2020-12-10 22:19:41.061198] <warning>: (UserHandler.h:910:GetUserId) User: username_416 doesn't exist in MongoDB
+[2020-12-10 22:19:41.162686] <warning>: (UserHandler.h:910:GetUserId) User: username_655 doesn't exist in MongoDB
+[2020-12-10 22:19:41.194734] <warning>: (UserHandler.h:910:GetUserId) User: username_204 doesn't exist in MongoDB
+[2020-12-10 22:19:41.296449] <warning>: (UserHandler.h:910:GetUserId) User: username_92 doesn't exist in MongoDB
+[2020-12-10 22:19:41.366869] <warning>: (UserHandler.h:910:GetUserId) User: username_94 doesn't exist in MongoDB
+[2020-12-10 22:19:41.369290] <warning>: (UserHandler.h:910:GetUserId) User: username_94 doesn't exist in MongoDB
+[2020-12-10 22:19:41.369932] <warning>: (UserHandler.h:910:GetUserId) User: username_94 doesn't exist in MongoDB
+[2020-12-10 22:19:41.639997] <warning>: (UserHandler.h:910:GetUserId) User: username_204 doesn't exist in MongoDB
+[2020-12-10 22:19:42.177823] <warning>: (UserHandler.h:910:GetUserId) User: username_583 doesn't exist in MongoDB
+[2020-12-10 22:19:42.181465] <warning>: (UserHandler.h:910:GetUserId) User: username_633 doesn't exist in MongoDB
+[2020-12-10 22:19:42.401110] <warning>: (UserHandler.h:910:GetUserId) User: username_156 doesn't exist in MongoDB
+[2020-12-10 22:19:42.518348] <warning>: (UserHandler.h:910:GetUserId) User: username_363 doesn't exist in MongoDB
+[2020-12-10 22:19:42.668375] <warning>: (UserHandler.h:910:GetUserId) User: username_110 doesn't exist in MongoDB
+[2020-12-10 22:19:42.669527] <warning>: (UserHandler.h:910:GetUserId) User: username_110 doesn't exist in MongoDB
+[2020-12-10 22:19:42.670439] <warning>: (UserHandler.h:910:GetUserId) User: username_110 doesn't exist in MongoDB
+[2020-12-10 22:19:42.671774] <warning>: (UserHandler.h:910:GetUserId) User: username_110 doesn't exist in MongoDB
+[2020-12-10 22:19:42.704280] <warning>: (UserHandler.h:910:GetUserId) User: username_110 doesn't exist in MongoDB
+[2020-12-10 22:19:42.705912] <warning>: (UserHandler.h:910:GetUserId) User: username_284 doesn't exist in MongoDB
+[2020-12-10 22:19:42.970306] <warning>: (UserHandler.h:910:GetUserId) User: username_958 doesn't exist in MongoDB
+[2020-12-10 22:19:43.050569] <warning>: (UserHandler.h:910:GetUserId) User: username_714 doesn't exist in MongoDB
+[2020-12-10 22:19:43.087611] <warning>: (UserHandler.h:910:GetUserId) User: username_608 doesn't exist in MongoDB
+[2020-12-10 22:19:43.609476] <warning>: (UserHandler.h:910:GetUserId) User: username_906 doesn't exist in MongoDB
+[2020-12-10 22:19:43.811811] <warning>: (UserHandler.h:910:GetUserId) User: username_429 doesn't exist in MongoDB
+[2020-12-10 22:19:44.858487] <warning>: (UserHandler.h:910:GetUserId) User: username_958 doesn't exist in MongoDB
+[2020-12-10 22:19:45.035106] <warning>: (UserHandler.h:910:GetUserId) User: username_141 doesn't exist in MongoDB
+[2020-12-10 22:19:45.076884] <warning>: (UserHandler.h:910:GetUserId) User: username_141 doesn't exist in MongoDB
+[2020-12-10 22:19:45.077322] <warning>: (UserHandler.h:910:GetUserId) User: username_141 doesn't exist in MongoDB
+[2020-12-10 22:19:45.127350] <warning>: (UserHandler.h:910:GetUserId) User: username_583 doesn't exist in MongoDB
+[2020-12-10 22:19:45.130563] <warning>: (UserHandler.h:910:GetUserId) User: username_251 doesn't exist in MongoDB
+[2020-12-10 22:19:45.171992] <warning>: (UserHandler.h:910:GetUserId) User: username_526 doesn't exist in MongoDB
+[2020-12-10 22:19:45.350298] <warning>: (UserHandler.h:910:GetUserId) User: username_166 doesn't exist in MongoDB
+[2020-12-10 22:19:45.586417] <warning>: (UserHandler.h:910:GetUserId) User: username_156 doesn't exist in MongoDB
+[2020-12-10 22:19:45.774218] <warning>: (UserHandler.h:910:GetUserId) User: username_958 doesn't exist in MongoDB
+[2020-12-10 22:19:46.679368] <warning>: (UserHandler.h:910:GetUserId) User: username_526 doesn't exist in MongoDB
+[2020-12-10 22:19:47.388333] <warning>: (UserHandler.h:910:GetUserId) User: username_526 doesn't exist in MongoDB
+[2020-12-10 22:19:47.636860] <warning>: (UserHandler.h:910:GetUserId) User: username_156 doesn't exist in MongoDB
+[2020-12-10 22:19:47.796069] <warning>: (UserHandler.h:910:GetUserId) User: username_240 doesn't exist in MongoDB
+[2020-12-10 22:19:48.168114] <warning>: (UserHandler.h:910:GetUserId) User: username_927 doesn't exist in MongoDB
+[2020-12-10 22:19:49.076197] <warning>: (UserHandler.h:910:GetUserId) User: username_166 doesn't exist in MongoDB
+[2020-12-10 22:19:49.078373] <warning>: (UserHandler.h:910:GetUserId) User: username_166 doesn't exist in MongoDB
+[2020-12-10 22:19:49.079691] <warning>: (UserHandler.h:910:GetUserId) User: username_166 doesn't exist in MongoDB
+[2020-12-10 22:19:49.138191] <warning>: (UserHandler.h:910:GetUserId) User: username_166 doesn't exist in MongoDB
+[2020-12-10 22:19:49.188760] <warning>: (UserHandler.h:910:GetUserId) User: username_166 doesn't exist in MongoDB
+[2020-12-10 22:19:49.191379] <warning>: (UserHandler.h:910:GetUserId) User: username_765 doesn't exist in MongoDB
+[2020-12-10 22:19:49.810447] <warning>: (UserHandler.h:910:GetUserId) User: username_251 doesn't exist in MongoDB
+[2020-12-10 22:19:50.314032] <warning>: (UserHandler.h:910:GetUserId) User: username_633 doesn't exist in MongoDB
+[2020-12-10 22:19:50.725864] <warning>: (UserHandler.h:910:GetUserId) User: username_187 doesn't exist in MongoDB
+[2020-12-10 22:19:50.895683] <warning>: (UserHandler.h:910:GetUserId) User: username_906 doesn't exist in MongoDB
+[2020-12-10 22:19:51.323153] <warning>: (UserHandler.h:910:GetUserId) User: username_240 doesn't exist in MongoDB
+[2020-12-10 22:19:51.556932] <warning>: (UserHandler.h:910:GetUserId) User: username_204 doesn't exist in MongoDB
+[2020-12-10 22:19:51.922337] <warning>: (UserHandler.h:910:GetUserId) User: username_813 doesn't exist in MongoDB
+[2020-12-10 22:19:52.720031] <warning>: (UserHandler.h:910:GetUserId) User: username_204 doesn't exist in MongoDB
+[2020-12-10 22:19:52.723357] <warning>: (UserHandler.h:910:GetUserId) User: username_204 doesn't exist in MongoDB
+[2020-12-10 22:19:52.790189] <warning>: (UserHandler.h:910:GetUserId) User: username_204 doesn't exist in MongoDB
+[2020-12-10 22:19:52.793068] <warning>: (UserHandler.h:910:GetUserId) User: username_204 doesn't exist in MongoDB
+[2020-12-10 22:19:52.793676] <warning>: (UserHandler.h:910:GetUserId) User: username_204 doesn't exist in MongoDB
+[2020-12-10 22:19:52.847360] <warning>: (UserHandler.h:910:GetUserId) User: username_204 doesn't exist in MongoDB
+[2020-12-10 22:19:52.905211] <warning>: (UserHandler.h:910:GetUserId) User: username_204 doesn't exist in MongoDB
+[2020-12-10 22:19:52.908560] <warning>: (UserHandler.h:910:GetUserId) User: username_204 doesn't exist in MongoDB
+[2020-12-10 22:19:52.974396] <warning>: (UserHandler.h:910:GetUserId) User: username_204 doesn't exist in MongoDB
+[2020-12-10 22:19:52.978151] <warning>: (UserHandler.h:910:GetUserId) User: username_204 doesn't exist in MongoDB
+[2020-12-10 22:19:53.032407] <warning>: (UserHandler.h:910:GetUserId) User: username_204 doesn't exist in MongoDB
+[2020-12-10 22:19:53.103171] <warning>: (UserHandler.h:910:GetUserId) User: username_204 doesn't exist in MongoDB
+[2020-12-10 22:19:53.161310] <warning>: (UserHandler.h:910:GetUserId) User: username_204 doesn't exist in MongoDB
+[2020-12-10 22:19:53.791664] <warning>: (UserHandler.h:910:GetUserId) User: username_765 doesn't exist in MongoDB
+[2020-12-10 22:19:53.869265] <warning>: (UserHandler.h:910:GetUserId) User: username_958 doesn't exist in MongoDB
+[2020-12-10 22:19:54.058224] <warning>: (UserHandler.h:910:GetUserId) User: username_958 doesn't exist in MongoDB
+[2020-12-10 22:19:54.461774] <warning>: (UserHandler.h:910:GetUserId) User: username_795 doesn't exist in MongoDB
+[2020-12-10 22:19:54.465812] <warning>: (UserHandler.h:910:GetUserId) User: username_848 doesn't exist in MongoDB
+[2020-12-10 22:19:55.065872] <warning>: (UserHandler.h:910:GetUserId) User: username_221 doesn't exist in MongoDB
+[2020-12-10 22:19:56.921895] <warning>: (UserHandler.h:910:GetUserId) User: username_301 doesn't exist in MongoDB
+[2020-12-10 22:20:00.316603] <warning>: (UserHandler.h:910:GetUserId) User: username_251 doesn't exist in MongoDB
+[2020-12-10 22:20:00.317110] <warning>: (UserHandler.h:910:GetUserId) User: username_251 doesn't exist in MongoDB
+[2020-12-10 22:20:00.319722] <warning>: (UserHandler.h:910:GetUserId) User: username_251 doesn't exist in MongoDB
+[2020-12-10 22:20:00.320423] <warning>: (UserHandler.h:910:GetUserId) User: username_251 doesn't exist in MongoDB
+[2020-12-10 22:20:00.385851] <warning>: (UserHandler.h:910:GetUserId) User: username_251 doesn't exist in MongoDB
+[2020-12-10 22:20:00.389643] <warning>: (UserHandler.h:910:GetUserId) User: username_251 doesn't exist in MongoDB
+[2020-12-10 22:20:00.469432] <warning>: (UserHandler.h:910:GetUserId) User: username_251 doesn't exist in MongoDB
+[2020-12-10 22:20:00.938784] <warning>: (UserHandler.h:910:GetUserId) User: username_795 doesn't exist in MongoDB
+[2020-12-10 22:20:01.814028] <warning>: (UserHandler.h:910:GetUserId) User: username_686 doesn't exist in MongoDB
+[2020-12-10 22:20:01.965804] <warning>: (UserHandler.h:910:GetUserId) User: username_266 doesn't exist in MongoDB
+[2020-12-10 22:20:02.130343] <warning>: (UserHandler.h:910:GetUserId) User: username_655 doesn't exist in MongoDB
+[2020-12-10 22:20:02.533979] <warning>: (UserHandler.h:910:GetUserId) User: username_526 doesn't exist in MongoDB
+[2020-12-10 22:20:02.778791] <warning>: (UserHandler.h:910:GetUserId) User: username_927 doesn't exist in MongoDB
+[2020-12-10 22:20:03.904749] <warning>: (UserHandler.h:910:GetUserId) User: username_896 doesn't exist in MongoDB
+[2020-12-10 22:20:03.906655] <warning>: (UserHandler.h:910:GetUserId) User: username_958 doesn't exist in MongoDB
+[2020-12-10 22:20:03.994901] <warning>: (UserHandler.h:910:GetUserId) User: username_459 doesn't exist in MongoDB
+[2020-12-10 22:20:06.027099] <warning>: (UserHandler.h:910:GetUserId) User: username_284 doesn't exist in MongoDB
+[2020-12-10 22:20:06.030010] <warning>: (UserHandler.h:910:GetUserId) User: username_284 doesn't exist in MongoDB
+[2020-12-10 22:20:06.030687] <warning>: (UserHandler.h:910:GetUserId) User: username_284 doesn't exist in MongoDB
+[2020-12-10 22:20:06.118482] <warning>: (UserHandler.h:910:GetUserId) User: username_284 doesn't exist in MongoDB
+[2020-12-10 22:20:06.379369] <warning>: (UserHandler.h:910:GetUserId) User: username_686 doesn't exist in MongoDB
+[2020-12-10 22:20:06.383008] <warning>: (UserHandler.h:910:GetUserId) User: username_377 doesn't exist in MongoDB
+[2020-12-10 22:20:06.624630] <warning>: (UserHandler.h:910:GetUserId) User: username_429 doesn't exist in MongoDB
+[2020-12-10 22:20:06.988271] <warning>: (UserHandler.h:910:GetUserId) User: username_534 doesn't exist in MongoDB
+[2020-12-10 22:20:08.135839] <warning>: (UserHandler.h:910:GetUserId) User: username_865 doesn't exist in MongoDB
+[2020-12-10 22:20:08.139722] <warning>: (UserHandler.h:910:GetUserId) User: username_363 doesn't exist in MongoDB
+[2020-12-10 22:20:09.570850] <warning>: (UserHandler.h:910:GetUserId) User: username_377 doesn't exist in MongoDB
+[2020-12-10 22:20:10.309343] <warning>: (UserHandler.h:910:GetUserId) User: username_896 doesn't exist in MongoDB
+[2020-12-10 22:20:10.505840] <warning>: (UserHandler.h:910:GetUserId) User: username_388 doesn't exist in MongoDB
+[2020-12-10 22:20:10.509004] <warning>: (UserHandler.h:910:GetUserId) User: username_416 doesn't exist in MongoDB
+[2020-12-10 22:20:10.684745] <warning>: (UserHandler.h:910:GetUserId) User: username_633 doesn't exist in MongoDB
+[2020-12-10 22:20:11.434518] <warning>: (UserHandler.h:910:GetUserId) User: username_714 doesn't exist in MongoDB
+[2020-12-10 22:20:12.379298] <warning>: (UserHandler.h:910:GetUserId) User: username_377 doesn't exist in MongoDB
+[2020-12-10 22:20:13.238303] <warning>: (UserHandler.h:910:GetUserId) User: username_863 doesn't exist in MongoDB
+[2020-12-10 22:20:13.816086] <warning>: (UserHandler.h:910:GetUserId) User: username_574 doesn't exist in MongoDB
+[2020-12-10 22:20:15.120385] <warning>: (UserHandler.h:910:GetUserId) User: username_633 doesn't exist in MongoDB
+[2020-12-10 22:20:15.332291] <warning>: (UserHandler.h:910:GetUserId) User: username_330 doesn't exist in MongoDB
+[2020-12-10 22:20:15.333360] <warning>: (UserHandler.h:910:GetUserId) User: username_330 doesn't exist in MongoDB
+[2020-12-10 22:20:17.247637] <warning>: (UserHandler.h:910:GetUserId) User: username_348 doesn't exist in MongoDB
+[2020-12-10 22:20:17.248161] <warning>: (UserHandler.h:910:GetUserId) User: username_348 doesn't exist in MongoDB
+[2020-12-10 22:20:17.352510] <warning>: (UserHandler.h:910:GetUserId) User: username_348 doesn't exist in MongoDB
+[2020-12-10 22:20:17.461690] <warning>: (UserHandler.h:910:GetUserId) User: username_813 doesn't exist in MongoDB
+[2020-12-10 22:20:17.550788] <warning>: (UserHandler.h:910:GetUserId) User: username_348 doesn't exist in MongoDB
+[2020-12-10 22:20:19.329356] <warning>: (UserHandler.h:910:GetUserId) User: username_416 doesn't exist in MongoDB
+[2020-12-10 22:20:20.391901] <warning>: (UserHandler.h:910:GetUserId) User: username_574 doesn't exist in MongoDB
+[2020-12-10 22:20:20.731376] <warning>: (UserHandler.h:910:GetUserId) User: username_958 doesn't exist in MongoDB
+[2020-12-10 22:20:20.819729] <warning>: (UserHandler.h:910:GetUserId) User: username_416 doesn't exist in MongoDB
+[2020-12-10 22:20:21.162098] <warning>: (UserHandler.h:910:GetUserId) User: username_377 doesn't exist in MongoDB
+[2020-12-10 22:20:21.372890] <warning>: (UserHandler.h:910:GetUserId) User: username_574 doesn't exist in MongoDB
+[2020-12-10 22:20:22.141145] <warning>: (UserHandler.h:910:GetUserId) User: username_470 doesn't exist in MongoDB
+[2020-12-10 22:20:22.239988] <warning>: (UserHandler.h:910:GetUserId) User: username_388 doesn't exist in MongoDB
+[2020-12-10 22:20:22.347782] <warning>: (UserHandler.h:910:GetUserId) User: username_388 doesn't exist in MongoDB
+[2020-12-10 22:20:22.348262] <warning>: (UserHandler.h:910:GetUserId) User: username_388 doesn't exist in MongoDB
+[2020-12-10 22:20:22.352245] <warning>: (UserHandler.h:910:GetUserId) User: username_388 doesn't exist in MongoDB
+[2020-12-10 22:20:22.461224] <warning>: (UserHandler.h:910:GetUserId) User: username_388 doesn't exist in MongoDB
+[2020-12-10 22:20:23.010517] <warning>: (UserHandler.h:910:GetUserId) User: username_765 doesn't exist in MongoDB
+[2020-12-10 22:20:23.453181] <warning>: (UserHandler.h:910:GetUserId) User: username_416 doesn't exist in MongoDB
+[2020-12-10 22:20:24.927796] <warning>: (UserHandler.h:910:GetUserId) User: username_848 doesn't exist in MongoDB
+[2020-12-10 22:20:25.280747] <warning>: (UserHandler.h:910:GetUserId) User: username_574 doesn't exist in MongoDB
+[2020-12-10 22:20:26.180543] <warning>: (UserHandler.h:910:GetUserId) User: username_958 doesn't exist in MongoDB
+[2020-12-10 22:20:26.420828] <warning>: (UserHandler.h:910:GetUserId) User: username_526 doesn't exist in MongoDB
+[2020-12-10 22:20:26.636746] <warning>: (UserHandler.h:910:GetUserId) User: username_765 doesn't exist in MongoDB
+[2020-12-10 22:20:26.877142] <warning>: (UserHandler.h:910:GetUserId) User: username_795 doesn't exist in MongoDB
+[2020-12-10 22:20:26.880901] <warning>: (UserHandler.h:910:GetUserId) User: username_416 doesn't exist in MongoDB
+[2020-12-10 22:20:27.001584] <warning>: (UserHandler.h:910:GetUserId) User: username_416 doesn't exist in MongoDB
+[2020-12-10 22:20:27.099117] <warning>: (UserHandler.h:910:GetUserId) User: username_416 doesn't exist in MongoDB
+[2020-12-10 22:20:27.216020] <warning>: (UserHandler.h:910:GetUserId) User: username_416 doesn't exist in MongoDB
+[2020-12-10 22:20:27.915655] <warning>: (UserHandler.h:910:GetUserId) User: username_958 doesn't exist in MongoDB
+[2020-12-10 22:20:28.158042] <warning>: (UserHandler.h:910:GetUserId) User: username_765 doesn't exist in MongoDB
+[2020-12-10 22:20:28.980357] <warning>: (UserHandler.h:910:GetUserId) User: username_429 doesn't exist in MongoDB
+[2020-12-10 22:20:29.105721] <warning>: (UserHandler.h:910:GetUserId) User: username_429 doesn't exist in MongoDB
+[2020-12-10 22:20:29.108836] <warning>: (UserHandler.h:910:GetUserId) User: username_429 doesn't exist in MongoDB
+[2020-12-10 22:20:29.109241] <warning>: (UserHandler.h:910:GetUserId) User: username_429 doesn't exist in MongoDB
+[2020-12-10 22:20:29.206458] <warning>: (UserHandler.h:910:GetUserId) User: username_429 doesn't exist in MongoDB
+[2020-12-10 22:20:29.572164] <warning>: (UserHandler.h:910:GetUserId) User: username_863 doesn't exist in MongoDB
+[2020-12-10 22:20:30.544475] <warning>: (UserHandler.h:910:GetUserId) User: username_848 doesn't exist in MongoDB
+[2020-12-10 22:20:31.621683] <warning>: (UserHandler.h:910:GetUserId) User: username_832 doesn't exist in MongoDB
+[2020-12-10 22:20:31.745210] <warning>: (UserHandler.h:910:GetUserId) User: username_504 doesn't exist in MongoDB
+[2020-12-10 22:20:31.745633] <warning>: (UserHandler.h:910:GetUserId) User: username_504 doesn't exist in MongoDB
+[2020-12-10 22:20:32.469291] <warning>: (UserHandler.h:910:GetUserId) User: username_633 doesn't exist in MongoDB
+[2020-12-10 22:20:32.472293] <warning>: (UserHandler.h:910:GetUserId) User: username_655 doesn't exist in MongoDB
+[2020-12-10 22:20:32.969250] <warning>: (UserHandler.h:910:GetUserId) User: username_633 doesn't exist in MongoDB
+[2020-12-10 22:20:33.225379] <warning>: (UserHandler.h:910:GetUserId) User: username_459 doesn't exist in MongoDB
+[2020-12-10 22:20:33.453631] <warning>: (UserHandler.h:910:GetUserId) User: username_534 doesn't exist in MongoDB
+[2020-12-10 22:20:33.830697] <warning>: (UserHandler.h:910:GetUserId) User: username_958 doesn't exist in MongoDB
+[2020-12-10 22:20:34.720877] <warning>: (UserHandler.h:910:GetUserId) User: username_470 doesn't exist in MongoDB
+[2020-12-10 22:20:34.850398] <warning>: (UserHandler.h:910:GetUserId) User: username_470 doesn't exist in MongoDB
+[2020-12-10 22:20:35.595742] <warning>: (UserHandler.h:910:GetUserId) User: username_534 doesn't exist in MongoDB
+[2020-12-10 22:20:36.109744] <warning>: (UserHandler.h:910:GetUserId) User: username_714 doesn't exist in MongoDB
+[2020-12-10 22:20:36.510789] <warning>: (UserHandler.h:910:GetUserId) User: username_906 doesn't exist in MongoDB
+[2020-12-10 22:20:37.658664] <warning>: (UserHandler.h:910:GetUserId) User: username_491 doesn't exist in MongoDB
+[2020-12-10 22:20:37.792019] <warning>: (UserHandler.h:910:GetUserId) User: username_666 doesn't exist in MongoDB
+[2020-12-10 22:20:38.547846] <warning>: (UserHandler.h:910:GetUserId) User: username_526 doesn't exist in MongoDB
+[2020-12-10 22:20:39.596005] <warning>: (UserHandler.h:910:GetUserId) User: username_958 doesn't exist in MongoDB
+[2020-12-10 22:20:39.996642] <warning>: (UserHandler.h:910:GetUserId) User: username_504 doesn't exist in MongoDB
+[2020-12-10 22:20:40.000063] <warning>: (UserHandler.h:910:GetUserId) User: username_504 doesn't exist in MongoDB
+[2020-12-10 22:20:40.000792] <warning>: (UserHandler.h:910:GetUserId) User: username_504 doesn't exist in MongoDB
+[2020-12-10 22:20:42.141787] <warning>: (UserHandler.h:910:GetUserId) User: username_863 doesn't exist in MongoDB
+[2020-12-10 22:20:42.550870] <warning>: (UserHandler.h:910:GetUserId) User: username_526 doesn't exist in MongoDB
+[2020-12-10 22:20:42.554739] <warning>: (UserHandler.h:910:GetUserId) User: username_526 doesn't exist in MongoDB
+[2020-12-10 22:20:42.688069] <warning>: (UserHandler.h:910:GetUserId) User: username_526 doesn't exist in MongoDB
+[2020-12-10 22:20:42.824535] <warning>: (UserHandler.h:910:GetUserId) User: username_526 doesn't exist in MongoDB
+[2020-12-10 22:20:42.827264] <warning>: (UserHandler.h:910:GetUserId) User: username_526 doesn't exist in MongoDB
+[2020-12-10 22:20:42.828174] <warning>: (UserHandler.h:910:GetUserId) User: username_526 doesn't exist in MongoDB
+[2020-12-10 22:20:44.321037] <warning>: (UserHandler.h:910:GetUserId) User: username_534 doesn't exist in MongoDB
+[2020-12-10 22:20:44.324865] <warning>: (UserHandler.h:910:GetUserId) User: username_534 doesn't exist in MongoDB
+[2020-12-10 22:20:44.458386] <warning>: (UserHandler.h:910:GetUserId) User: username_906 doesn't exist in MongoDB
+[2020-12-10 22:20:46.416716] <warning>: (UserHandler.h:910:GetUserId) User: username_553 doesn't exist in MongoDB
+[2020-12-10 22:20:47.137857] <warning>: (UserHandler.h:910:GetUserId) User: username_686 doesn't exist in MongoDB
+[2020-12-10 22:20:47.854758] <warning>: (UserHandler.h:910:GetUserId) User: username_795 doesn't exist in MongoDB
+[2020-12-10 22:20:49.546896] <warning>: (UserHandler.h:910:GetUserId) User: username_574 doesn't exist in MongoDB
+[2020-12-10 22:20:49.547556] <warning>: (UserHandler.h:910:GetUserId) User: username_633 doesn't exist in MongoDB
+[2020-12-10 22:20:49.550597] <warning>: (UserHandler.h:910:GetUserId) User: username_574 doesn't exist in MongoDB
+[2020-12-10 22:20:49.667024] <warning>: (UserHandler.h:910:GetUserId) User: username_574 doesn't exist in MongoDB
+[2020-12-10 22:20:49.670049] <warning>: (UserHandler.h:910:GetUserId) User: username_574 doesn't exist in MongoDB
+[2020-12-10 22:20:50.848458] <warning>: (UserHandler.h:910:GetUserId) User: username_714 doesn't exist in MongoDB
+[2020-12-10 22:20:52.932746] <warning>: (UserHandler.h:910:GetUserId) User: username_714 doesn't exist in MongoDB
+[2020-12-10 22:20:54.118600] <warning>: (UserHandler.h:910:GetUserId) User: username_686 doesn't exist in MongoDB
+[2020-12-10 22:20:54.568499] <warning>: (UserHandler.h:910:GetUserId) User: username_608 doesn't exist in MongoDB
+[2020-12-10 22:20:54.714391] <warning>: (UserHandler.h:910:GetUserId) User: username_608 doesn't exist in MongoDB
+[2020-12-10 22:20:56.802433] <warning>: (UserHandler.h:910:GetUserId) User: username_765 doesn't exist in MongoDB
+[2020-12-10 22:20:56.806001] <warning>: (UserHandler.h:910:GetUserId) User: username_633 doesn't exist in MongoDB
+[2020-12-10 22:20:57.421710] <warning>: (UserHandler.h:910:GetUserId) User: username_633 doesn't exist in MongoDB
+[2020-12-10 22:20:57.568257] <warning>: (UserHandler.h:910:GetUserId) User: username_633 doesn't exist in MongoDB
+[2020-12-10 22:20:57.718274] <warning>: (UserHandler.h:910:GetUserId) User: username_633 doesn't exist in MongoDB
+[2020-12-10 22:21:00.783129] <warning>: (UserHandler.h:910:GetUserId) User: username_927 doesn't exist in MongoDB
+[2020-12-10 22:21:00.938902] <warning>: (UserHandler.h:910:GetUserId) User: username_958 doesn't exist in MongoDB
+[2020-12-10 22:21:01.093211] <warning>: (UserHandler.h:910:GetUserId) User: username_655 doesn't exist in MongoDB
+[2020-12-10 22:21:01.243412] <warning>: (UserHandler.h:910:GetUserId) User: username_655 doesn't exist in MongoDB
+[2020-12-10 22:21:02.833464] <warning>: (UserHandler.h:910:GetUserId) User: username_686 doesn't exist in MongoDB
+[2020-12-10 22:21:06.047896] <warning>: (UserHandler.h:910:GetUserId) User: username_765 doesn't exist in MongoDB
+[2020-12-10 22:21:07.343409] <warning>: (UserHandler.h:910:GetUserId) User: username_848 doesn't exist in MongoDB
+[2020-12-10 22:21:07.501774] <warning>: (UserHandler.h:910:GetUserId) User: username_714 doesn't exist in MongoDB
+[2020-12-10 22:21:08.646457] <warning>: (UserHandler.h:910:GetUserId) User: username_714 doesn't exist in MongoDB
+[2020-12-10 22:21:08.647801] <warning>: (UserHandler.h:910:GetUserId) User: username_714 doesn't exist in MongoDB
+[2020-12-10 22:21:11.607275] <warning>: (UserHandler.h:910:GetUserId) User: username_927 doesn't exist in MongoDB
+[2020-12-10 22:21:12.131243] <warning>: (UserHandler.h:910:GetUserId) User: username_927 doesn't exist in MongoDB
+[2020-12-10 22:21:12.294803] <warning>: (UserHandler.h:910:GetUserId) User: username_765 doesn't exist in MongoDB
+[2020-12-10 22:21:13.459305] <warning>: (UserHandler.h:910:GetUserId) User: username_927 doesn't exist in MongoDB
+[2020-12-10 22:21:13.623438] <warning>: (UserHandler.h:910:GetUserId) User: username_765 doesn't exist in MongoDB
+[2020-12-10 22:21:14.494431] <warning>: (UserHandler.h:910:GetUserId) User: username_958 doesn't exist in MongoDB
+[2020-12-10 22:21:15.517950] <warning>: (UserHandler.h:910:GetUserId) User: username_927 doesn't exist in MongoDB
+[2020-12-10 22:21:15.521570] <warning>: (UserHandler.h:910:GetUserId) User: username_906 doesn't exist in MongoDB
+[2020-12-10 22:21:15.684226] <warning>: (UserHandler.h:910:GetUserId) User: username_795 doesn't exist in MongoDB
+[2020-12-10 22:21:15.688137] <warning>: (UserHandler.h:910:GetUserId) User: username_795 doesn't exist in MongoDB
+[2020-12-10 22:21:15.688547] <warning>: (UserHandler.h:910:GetUserId) User: username_795 doesn't exist in MongoDB
+[2020-12-10 22:21:17.234037] <warning>: (UserHandler.h:910:GetUserId) User: username_813 doesn't exist in MongoDB
+[2020-12-10 22:21:18.591924] <warning>: (UserHandler.h:910:GetUserId) User: username_848 doesn't exist in MongoDB
+[2020-12-10 22:21:19.127498] <warning>: (UserHandler.h:910:GetUserId) User: username_896 doesn't exist in MongoDB
+[2020-12-10 22:21:19.129724] <warning>: (UserHandler.h:910:GetUserId) User: username_958 doesn't exist in MongoDB
+[2020-12-10 22:21:19.297722] <warning>: (UserHandler.h:910:GetUserId) User: username_863 doesn't exist in MongoDB
+[2020-12-10 22:21:19.300835] <warning>: (UserHandler.h:910:GetUserId) User: username_865 doesn't exist in MongoDB
+[2020-12-10 22:21:20.008324] <warning>: (UserHandler.h:910:GetUserId) User: username_896 doesn't exist in MongoDB
+[2020-12-10 22:21:20.175807] <warning>: (UserHandler.h:910:GetUserId) User: username_906 doesn't exist in MongoDB
+[2020-12-10 22:21:20.176310] <warning>: (UserHandler.h:910:GetUserId) User: username_906 doesn't exist in MongoDB
+[2020-12-10 22:21:32.282322] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:21:32.282358] <info>: (ClientPool.h:233:Pop) New compose-post client, total_client=1

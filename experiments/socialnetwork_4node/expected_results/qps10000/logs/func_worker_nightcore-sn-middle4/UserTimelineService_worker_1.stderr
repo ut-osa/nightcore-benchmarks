@@ -1,0 +1,30 @@
+I1210 22:36:11.205083 Main     thread.cpp:100] Register main thread: tid=68038
+I1210 22:36:11.205148 Main     func_worker.cpp:51] My client_id is 10
+[2020-12-10 22:36:11.214341] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-10 22:36:11.516088] <error>: (utils_mongodb.h:70:CreateIndex) Error in createIndexes: No suitable servers found: `serverSelectionTimeoutMS` expired: [Failed to resolve 'socialnetwork-mongodb']
+[2020-12-10 22:36:11.516134] <error>: (UserTimelineService.cpp:50:faas_init) Failed to create mongodb index, try again
+[2020-12-10 22:36:12.816088] <error>: (utils_mongodb.h:70:CreateIndex) Error in createIndexes: No suitable servers found: `serverSelectionTimeoutMS` expired: [Failed to resolve 'socialnetwork-mongodb']
+[2020-12-10 22:36:12.816130] <error>: (UserTimelineService.cpp:50:faas_init) Failed to create mongodb index, try again
+[2020-12-10 22:36:14.116085] <error>: (utils_mongodb.h:70:CreateIndex) Error in createIndexes: No suitable servers found: `serverSelectionTimeoutMS` expired: [Failed to resolve 'socialnetwork-mongodb']
+[2020-12-10 22:36:14.116131] <error>: (UserTimelineService.cpp:50:faas_init) Failed to create mongodb index, try again
+[2020-12-10 22:36:15.416087] <error>: (utils_mongodb.h:70:CreateIndex) Error in createIndexes: No suitable servers found: `serverSelectionTimeoutMS` expired: [Failed to resolve 'socialnetwork-mongodb']
+[2020-12-10 22:36:15.416123] <error>: (UserTimelineService.cpp:50:faas_init) Failed to create mongodb index, try again
+I1210 22:36:16.418484 Main     func_config.cpp:135] Load configuration for function SocialGraphService[1]
+I1210 22:36:16.418499 Main     func_config.cpp:135] Load configuration for function ComposePostService[2]
+I1210 22:36:16.418509 Main     func_config.cpp:135] Load configuration for function PostStorageService[3]
+I1210 22:36:16.418513 Main     func_config.cpp:135] Load configuration for function UserTimelineService[4]
+I1210 22:36:16.418516 Main     func_config.cpp:135] Load configuration for function UrlShortenService[5]
+I1210 22:36:16.418520 Main     func_config.cpp:135] Load configuration for function UserService[6]
+I1210 22:36:16.418523 Main     func_config.cpp:135] Load configuration for function MediaService[7]
+I1210 22:36:16.418526 Main     func_config.cpp:135] Load configuration for function TextService[8]
+I1210 22:36:16.418529 Main     func_config.cpp:135] Load configuration for function UniqueIdService[9]
+I1210 22:36:16.418532 Main     func_config.cpp:135] Load configuration for function UserMentionService[10]
+I1210 22:36:16.418535 Main     func_config.cpp:135] Load configuration for function HomeTimelineService[11]
+I1210 22:36:16.418556 Main     func_worker.cpp:118] Use extra pipes for messages
+I1210 22:36:16.418659 Main     func_worker.cpp:137] Handshake done
+[2020-12-10 22:36:16.418680] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-10 22:39:18.734325] <info>: (ClientPool.h:233:Pop) New user-timeline-redis client, total_client=1
+[2020-12-10 22:39:18.750085] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:18.750110] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+I1210 22:39:18.750196 Main     buffer_pool.h:25] BufferPool[Pipes]: Allocate new buffer, current buffer count is 1
+[2020-12-10 22:39:18.847725] <error>: (UserTimelineHandler.h:108:WriteUserTimeline) Failed to insert user timeline user 610 to MongoDB: E11000 duplicate key error collection: user-timeline.user-timeline index: user_id_1 dup key: { user_id: 610 }

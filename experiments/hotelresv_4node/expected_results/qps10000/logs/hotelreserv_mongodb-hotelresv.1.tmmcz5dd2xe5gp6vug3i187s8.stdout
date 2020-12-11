@@ -1,0 +1,159 @@
+2020-12-10T23:57:29.487+0000 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2020-12-10T23:57:29.489+0000 W  ASIO     [main] No TransportLayer configured during NetworkInterface startup
+2020-12-10T23:57:29.489+0000 I  CONTROL  [initandlisten] MongoDB starting : pid=7655 port=27017 dbpath=/data/db 64-bit host=socialnetwork-mongodb
+2020-12-10T23:57:29.489+0000 I  CONTROL  [initandlisten] db version v4.2.8
+2020-12-10T23:57:29.489+0000 I  CONTROL  [initandlisten] git version: 43d25964249164d76d5e04dd6cf38f6111e21f5f
+2020-12-10T23:57:29.489+0000 I  CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1  11 Sep 2018
+2020-12-10T23:57:29.489+0000 I  CONTROL  [initandlisten] allocator: tcmalloc
+2020-12-10T23:57:29.489+0000 I  CONTROL  [initandlisten] modules: none
+2020-12-10T23:57:29.489+0000 I  CONTROL  [initandlisten] build environment:
+2020-12-10T23:57:29.489+0000 I  CONTROL  [initandlisten]     distmod: ubuntu1804
+2020-12-10T23:57:29.489+0000 I  CONTROL  [initandlisten]     distarch: x86_64
+2020-12-10T23:57:29.489+0000 I  CONTROL  [initandlisten]     target_arch: x86_64
+2020-12-10T23:57:29.489+0000 I  CONTROL  [initandlisten] options: { net: { bindIp: "*" }, storage: { journal: { enabled: false } } }
+2020-12-10T23:57:29.489+0000 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=15145M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],,log=(enabled=false),
+2020-12-10T23:57:29.947+0000 I  STORAGE  [initandlisten] WiredTiger message [1607644649:947180][7655:0x7fb2a4eb6b00], txn-recover: Set global recovery timestamp: (0, 0)
+2020-12-10T23:57:29.949+0000 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2020-12-10T23:57:29.952+0000 I  STORAGE  [initandlisten] Timestamp monitor starting
+2020-12-10T23:57:29.952+0000 I  CONTROL  [initandlisten] 
+2020-12-10T23:57:29.952+0000 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2020-12-10T23:57:29.952+0000 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2020-12-10T23:57:29.952+0000 I  CONTROL  [initandlisten] 
+2020-12-10T23:57:29.952+0000 I  STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 74bbe540-9c82-4ad9-a95f-278154d45790 and options: { uuid: UUID("74bbe540-9c82-4ad9-a95f-278154d45790") }
+2020-12-10T23:57:29.954+0000 I  INDEX    [initandlisten] index build: done building index _id_ on ns admin.system.version
+2020-12-10T23:57:29.954+0000 I  SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+2020-12-10T23:57:29.954+0000 I  COMMAND  [initandlisten] setting featureCompatibilityVersion to 4.2
+2020-12-10T23:57:29.955+0000 I  SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+2020-12-10T23:57:29.955+0000 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2020-12-10T23:57:29.955+0000 I  SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+2020-12-10T23:57:29.955+0000 I  STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 24f11d7b-40a7-4d27-9cc4-31a08562e014 and options: { capped: true, size: 10485760 }
+2020-12-10T23:57:29.957+0000 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.startup_log
+2020-12-10T23:57:29.957+0000 I  SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+2020-12-10T23:57:29.957+0000 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2020-12-10T23:57:29.958+0000 I  SHARDING [LogicalSessionCacheRefresh] Marking collection config.system.sessions as collection version: <unsharded>
+2020-12-10T23:57:29.958+0000 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: config.system.sessions does not exist
+2020-12-10T23:57:29.958+0000 I  STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with provided UUID: 0811102d-a10b-461f-900b-d4c9a8e6b7de and options: { uuid: UUID("0811102d-a10b-461f-900b-d4c9a8e6b7de") }
+2020-12-10T23:57:29.958+0000 I  NETWORK  [listener] Listening on /tmp/mongodb-27017.sock
+2020-12-10T23:57:29.959+0000 I  NETWORK  [listener] Listening on 0.0.0.0
+2020-12-10T23:57:29.959+0000 I  NETWORK  [listener] waiting for connections on port 27017
+2020-12-10T23:57:29.960+0000 I  INDEX    [LogicalSessionCacheRefresh] index build: done building index _id_ on ns config.system.sessions
+2020-12-10T23:57:29.962+0000 I  INDEX    [LogicalSessionCacheRefresh] index build: starting on config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 } using method: Hybrid
+2020-12-10T23:57:29.962+0000 I  INDEX    [LogicalSessionCacheRefresh] build may temporarily use up to 200 megabytes of RAM
+2020-12-10T23:57:29.962+0000 I  INDEX    [LogicalSessionCacheRefresh] index build: collection scan done. scanned 0 total records in 0 seconds
+2020-12-10T23:57:29.963+0000 I  INDEX    [LogicalSessionCacheRefresh] index build: inserted 0 keys from external sorter into index in 0 seconds
+2020-12-10T23:57:29.963+0000 I  INDEX    [LogicalSessionCacheRefresh] index build: done building index lsidTTLIndex on ns config.system.sessions
+2020-12-10T23:57:30.000+0000 I  SHARDING [ftdc] Marking collection local.oplog.rs as collection version: <unsharded>
+2020-12-10T23:57:36.636+0000 I  NETWORK  [listener] connection accepted from 10.0.4.12:38106 #1 (1 connection now open)
+2020-12-10T23:57:36.978+0000 I  NETWORK  [listener] connection accepted from 10.0.4.12:38500 #2 (2 connections now open)
+2020-12-10T23:57:37.001+0000 I  NETWORK  [listener] connection accepted from 10.0.4.11:53508 #3 (3 connections now open)
+2020-12-10T23:57:37.002+0000 I  SHARDING [conn3] Marking collection rate-db.inventory as collection version: <unsharded>
+2020-12-10T23:57:37.002+0000 I  STORAGE  [conn3] createCollection: rate-db.inventory with generated UUID: 1ce262ab-6fd0-4752-8455-b97ca13f22ac and options: {}
+2020-12-10T23:57:37.004+0000 I  INDEX    [conn3] index build: done building index _id_ on ns rate-db.inventory
+2020-12-10T23:57:37.082+0000 I  NETWORK  [listener] connection accepted from 10.0.4.13:33070 #4 (4 connections now open)
+2020-12-10T23:57:37.149+0000 I  INDEX    [conn3] index build: starting on rate-db.inventory properties: { v: 2, key: { hotelId: 1 }, name: "hotelId_1", ns: "rate-db.inventory" } using method: Hybrid
+2020-12-10T23:57:37.149+0000 I  INDEX    [conn3] build may temporarily use up to 200 megabytes of RAM
+2020-12-10T23:57:37.150+0000 I  INDEX    [conn3] index build: collection scan done. scanned 334 total records in 0 seconds
+2020-12-10T23:57:37.150+0000 I  INDEX    [conn3] index build: inserted 334 keys from external sorter into index in 0 seconds
+2020-12-10T23:57:37.150+0000 I  INDEX    [conn3] index build: done building index hotelId_1 on ns rate-db.inventory
+2020-12-10T23:57:37.238+0000 I  NETWORK  [listener] connection accepted from 10.0.4.10:34600 #5 (5 connections now open)
+2020-12-10T23:57:37.610+0000 I  NETWORK  [listener] connection accepted from 10.0.4.13:54462 #6 (6 connections now open)
+2020-12-10T23:57:37.666+0000 I  NETWORK  [listener] connection accepted from 10.0.4.12:43412 #7 (7 connections now open)
+2020-12-10T23:57:37.683+0000 I  NETWORK  [listener] connection accepted from 10.0.4.11:37772 #8 (8 connections now open)
+2020-12-10T23:57:37.703+0000 I  NETWORK  [listener] connection accepted from 10.0.4.10:48224 #9 (9 connections now open)
+2020-12-10T23:57:37.704+0000 I  SHARDING [conn9] Marking collection recommendation-db.recommendation as collection version: <unsharded>
+2020-12-10T23:57:37.705+0000 I  STORAGE  [conn9] createCollection: recommendation-db.recommendation with generated UUID: 3971bbfc-4359-45ca-b116-bbba640e0947 and options: {}
+2020-12-10T23:57:37.707+0000 I  INDEX    [conn9] index build: done building index _id_ on ns recommendation-db.recommendation
+2020-12-10T23:57:38.540+0000 I  NETWORK  [listener] connection accepted from 10.0.4.11:35646 #10 (10 connections now open)
+2020-12-10T23:57:38.579+0000 I  INDEX    [conn9] index build: starting on recommendation-db.recommendation properties: { v: 2, key: { hotelId: 1 }, name: "hotelId_1", ns: "recommendation-db.recommendation" } using method: Hybrid
+2020-12-10T23:57:38.579+0000 I  INDEX    [conn9] build may temporarily use up to 200 megabytes of RAM
+2020-12-10T23:57:38.580+0000 I  INDEX    [conn9] index build: collection scan done. scanned 1000 total records in 0 seconds
+2020-12-10T23:57:38.580+0000 I  INDEX    [conn9] index build: inserted 1000 keys from external sorter into index in 0 seconds
+2020-12-10T23:57:38.581+0000 I  INDEX    [conn9] index build: done building index hotelId_1 on ns recommendation-db.recommendation
+2020-12-10T23:57:38.639+0000 I  NETWORK  [listener] connection accepted from 10.0.4.13:35884 #11 (11 connections now open)
+2020-12-10T23:57:38.640+0000 I  SHARDING [conn11] Marking collection geo-db.geo as collection version: <unsharded>
+2020-12-10T23:57:38.640+0000 I  STORAGE  [conn11] createCollection: geo-db.geo with generated UUID: 3e44bcf8-0e80-4b3c-a613-1d45ddd021b6 and options: {}
+2020-12-10T23:57:38.642+0000 I  INDEX    [conn11] index build: done building index _id_ on ns geo-db.geo
+2020-12-10T23:57:38.669+0000 I  NETWORK  [listener] connection accepted from 10.0.4.10:52966 #12 (12 connections now open)
+2020-12-10T23:57:38.695+0000 I  NETWORK  [listener] connection accepted from 10.0.4.12:54694 #13 (13 connections now open)
+2020-12-10T23:57:39.134+0000 I  INDEX    [conn11] index build: starting on geo-db.geo properties: { v: 2, key: { hotelId: 1 }, name: "hotelId_1", ns: "geo-db.geo" } using method: Hybrid
+2020-12-10T23:57:39.134+0000 I  INDEX    [conn11] build may temporarily use up to 200 megabytes of RAM
+2020-12-10T23:57:39.135+0000 I  INDEX    [conn11] index build: collection scan done. scanned 1000 total records in 0 seconds
+2020-12-10T23:57:39.136+0000 I  INDEX    [conn11] index build: inserted 1000 keys from external sorter into index in 0 seconds
+2020-12-10T23:57:39.136+0000 I  INDEX    [conn11] index build: done building index hotelId_1 on ns geo-db.geo
+2020-12-10T23:57:39.917+0000 I  NETWORK  [listener] connection accepted from 10.0.4.11:53548 #14 (14 connections now open)
+2020-12-10T23:57:39.918+0000 I  SHARDING [conn14] Marking collection profile-db.hotels as collection version: <unsharded>
+2020-12-10T23:57:39.918+0000 I  STORAGE  [conn14] createCollection: profile-db.hotels with generated UUID: 2c29b554-6748-4266-b3c9-8623a448bbe3 and options: {}
+2020-12-10T23:57:39.920+0000 I  INDEX    [conn14] index build: done building index _id_ on ns profile-db.hotels
+2020-12-10T23:57:40.009+0000 I  NETWORK  [listener] connection accepted from 10.0.4.13:43080 #15 (15 connections now open)
+2020-12-10T23:57:40.170+0000 I  NETWORK  [listener] connection accepted from 10.0.4.10:53298 #16 (16 connections now open)
+2020-12-10T23:57:40.329+0000 I  NETWORK  [listener] connection accepted from 10.0.4.12:49820 #17 (17 connections now open)
+2020-12-10T23:57:40.428+0000 I  INDEX    [conn14] index build: starting on profile-db.hotels properties: { v: 2, key: { id: 1 }, name: "id_1", ns: "profile-db.hotels" } using method: Hybrid
+2020-12-10T23:57:40.428+0000 I  INDEX    [conn14] build may temporarily use up to 200 megabytes of RAM
+2020-12-10T23:57:40.429+0000 I  INDEX    [conn14] index build: collection scan done. scanned 1000 total records in 0 seconds
+2020-12-10T23:57:40.430+0000 I  INDEX    [conn14] index build: inserted 1000 keys from external sorter into index in 0 seconds
+2020-12-10T23:57:40.430+0000 I  INDEX    [conn14] index build: done building index id_1 on ns profile-db.hotels
+2020-12-10T23:57:41.920+0000 I  NETWORK  [listener] connection accepted from 10.0.4.12:52266 #18 (18 connections now open)
+2020-12-10T23:57:41.930+0000 I  NETWORK  [listener] connection accepted from 10.0.4.13:46854 #19 (19 connections now open)
+2020-12-10T23:57:41.990+0000 I  NETWORK  [listener] connection accepted from 10.0.4.11:46552 #20 (20 connections now open)
+2020-12-10T23:57:41.991+0000 I  SHARDING [conn20] Marking collection reservation-db.reservation as collection version: <unsharded>
+2020-12-10T23:57:41.991+0000 I  STORAGE  [conn20] createCollection: reservation-db.reservation with generated UUID: 5a38e504-4565-44f3-b989-10960d514c86 and options: {}
+2020-12-10T23:57:41.993+0000 I  INDEX    [conn20] index build: done building index _id_ on ns reservation-db.reservation
+2020-12-10T23:57:41.994+0000 I  SHARDING [conn20] Marking collection reservation-db.number as collection version: <unsharded>
+2020-12-10T23:57:41.994+0000 I  STORAGE  [conn20] createCollection: reservation-db.number with generated UUID: 416c8cb1-53b7-4d17-9596-3d78ba068a76 and options: {}
+2020-12-10T23:57:41.996+0000 I  INDEX    [conn20] index build: done building index _id_ on ns reservation-db.number
+2020-12-10T23:57:42.379+0000 I  NETWORK  [listener] connection accepted from 10.0.4.11:40138 #21 (21 connections now open)
+2020-12-10T23:57:42.381+0000 I  NETWORK  [listener] connection accepted from 10.0.4.10:42774 #22 (22 connections now open)
+2020-12-10T23:57:42.487+0000 I  INDEX    [conn20] index build: starting on reservation-db.number properties: { v: 2, key: { hotelId: 1 }, name: "hotelId_1", ns: "reservation-db.number" } using method: Hybrid
+2020-12-10T23:57:42.487+0000 I  INDEX    [conn20] build may temporarily use up to 200 megabytes of RAM
+2020-12-10T23:57:42.488+0000 I  INDEX    [conn20] index build: collection scan done. scanned 1000 total records in 0 seconds
+2020-12-10T23:57:42.489+0000 I  INDEX    [conn20] index build: inserted 1000 keys from external sorter into index in 0 seconds
+2020-12-10T23:57:42.489+0000 I  INDEX    [conn20] index build: done building index hotelId_1 on ns reservation-db.number
+2020-12-10T23:57:42.630+0000 I  NETWORK  [listener] connection accepted from 10.0.4.13:33964 #23 (23 connections now open)
+2020-12-10T23:57:42.630+0000 I  SHARDING [conn23] Marking collection user-db.user as collection version: <unsharded>
+2020-12-10T23:57:42.631+0000 I  STORAGE  [conn23] createCollection: user-db.user with generated UUID: 1827a5e3-a7cb-4465-b6c2-b83b9579635f and options: {}
+2020-12-10T23:57:42.633+0000 I  INDEX    [conn23] index build: done building index _id_ on ns user-db.user
+2020-12-10T23:57:42.673+0000 I  NETWORK  [listener] connection accepted from 10.0.4.10:40222 #24 (24 connections now open)
+2020-12-10T23:57:52.001+0000 I  NETWORK  [listener] connection accepted from 10.0.4.11:53522 #25 (25 connections now open)
+2020-12-10T23:57:52.704+0000 I  NETWORK  [listener] connection accepted from 10.0.4.10:48236 #26 (26 connections now open)
+2020-12-10T23:57:53.639+0000 I  NETWORK  [listener] connection accepted from 10.0.4.13:35894 #27 (27 connections now open)
+2020-12-10T23:57:54.917+0000 I  NETWORK  [listener] connection accepted from 10.0.4.11:53560 #28 (28 connections now open)
+2020-12-10T23:57:56.990+0000 I  NETWORK  [listener] connection accepted from 10.0.4.11:46566 #29 (29 connections now open)
+2020-12-10T23:57:57.630+0000 I  NETWORK  [listener] connection accepted from 10.0.4.13:33972 #30 (30 connections now open)
+2020-12-10T23:58:02.375+0000 I  INDEX    [conn23] index build: starting on user-db.user properties: { v: 2, key: { username: 1 }, name: "username_1", ns: "user-db.user" } using method: Hybrid
+2020-12-10T23:58:02.375+0000 I  INDEX    [conn23] build may temporarily use up to 200 megabytes of RAM
+2020-12-10T23:58:02.382+0000 I  INDEX    [conn23] index build: collection scan done. scanned 10001 total records in 0 seconds
+2020-12-10T23:58:02.388+0000 I  INDEX    [conn23] index build: inserted 10001 keys from external sorter into index in 0 seconds
+2020-12-10T23:58:02.388+0000 I  INDEX    [conn23] index build: done building index username_1 on ns user-db.user
+2020-12-10T23:58:51.959+0000 I  NETWORK  [listener] connection accepted from 10.0.4.13:35910 #31 (31 connections now open)
+2020-12-10T23:58:51.963+0000 I  NETWORK  [listener] connection accepted from 10.0.4.12:52284 #32 (32 connections now open)
+2020-12-10T23:58:51.967+0000 I  NETWORK  [listener] connection accepted from 10.0.4.12:49850 #33 (33 connections now open)
+2020-12-10T23:58:51.971+0000 I  NETWORK  [listener] connection accepted from 10.0.4.11:46590 #34 (34 connections now open)
+2020-12-10T23:58:51.972+0000 I  NETWORK  [listener] connection accepted from 10.0.4.11:46592 #35 (35 connections now open)
+2020-12-10T23:58:51.976+0000 I  NETWORK  [listener] connection accepted from 10.0.4.10:53330 #36 (36 connections now open)
+2020-12-10T23:58:51.979+0000 I  NETWORK  [listener] connection accepted from 10.0.4.11:53596 #37 (37 connections now open)
+2020-12-10T23:58:51.980+0000 I  NETWORK  [listener] connection accepted from 10.0.4.12:38540 #38 (38 connections now open)
+2020-12-10T23:58:51.980+0000 I  NETWORK  [listener] connection accepted from 10.0.4.12:38542 #39 (39 connections now open)
+2020-12-10T23:58:51.980+0000 I  NETWORK  [listener] connection accepted from 10.0.4.10:42808 #40 (40 connections now open)
+2020-12-10T23:58:51.984+0000 I  NETWORK  [listener] connection accepted from 10.0.4.13:43114 #41 (41 connections now open)
+2020-12-10T23:58:51.985+0000 I  NETWORK  [listener] connection accepted from 10.0.4.10:42814 #42 (42 connections now open)
+2020-12-10T23:58:51.987+0000 I  NETWORK  [listener] connection accepted from 10.0.4.12:52302 #43 (43 connections now open)
+2020-12-10T23:58:52.018+0000 I  NETWORK  [listener] connection accepted from 10.0.4.13:46894 #44 (44 connections now open)
+2020-12-10T23:58:52.036+0000 I  NETWORK  [listener] connection accepted from 10.0.4.10:53014 #45 (45 connections now open)
+2020-12-10T23:58:52.042+0000 I  NETWORK  [listener] connection accepted from 10.0.4.11:35704 #46 (46 connections now open)
+2020-12-10T23:58:52.053+0000 I  NETWORK  [listener] connection accepted from 10.0.4.12:38162 #47 (47 connections now open)
+2020-12-10T23:58:52.053+0000 I  NETWORK  [listener] connection accepted from 10.0.4.12:38164 #48 (48 connections now open)
+2020-12-10T23:58:52.058+0000 I  NETWORK  [listener] connection accepted from 10.0.4.13:54518 #49 (49 connections now open)
+2020-12-10T23:58:52.058+0000 I  NETWORK  [listener] connection accepted from 10.0.4.13:54520 #50 (50 connections now open)
+2020-12-10T23:58:52.059+0000 I  NETWORK  [listener] connection accepted from 10.0.4.12:54748 #51 (51 connections now open)
+2020-12-10T23:58:52.083+0000 I  NETWORK  [listener] connection accepted from 10.0.4.12:43474 #52 (52 connections now open)
+2020-12-10T23:58:52.084+0000 I  NETWORK  [listener] connection accepted from 10.0.4.10:48282 #53 (53 connections now open)
+2020-12-10T23:58:52.084+0000 I  NETWORK  [listener] connection accepted from 10.0.4.12:43476 #54 (54 connections now open)
+2020-12-10T23:58:52.084+0000 I  NETWORK  [listener] connection accepted from 10.0.4.12:43478 #55 (55 connections now open)
+2020-12-10T23:58:52.084+0000 I  NETWORK  [listener] connection accepted from 10.0.4.10:48284 #56 (56 connections now open)
+2020-12-10T23:58:52.084+0000 I  NETWORK  [listener] connection accepted from 10.0.4.10:48286 #57 (57 connections now open)
+2020-12-10T23:58:52.085+0000 I  NETWORK  [listener] connection accepted from 10.0.4.12:43480 #58 (58 connections now open)
+2020-12-10T23:58:52.090+0000 I  NETWORK  [listener] connection accepted from 10.0.4.10:48288 #59 (59 connections now open)
+2020-12-10T23:58:52.094+0000 I  NETWORK  [listener] connection accepted from 10.0.4.13:35944 #60 (60 connections now open)
+2020-12-10T23:58:52.094+0000 I  NETWORK  [listener] connection accepted from 10.0.4.13:35946 #61 (61 connections now open)
+2020-12-10T23:58:52.117+0000 I  NETWORK  [listener] connection accepted from 10.0.4.12:52334 #62 (62 connections now open)
+2020-12-10T23:59:20.097+0000 I  NETWORK  [listener] connection accepted from 10.0.4.13:46948 #63 (63 connections now open)

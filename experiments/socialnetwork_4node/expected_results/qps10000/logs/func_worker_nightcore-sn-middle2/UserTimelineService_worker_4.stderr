@@ -1,0 +1,22 @@
+I1210 22:39:19.016879 Main     thread.cpp:100] Register main thread: tid=68566
+I1210 22:39:19.016937 Main     func_worker.cpp:51] My client_id is 49
+[2020-12-10 22:39:19.030048] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+I1210 22:39:19.033815 Main     func_config.cpp:135] Load configuration for function SocialGraphService[1]
+I1210 22:39:19.033832 Main     func_config.cpp:135] Load configuration for function ComposePostService[2]
+I1210 22:39:19.033838 Main     func_config.cpp:135] Load configuration for function PostStorageService[3]
+I1210 22:39:19.033860 Main     func_config.cpp:135] Load configuration for function UserTimelineService[4]
+I1210 22:39:19.033867 Main     func_config.cpp:135] Load configuration for function UrlShortenService[5]
+I1210 22:39:19.033872 Main     func_config.cpp:135] Load configuration for function UserService[6]
+I1210 22:39:19.033877 Main     func_config.cpp:135] Load configuration for function MediaService[7]
+I1210 22:39:19.033883 Main     func_config.cpp:135] Load configuration for function TextService[8]
+I1210 22:39:19.033898 Main     func_config.cpp:135] Load configuration for function UniqueIdService[9]
+I1210 22:39:19.033902 Main     func_config.cpp:135] Load configuration for function UserMentionService[10]
+I1210 22:39:19.033905 Main     func_config.cpp:135] Load configuration for function HomeTimelineService[11]
+I1210 22:39:19.033928 Main     func_worker.cpp:118] Use extra pipes for messages
+I1210 22:39:19.034515 Main     func_worker.cpp:137] Handshake done
+[2020-12-10 22:39:19.034538] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-10 22:39:19.037052] <info>: (ClientPool.h:233:Pop) New user-timeline-redis client, total_client=1
+[2020-12-10 22:39:19.051957] <info>: (ThriftClient.h:84:ThriftClient) Use FaaSWorker for thrift calls
+[2020-12-10 22:39:19.051991] <info>: (ClientPool.h:233:Pop) New post-storage-client client, total_client=1
+I1210 22:39:19.052330 Main     buffer_pool.h:25] BufferPool[Pipes]: Allocate new buffer, current buffer count is 1
+[2020-12-10 22:39:19.064800] <error>: (UserTimelineHandler.h:108:WriteUserTimeline) Failed to insert user timeline user 839 to MongoDB: E11000 duplicate key error collection: user-timeline.user-timeline index: user_id_1 dup key: { user_id: 839 }

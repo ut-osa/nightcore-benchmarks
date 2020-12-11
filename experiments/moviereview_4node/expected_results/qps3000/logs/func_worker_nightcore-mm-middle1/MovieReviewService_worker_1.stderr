@@ -1,0 +1,21 @@
+I1210 22:57:48.958070 Main     thread.cpp:100] Register main thread: tid=11950
+I1210 22:57:48.958152 Main     func_worker.cpp:51] My client_id is 34
+[2020-12-10 22:57:48.968026] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+I1210 22:57:48.973830 Main     func_config.cpp:135] Load configuration for function UniqueIdService[1]
+I1210 22:57:48.973852 Main     func_config.cpp:135] Load configuration for function MovieIdService[2]
+I1210 22:57:48.973859 Main     func_config.cpp:135] Load configuration for function TextService[3]
+I1210 22:57:48.973864 Main     func_config.cpp:135] Load configuration for function RatingService[4]
+I1210 22:57:48.973869 Main     func_config.cpp:135] Load configuration for function UserService[5]
+I1210 22:57:48.973878 Main     func_config.cpp:135] Load configuration for function ComposeReviewService[6]
+I1210 22:57:48.973883 Main     func_config.cpp:135] Load configuration for function ReviewStorageService[7]
+I1210 22:57:48.973889 Main     func_config.cpp:135] Load configuration for function UserReviewService[8]
+I1210 22:57:48.973911 Main     func_config.cpp:135] Load configuration for function MovieReviewService[9]
+I1210 22:57:48.973916 Main     func_config.cpp:135] Load configuration for function CastInfoService[10]
+I1210 22:57:48.973920 Main     func_config.cpp:135] Load configuration for function PlotService[11]
+I1210 22:57:48.973924 Main     func_config.cpp:135] Load configuration for function MovieInfoService[12]
+I1210 22:57:48.973955 Main     func_worker.cpp:118] Use extra pipes for messages
+I1210 22:57:48.974175 Main     func_worker.cpp:137] Handshake done
+[2020-12-10 22:57:48.974208] <info>: (ClientPool.h:195:ClientPool) Max pool size: 128
+[2020-12-10 23:00:17.323531] <info>: (ClientPool.h:233:Pop) New movie-review-redis client, total_client=1
+[2020-12-10 23:00:17.434514] <error>: (MovieReviewHandler.h:105:UploadMovieReview) Failed to insert movie review of movie 10016 to MongoDB: E11000 duplicate key error collection: movie-review.movie-review index: movie_id_1 dup key: { movie_id: "10016" }
+[2020-12-10 23:00:17.579769] <error>: (MovieReviewHandler.h:105:UploadMovieReview) Failed to insert movie review of movie 8879 to MongoDB: E11000 duplicate key error collection: movie-review.movie-review index: movie_id_1 dup key: { movie_id: "8879" }
