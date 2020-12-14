@@ -18,28 +18,27 @@ for running on Nightcore.
 ### Hardware and software dependencies ###
 
 Our evaluation workloads run on AWS EC2 instances in `us-east-2` region.
-EC2 VMs for running experiments use public AMI (`ami-06e206d7334bff2ec`) built by us,
+
+EC2 VMs for running experiments use a public AMI (`ami-06e206d7334bff2ec`) built by us,
 which is based on Ubuntu 20.04 with necessary dependencies installed.
 
 ### Installation ###
 
-Our scripts will use public Docker images (built by us as well) hosted on DockerHub to run experiments.
-Thus no compilation is needed. But it requires a controller machine setting up to conduct Nightcore experiments.
-
 #### Setting up the controller machine ####
 
-Our scripts require a controller machine in AWS `us-east-2` region to provision and control experiment VMs.
-The controller machine can use very small EC2 instance type, as it does not affect experimental results.
-In our setup, we use a `t3.micro` EC2 instance installed with Ubuntu 20.04 as the controller machine.
+A controller machine in AWS `us-east-2` region is required for running scripts executing experiment workflows.
+The controller machine can use very small EC2 instance type, as it only provisions and controls experiment VMs,
+but does not affect experimental results.
+In our own setup, we use a `t3.micro` EC2 instance installed with Ubuntu 20.04 as the controller machine.
 
-The controller machine needs `bash`, `python3`, `rsync`, and AWS CLI version 1 installed.
+The controller machine needs `python3`, `rsync`, and AWS CLI version 1 installed.
 `python3` and `rsync` can be installed with `apt`,
 and this [documentation](https://docs.aws.amazon.com/cli/latest/userguide/install-linux.html)
 details the recommanded way for installing AWS CLI version 1.
 Once installed, AWS CLI has to be configured with region `us-east-2` and access key
 (see this [documentation](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)).
 
-Then on the controller machine, clone this repository with all submodules
+Then on the controller machine, clone this repository with all git submodules
 ```
 git clone --recursive https://github.com/ut-osa/nightcore-benchmarks.git
 ```
@@ -51,25 +50,53 @@ Please read the notice in `scripts/setup_sshkey.sh` before executing it to see i
 Our VM provisioning script creates EC2 instances with security group `nightcore` and placement group `nightcore-experiments`.
 The security group includes firewall rules for experiment VMs (including allowing the controller machine to SSH into them),
 while the placement group instructs AWS to place experiment VMs close together.
-Executing `scripts/aws_provision.sh` will create these groups with the correct configurations.
+
+Executing `scripts/aws_provision.sh` on the controller machine will create these groups with correct configurations.
+
+#### Building Docker images ####
+We also provide the script (`scripts/docker_images.sh`) for building Docker images relevant to experiments in this artifact.
+As we already pushed all compiled images to DockerHub, there is no need to run this script
+as long as you do not modify source code of Nightcore (in `nightcore` directory) and evaluation workloads (in `workloads` directory).
 
 ### Experiment workflow ###
 
-Individual experiments correspond to directories inside `experiments`.
-The script `experiments/*/run_all.sh` contains the end-to-end workflow to running experiments of the corresponding workload.
+Each sub-directory within `experiments` corresponds to one experiment.
+Within each experiment directory, a `config.json` file describes machine configuration and placement assignment of
+individual Docker containers (i.e. microservices) for this experiment.
+
+The entry point of each experiment is `run_all.sh` script.
+It first provisions VMs for experiments.
+Then it executes evaluation workloads with different QPS targets via `run_once.sh` script.
+`run_once.sh` script performs workload-specific setups, runs `wrk2` to measure latency distribution under the target QPS,
+and stores results in `results` directory.
+When everything is done, `run_all.sh` script terminates all provisioned experiment VMs.
+
+VM provisioning is done by `scripts/exp_helper` with sub-command `start-machines`.
+By default, it creates on-demand EC2 instances. But it also supports the option to
+use Spot instances for cost saving.
+After EC2 instances are up, the script then sets up Docker engines on newly created
+VMs to form a Docker cluster in [swarm](https://docs.docker.com/engine/swarm/) mode.
 
 ### Evaluation and expected result ###
 
 For each experiment, the evaluation metric is the latency distribution under a specific QPS.
-We use `wrk2` as the benchmarking tool, and it will output a detail latency distribution.
-`experiments/*/expected_results` contain examples of expected outputs.
-The file `experiments/*/expected_results/*/wrk2.log` contains the `wrk2` output, from where we report 50% and 99% latency in our paper.
+We use `wrk2` as the benchmarking tool, and it will output a detailed latency distribution, which looks like
+```
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%    2.21ms
+ 75.000%    3.29ms
+ 90.000%    5.13ms
+ 99.000%    9.12ms
+ 99.900%   12.28ms
+ 99.990%   17.45ms
+ 99.999%   20.32ms
+100.000%   23.61ms
+```
+We report the 50% and 99% values as median and tail latencies in the paper.
+`run_all.sh` script conducts evaluations on various QPS targets.
 
-### Notes ###
-
-* `scripts/docker_images.sh` includes details about how we build Docker images for experiments.
-But note that Docker in experiment VMs will always pull images from DockerHub.
-Thus if you are going to customize these images, you need to use image repositories under your own DockerHub account.
+For each individual experiment, `expected_results` directory contains
+the expected experiment outputs by running `run_all.sh`.
 
 ### License ###
 
@@ -77,4 +104,3 @@ Thus if you are going to customize these images, you need to use image repositor
 `runc`, and `wrk2` are licensed under Apache License 2.0.
 * DeathStarBench (`workloads/DeathStarBench`) is licensed under GNU General Public License v2.0.
 * All other source code in this repository is licensed under Apache License 2.0.
-
