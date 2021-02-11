@@ -1,0 +1,67 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+
+SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
+EXP_DIR = os.path.join(SCRIPT_DIR, '../experiments')
+
+WORKLOADS = ['socialnetwork', 'moviereview', 'hotelresv', 'hipstershop']
+RESULT_DIR = 'results'
+
+def lstrip(s, prefix):
+    return s[len(prefix):]
+
+def rstrip(s, suffix):
+    return s[:-len(suffix)]
+
+def parse_wrk_output(full_path):
+    def parse_time(s):
+        if s.endswith('ms'):
+            return float(rstrip(s, 'ms'))
+        elif s.endswith('s'):
+            return float(rstrip(s, 's')) * 1000
+        elif s.endswith('m'):
+            return float(rstrip(s, 'm')) * 60000
+        else:
+            return -1
+    results = {}
+    with open(full_path) as fin:
+        for line in fin:
+            parts = line.strip().split()
+            if len(parts) == 0:
+                continue
+            if parts[0] == '50.000%' and 'median' not in results:
+                results['median'] = parse_time(parts[1])
+            if parts[0] == '99.000%' and 'tail' not in results:
+                results['tail'] = parse_time(parts[1])
+    return results
+
+def print_results(dir_name, title, prefix=''):
+    dir_path = os.path.join(EXP_DIR, dir_name, RESULT_DIR)
+    results = {}
+    for exp_dir in os.listdir(dir_path):
+        if exp_dir.startswith(prefix):
+            wrk_outputs = parse_wrk_output(os.path.join(dir_path, exp_dir, 'wrk.log'))
+            qps_str = lstrip(exp_dir, prefix)
+            assert qps_str.startswith('qps')
+            results[int(lstrip(qps_str, 'qps'))] = (wrk_outputs['median'], wrk_outputs['tail'])
+    sys.stdout.write('[%s]\nQPS\tmedian\ttail\n' % (title,))
+    for key in sorted(results.keys()):
+        median, tail = results[key]
+        sys.stdout.write('%d\t%.2fms\t%.2fms\n' % (key, median, tail))
+    sys.stdout.write('\n')
+
+if __name__ == '__main__':
+    for workload in WORKLOADS:
+        dir_name = '%s_singlenode' % (workload,)
+        if workload == 'socialnetwork':
+            print_results(dir_name, title='%s write (single node)' % (workload,),
+                          prefix='write_')
+            print_results(dir_name, title='%s mixed (single node)' % (workload,),
+                          prefix='mixed_')
+        else:
+            print_results(dir_name, title='%s (single node)' % (workload,))
+    for workload in WORKLOADS:
+        dir_name = '%s_4node' % (workload,)
+        print_results(dir_name, title='%s (single node)' % (workload,))
