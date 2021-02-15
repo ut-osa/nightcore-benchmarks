@@ -42,7 +42,7 @@ Then on the controller machine, clone this repository with all git submodules
 ```
 git clone --recursive https://github.com/ut-osa/nightcore-benchmarks.git
 ```
-Finally, executing `scripts/setup_sshkey.sh` to setup SSH keys that will be used to access experiment VMs.
+Finally, execute `scripts/setup_sshkey.sh` to setup SSH keys that will be used to access experiment VMs.
 Please read the notice in `scripts/setup_sshkey.sh` before executing it to see if this script works for your setup.
 
 #### Setting up EC2 security group and placement group ####
@@ -51,7 +51,7 @@ Our VM provisioning script creates EC2 instances with security group `nightcore`
 The security group includes firewall rules for experiment VMs (including allowing the controller machine to SSH into them),
 while the placement group instructs AWS to place experiment VMs close together.
 
-Executing `scripts/aws_provision.sh` on the controller machine will create these groups with correct configurations.
+Executing `scripts/aws_provision.sh` on the controller machine creates these groups with correct configurations.
 
 #### Building Docker images ####
 We also provide the script (`scripts/docker_images.sh`) for building Docker images relevant to experiments in this artifact.
@@ -64,7 +64,7 @@ Each sub-directory within `experiments` corresponds to one experiment.
 Within each experiment directory, a `config.json` file describes machine configuration and placement assignment of
 individual Docker containers (i.e. microservices) for this experiment.
 
-The entry point of each experiment is `run_all.sh` script.
+The entry point of each experiment is the `run_all.sh` script.
 It first provisions VMs for experiments.
 Then it executes evaluation workloads with different QPS targets via `run_once.sh` script.
 `run_once.sh` script performs workload-specific setups, runs `wrk2` to measure latency distribution under the target QPS,
@@ -80,7 +80,7 @@ VMs to form a Docker cluster in [swarm](https://docs.docker.com/engine/swarm/) m
 ### Evaluation and expected result ###
 
 For each experiment, the evaluation metric is the latency distribution under a specific QPS.
-We use `wrk2` as the benchmarking tool, and it will output a detailed latency distribution, which looks like
+We use `wrk2` as the benchmarking tool, and it outputs a detailed latency distribution, which looks like
 ```
   Latency Distribution (HdrHistogram - Recorded Latency)
  50.000%    2.21ms
@@ -92,11 +92,18 @@ We use `wrk2` as the benchmarking tool, and it will output a detailed latency di
  99.999%   20.32ms
 100.000%   23.61ms
 ```
-We report the 50% and 99% values as median and tail latencies in the paper.
+We report the 50\% and 99\% percentile values as median and tail latencies in the paper. 
 `run_all.sh` script conducts evaluations on various QPS targets.
 
-For each individual experiment, `expected_results` directory contains
-the expected experiment outputs by running `run_all.sh`.
+Experiment sub-directories ending with `singlenode` correspond to Nightcore results in Figure 7 the main paper.
+Experiment sub-directories ending with `4node` correspond to Nightcore (4 servers) results in Table 4 of the main paper.
+Note that `run_all.sh` scripts run less data points than presented in the paper, to allow a fast validation.
+But all `run_all.sh` scripts can be easily modified to collect more data points.
+
+We provide a helper script `scripts/collect_results` to print a summary of all experiment results.
+Meanwhile, `expected_results_summary.txt` gives the summary generated from our experiment runs.
+Details of our runs are stored in the `expected_results` directory within each experiment sub-directory.
+Note that these results are not the exact ones presented in the paper.
 
 ### License ###
 
